@@ -1,0 +1,634 @@
+/* ===== Global Responsive Rules ===== */
+@media (max-width: 991.98px) {
+    :root {
+        --nh-section-y: 3.5rem;
+    }
+
+    .section-lg {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .nh-navbar .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .nh-navbar .nav-link.dropdown-toggle::after {
+        transition: var(--nh-transition);
+    }
+
+    .nh-navbar .dropdown:hover .nav-link.dropdown-toggle::after {
+        transform: rotate(-180deg);
+    }
+
+    .nh-topbar {
+        display: none;
+    }
+
+    .nh-navbar {
+        padding: 0.7rem 0;
+    }
+
+    .nh-navbar-logo {
+        height: 44px;
+    }
+
+    .nh-navbar .navbar-toggler {
+        border: 1px solid var(--nh-border);
+        padding: 0.4rem 0.6rem;
+        font-size: 1.1rem;
+        color: var(--nh-navy);
+    }
+
+    .nh-navbar .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.15rem rgba(48, 124, 205, 0.25);
+    }
+
+    .nh-navbar .navbar-collapse {
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        border-top: 1px solid var(--nh-border-soft);
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+
+    .nh-navbar .navbar-nav {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nh-navbar .nav-link {
+        width: 100%;
+        padding: 0.75rem 0.5rem !important;
+        border-bottom: 1px solid var(--nh-border-soft);
+    }
+
+    .nh-navbar .nav-link.active::after {
+        display: none;
+    }
+
+    .nh-navbar .nav-link.active {
+        background-color: var(--nh-blue-tint);
+        border-radius: var(--nh-radius-sm);
+    }
+
+    .nh-navbar .dropdown-menu {
+        border: none;
+        box-shadow: none;
+        padding-left: 1rem;
+        margin: 0 !important;
+        width: 100%;
+        background-color: var(--nh-bg-light);
+    }
+
+    .nh-navbar .dropdown-item {
+        padding: 0.55rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .nh-navbar .btn-verify {
+        margin-left: 0;
+        margin-top: 0.75rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-section::before {
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 35%, 0 70%);
+    }
+
+    .hero-section {
+        padding-top: 3rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .hero-visual {
+        margin-top: 2.5rem;
+    }
+
+    .hero-visual-badge {
+        left: 0.5rem;
+    }
+
+    .hero-visual-stat {
+        right: 0.5rem;
+    }
+
+    .intro-visual-img {
+        height: 380px;
+    }
+
+    .intro-quote-block {
+        margin-top: -2rem;
+        margin-left: 1rem;
+    }
+
+    .institutional-visual {
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+    }
+
+    .about-visual-img {
+        height: 380px;
+    }
+
+    .about-visual {
+        margin-bottom: 2.5rem;
+    }
+
+    .nh-hero,
+    .nh-hero-slide,
+    .nh-hero-content-wrap {
+        min-height: calc(100vh - var(--nh-navbar-height, 82px));
+    }
+
+    .nh-hero-content {
+        max-width: 70%;
+    }
+
+    .nh-hero-overlay {
+        background: linear-gradient(90deg,
+                rgba(24, 40, 95, 0.90) 0%,
+                rgba(24, 40, 95, 0.72) 60%,
+                rgba(31, 53, 122, 0.55) 100%);
+    }
+
+    .about-hero {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .about-hero-visual {
+        margin-top: 2rem;
+        aspect-ratio: 16 / 10;
+    }
+
+    .about-who-img {
+        height: 380px;
+    }
+
+    .about-who-exp-badge {
+        right: 0.5rem;
+        bottom: -1rem;
+    }
+
+    .about-membership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-corporate-feature-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-inst-accred-visual {
+        margin-bottom: 2.5rem;
+    }
+
+    .about-why-intro-visual {
+        margin-bottom: 2.5rem;
+    }
+
+    .nh-hero {
+        height: calc(100vh - 70px);
+        min-height: 600px;
+    }
+
+    .nh-hero-slide {
+        min-height: 600px;
+    }
+
+    .standard-hero {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .standard-hero-visual {
+        margin-top: 2rem;
+        aspect-ratio: 16 / 10;
+    }
+
+    .standard-intro-img {
+        height: 380px;
+    }
+
+    .standard-intro-research-badge {
+        right: 0.5rem;
+        bottom: -1rem;
+    }
+
+    .standard-cluster-overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .standard-operational-card {
+        padding: 2rem 1.75rem;
+    }
+     .institutional-hero { padding-top: 2.75rem; padding-bottom: 2.75rem; }
+      .institutional-core-card { margin-top: 2rem; }
+      .institutional-standards-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .institutional-standard-card-full { grid-column: auto; }
+      .institutional-subsection-grid { grid-template-columns: repeat(2, 1fr); }
+      .institutional-excellence-card { padding: 2.5rem 2rem; }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+    :root {
+        --nh-section-y: 2.75rem;
+    }
+
+    .lead {
+        font-size: 1.05rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.9rem;
+    }
+
+    .nh-card {
+        padding: 1.5rem;
+    }
+
+    .intro-visual-img {
+        height: 300px;
+    }
+
+    .intro-quote-block {
+        margin-top: 1.5rem;
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .course-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .accreditation-card-header {
+        padding: 1.5rem;
+    }
+
+    .accreditation-card-body {
+        padding: 1.5rem;
+    }
+
+    .about-visual-img {
+        height: 300px;
+    }
+
+    .about-visual-frame::before,
+    .about-visual-frame::after {
+        width: 60px;
+        height: 60px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-card {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .cta-feature-list {
+        gap: 1rem;
+    }
+
+    .cta-feature {
+        font-size: 0.85rem;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .nh-footer {
+        padding-top: 3rem;
+    }
+
+    .nh-footer .footer-bottom-links {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    .nh-footer .footer-bottom .text-center {
+        text-align: left !important;
+    }
+
+    .nh-footer .footer-logo {
+        height: 48px;
+    }
+
+    .nh-hero-content {
+        max-width: 100%;
+    }
+
+    .nh-hero-overlay {
+        background: linear-gradient(180deg,
+                rgba(24, 40, 95, 0.78) 0%,
+                rgba(24, 40, 95, 0.86) 100%);
+    }
+
+    .nh-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .nh-hero-actions .btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .nh-hero-content-wrap {
+        padding: 3.5rem 0 6.5rem;
+    }
+
+    .nh-hero-prev,
+    .nh-hero-next {
+        width: 42px;
+        height: 42px;
+        bottom: 1.25rem;
+    }
+
+    .nh-hero-prev {
+        right: 4rem;
+    }
+
+    .nh-hero-next {
+        right: 1.25rem;
+    }
+
+    .nh-hero-pagination {
+        bottom: 1.9rem !important;
+    }
+
+    .nh-hero-pagination .swiper-pagination-bullet-active {
+        width: 22px;
+    }
+
+    .about-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .about-hero-visual {
+        aspect-ratio: 4 / 3;
+    }
+
+    .about-hero-badge {
+        display: none;
+    }
+
+    .about-who-img {
+        height: 300px;
+    }
+
+    .about-who-exp-badge {
+        display: none;
+    }
+
+    .about-membership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-corporate-feature-row {
+        grid-template-columns: 1fr;
+    }
+
+    .about-vm-card {
+        padding: 2rem 1.75rem;
+    }
+
+    .about-integrated-block {
+        padding: 2rem 1.5rem;
+    }
+
+    .about-integrated-block-text {
+        font-size: 1.02rem;
+    }
+
+    .about-why-feature-card {
+        padding: 1.5rem;
+    }
+
+    .about-cta-buttons .btn {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .nh-hero {
+        height: 650px;
+        min-height: 650px;
+    }
+
+    .nh-hero-swiper,
+    .nh-hero-swiper .swiper-wrapper,
+    .nh-hero-slide {
+        height: 650px;
+        min-height: 650px;
+    }
+
+    .nh-hero-content-wrap {
+        height: 100%;
+        min-height: 650px;
+        padding: 4rem 0 6rem;
+    }
+
+    .nh-hero-title {
+        font-size: clamp(2rem, 8vw, 2.7rem);
+    }
+
+    .nh-hero-actions {
+        gap: 0.75rem;
+    }
+
+    .nh-hero-actions .btn {
+        min-width: 0;
+    }
+
+    .nh-hero-prev,
+    .nh-hero-next {
+        width: 40px;
+        height: 40px;
+        bottom: 1.25rem;
+    }
+
+    .nh-hero-next {
+        right: 1rem;
+    }
+
+    .nh-hero-prev {
+        right: 4rem;
+    }
+
+    .nh-hero-pagination {
+        bottom: 2rem !important;
+    }
+
+    .standard-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .standard-hero-visual {
+        aspect-ratio: 4 / 3;
+    }
+
+    .standard-hero-badge {
+        display: none;
+    }
+
+    .standard-intro-img {
+        height: 300px;
+    }
+
+    .standard-intro-research-badge {
+        display: none;
+    }
+
+    .standard-cluster-overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .standard-cluster-header {
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+
+    .standard-operational-card {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .standard-compliance-card,
+    .standard-course-card {
+        padding: 1.5rem;
+    }
+
+    .standard-competency-card {
+        padding: 1.35rem;
+    }
+     .institutional-hero { padding-top: 2rem; padding-bottom: 2.25rem; }
+      .institutional-hero-subtitle { font-size: 1.02rem; }
+      .institutional-core-card { padding: 1.75rem 1.5rem; }
+      .institutional-card-header { padding: 1rem 1.25rem; }
+      .institutional-card-header-title { font-size: 1rem; }
+      .institutional-card-body { padding: 1.25rem; }
+      .institutional-subsection-grid { grid-template-columns: 1fr; gap: 1.1rem; }
+      .institutional-excellence-card { padding: 2rem 1.5rem; }
+      .institutional-excellence-features { gap: 1rem 1.5rem; }
+      .institutional-excellence-feature { font-size: 0.85rem; flex: 1 1 100%; justify-content: center; }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .hero-features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-cta-group .btn {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .hero-visual-badge {
+        display: none;
+    }
+
+    .hero-visual-stat {
+        padding: 0.7rem 0.9rem;
+    }
+
+    .hero-visual-stat-num {
+        font-size: 1.2rem;
+    }
+
+    .individual-cta-group .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 389.98px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.45rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nh-footer .footer-bottom-links {
+        gap: 1rem;
+    }
+
+    .about-vm-card {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .about-vm-card-title {
+        font-size: 1.4rem;
+    }
+
+    .about-why-feature-num {
+        font-size: 2rem;
+    }
+
+    .about-why-feature-title {
+        padding-right: 1.75rem;
+        font-size: 1rem;
+    }
+
+    .standard-compliance-num,
+    .standard-course-num {
+        font-size: 1.85rem;
+    }
+
+    .standard-cluster-header-title {
+        font-size: 1.3rem;
+    }
+
+    .standard-cluster-card {
+        padding: 1.5rem 1.25rem;
+    }
+    .institutional-hero-title { font-size: 1.7rem; }
+      .institutional-card-header-title { font-size: 0.95rem; }
+      .institutional-subsection-title { font-size: 0.88rem; }
+}

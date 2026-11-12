@@ -1,0 +1,3716 @@
+ /* ==========================================
+       GLOBAL COMMON CSS
+       Reusable across all website pages
+    ========================================== */
+
+ /* ===== Brand Variables ===== */
+ :root {
+     /* Approved Brand Colors */
+     --nh-white: #ffffff;
+     --nh-navy: #1f357a;
+     --nh-blue: #307ccd;
+
+     /* Derived Tints & Supporting Tones */
+     --nh-navy-dark: #18285f;
+     --nh-navy-soft: #2a4499;
+     --nh-blue-dark: #286db8;
+     --nh-blue-soft: #4a91dc;
+     --nh-blue-tint: #eaf2fb;
+     --nh-navy-tint: #eef1f9;
+     --nh-bg-light: #f6f8fc;
+     --nh-bg-section: #fafbfd;
+
+     --nh-text: #3c4858;
+     --nh-text-muted: #6b7686;
+     --nh-text-light: #9aa3b0;
+     --nh-border: #e6eaf1;
+     --nh-border-soft: #f0f3f8;
+
+     /* Typography */
+     --nh-font-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+
+     /* Spacing */
+     --nh-section-y: 5rem;
+     --nh-section-y-sm: 3rem;
+     --nh-navbar-height: 82px;
+
+     /* Transitions */
+     --nh-transition: all 0.3s ease;
+
+     /* Shadows */
+     --nh-shadow-sm: 0 1px 3px rgba(31, 53, 122, 0.05);
+     --nh-shadow-md: 0 6px 24px rgba(31, 53, 122, 0.08);
+     --nh-shadow-lg: 0 16px 48px rgba(31, 53, 122, 0.12);
+     --nh-shadow-blue: 0 10px 30px rgba(48, 124, 205, 0.22);
+
+     /* Radius */
+     --nh-radius: 0.75rem;
+     --nh-radius-sm: 0.5rem;
+     --nh-radius-lg: 1rem;
+ }
+
+ /* ===== Global Typography ===== */
+ html {
+     scroll-behavior: smooth;
+     scroll-padding-top: var(--nh-navbar-height);
+ }
+
+ body {
+     font-family: var(--nh-font-base);
+     color: var(--nh-text);
+     font-size: 1rem;
+     line-height: 1.7;
+     font-weight: 400;
+     background-color: var(--nh-white);
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: var(--nh-font-base);
+     color: var(--nh-navy);
+     font-weight: 700;
+     line-height: 1.22;
+     letter-spacing: -0.01em;
+ }
+
+ h1 {
+     font-size: clamp(2rem, 4vw, 3rem);
+     font-weight: 800;
+ }
+
+ h2 {
+     font-size: clamp(1.6rem, 3vw, 2.25rem);
+ }
+
+ h3 {
+     font-size: clamp(1.25rem, 2vw, 1.5rem);
+ }
+
+ h4 {
+     font-size: 1.15rem;
+ }
+
+ h5 {
+     font-size: 1rem;
+ }
+
+ h6 {
+     font-size: 0.9rem;
+ }
+
+ p {
+     margin-bottom: 1rem;
+ }
+
+ a {
+     color: var(--nh-blue);
+     text-decoration: none;
+     transition: var(--nh-transition);
+ }
+
+ a:hover {
+     color: var(--nh-navy);
+ }
+
+ .lead {
+     font-size: 1.1rem;
+     color: var(--nh-text-muted);
+     font-weight: 400;
+     line-height: 1.7;
+ }
+
+ .text-navy {
+     color: var(--nh-navy) !important;
+ }
+
+ .text-blue {
+     color: var(--nh-blue) !important;
+ }
+
+ .text-muted-soft {
+     color: var(--nh-text-muted) !important;
+ }
+
+ .bg-navy {
+     background-color: var(--nh-navy) !important;
+ }
+
+ .bg-blue {
+     background-color: var(--nh-blue) !important;
+ }
+
+ .bg-blue-tint {
+     background-color: var(--nh-blue-tint) !important;
+ }
+
+ .bg-navy-tint {
+     background-color: var(--nh-navy-tint) !important;
+ }
+
+ .bg-section {
+     background-color: var(--nh-bg-section) !important;
+ }
+
+ /* ===== Common Container ===== */
+ .nh-container {
+     max-width: 1240px;
+ }
+
+ /* ===== Common Section Spacing ===== */
+ .section {
+     padding-top: var(--nh-section-y);
+     padding-bottom: var(--nh-section-y);
+ }
+
+ .section-sm {
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+ }
+
+ .section-lg {
+     padding-top: 6.5rem;
+     padding-bottom: 6.5rem;
+ }
+
+ /* ===== Common Section Headings ===== */
+ .section-eyebrow {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     color: var(--nh-blue);
+     font-size: 0.8rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 0.14em;
+     margin-bottom: 1rem;
+ }
+
+ .section-eyebrow::before {
+     content: "";
+     display: inline-block;
+     width: 28px;
+     height: 2px;
+     background-color: var(--nh-blue);
+     border-radius: 2px;
+ }
+
+ .section-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     margin-bottom: 1.1rem;
+ }
+
+ .section-subtitle {
+     color: var(--nh-text-muted);
+     font-size: 1.05rem;
+     line-height: 1.75;
+     max-width: 640px;
+ }
+
+ .section-divider {
+     width: 56px;
+     height: 3px;
+     background-color: var(--nh-blue);
+     border-radius: 3px;
+     margin-bottom: 1.5rem;
+ }
+
+ /* ===== Common Buttons ===== */
+ .btn {
+     font-family: var(--nh-font-base);
+     font-weight: 600;
+     padding: 0.8rem 1.75rem;
+     border-radius: var(--nh-radius-sm);
+     transition: var(--nh-transition);
+     font-size: 0.94rem;
+     letter-spacing: 0.01em;
+     border: 1.5px solid transparent;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+ }
+
+ .btn:focus {
+     box-shadow: 0 0 0 0.2rem rgba(48, 124, 205, 0.25);
+ }
+
+ .btn-lg {
+     padding: 0.95rem 2rem;
+     font-size: 1rem;
+ }
+
+ .btn-sm {
+     padding: 0.5rem 1.1rem;
+     font-size: 0.85rem;
+ }
+
+ .btn-blue {
+     background-color: var(--nh-blue);
+     border-color: var(--nh-blue);
+     color: var(--nh-white);
+ }
+
+ .btn-blue:hover {
+     background-color: var(--nh-blue-dark);
+     border-color: var(--nh-blue-dark);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+     box-shadow: var(--nh-shadow-blue);
+ }
+
+ .btn-navy {
+     background-color: var(--nh-navy);
+     border-color: var(--nh-navy);
+     color: var(--nh-white);
+ }
+
+ .btn-navy:hover {
+     background-color: var(--nh-navy-dark);
+     border-color: var(--nh-navy-dark);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+     box-shadow: 0 10px 30px rgba(31, 53, 122, 0.28);
+ }
+
+ .btn-outline-blue {
+     background-color: transparent;
+     border-color: var(--nh-blue);
+     color: var(--nh-blue);
+ }
+
+ .btn-outline-blue:hover {
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+ }
+
+ .btn-outline-navy {
+     background-color: transparent;
+     border-color: var(--nh-navy);
+     color: var(--nh-navy);
+ }
+
+ .btn-outline-navy:hover {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+ }
+
+ .btn-outline-light {
+     background-color: transparent;
+     border-color: rgba(255, 255, 255, 0.7);
+     color: var(--nh-white);
+ }
+
+ .btn-outline-light:hover {
+     background-color: var(--nh-white);
+     color: var(--nh-navy);
+     border-color: var(--nh-white);
+ }
+
+ .btn-white {
+     background-color: var(--nh-white);
+     border-color: var(--nh-white);
+     color: var(--nh-navy);
+ }
+
+ .btn-white:hover {
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-navy);
+     transform: translateY(-2px);
+ }
+
+ /* ===== Common Cards ===== */
+ .nh-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 2rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+ }
+
+ .nh-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-4px);
+ }
+
+ .nh-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.5rem;
+     margin-bottom: 1.25rem;
+ }
+
+ .nh-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.15rem;
+     margin-bottom: 0.6rem;
+ }
+
+ .nh-card-text {
+     color: var(--nh-text-muted);
+     font-size: 0.95rem;
+     line-height: 1.7;
+     margin-bottom: 1.25rem;
+ }
+
+ .nh-card-link {
+     color: var(--nh-blue);
+     font-weight: 600;
+     font-size: 0.9rem;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     transition: var(--nh-transition);
+ }
+
+ .nh-card-link:hover {
+     color: var(--nh-navy);
+     gap: 0.7rem;
+ }
+
+ /* ===== Common Badges ===== */
+ .nh-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     padding: 0.4rem 0.9rem;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.04em;
+     border-radius: 50px;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     text-transform: uppercase;
+ }
+
+ .nh-badge-navy {
+     background-color: var(--nh-navy-tint);
+     color: var(--nh-navy);
+ }
+
+ .nh-badge-white {
+     background-color: rgba(255, 255, 255, 0.15);
+     color: var(--nh-white);
+     backdrop-filter: blur(6px);
+ }
+
+ /* ===== Common Images ===== */
+ .nh-img {
+     max-width: 100%;
+     height: auto;
+     border-radius: var(--nh-radius);
+ }
+
+ .nh-img-cover {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: var(--nh-radius);
+ }
+
+ /* ===== Common Links ===== */
+ .nh-link {
+     color: var(--nh-blue);
+     font-weight: 600;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     transition: var(--nh-transition);
+ }
+
+ .nh-link:hover {
+     color: var(--nh-navy);
+     gap: 0.7rem;
+ }
+
+ /* ===== Breadcrumbs ===== */
+ .nh-breadcrumb {
+     background-color: var(--nh-bg-section);
+     padding: 1rem 0;
+     border-bottom: 1px solid var(--nh-border);
+ }
+
+ .nh-breadcrumb .breadcrumb {
+     margin: 0;
+     font-size: 0.9rem;
+ }
+
+ .nh-breadcrumb .breadcrumb-item a {
+     color: var(--nh-text-muted);
+     text-decoration: none;
+ }
+
+ .nh-breadcrumb .breadcrumb-item a:hover {
+     color: var(--nh-blue);
+ }
+
+ .nh-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-navy);
+ }
+
+ .nh-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+     content: "\F285";
+     font-family: "bootstrap-icons";
+     color: var(--nh-text-light);
+ }
+
+ /* ===== Navbar Common ===== */
+ .nh-navbar {
+     background-color: var(--nh-white);
+     padding: 0.85rem 0;
+     transition: var(--nh-transition);
+     border-bottom: 1px solid var(--nh-border-soft);
+ }
+
+ .nh-navbar.scrolled {
+     box-shadow: var(--nh-shadow-md);
+     padding: 0.55rem 0;
+ }
+
+ .nh-navbar .navbar-brand {
+     padding: 0;
+ }
+
+ .nh-navbar-logo {
+     height: 52px;
+     width: auto;
+     transition: var(--nh-transition);
+ }
+
+ .nh-navbar.scrolled .nh-navbar-logo {
+     height: 46px;
+ }
+
+ .nh-navbar .nav-link {
+     color: var(--nh-text);
+     font-weight: 500;
+     font-size: 0.94rem;
+     padding: 0.6rem 0.95rem !important;
+     position: relative;
+     transition: var(--nh-transition);
+     display: inline-flex;
+     align-items: center;
+     gap: 0.3rem;
+ }
+
+ .nh-navbar .nav-link:hover,
+ .nh-navbar .nav-link.active {
+     color: var(--nh-blue);
+ }
+
+ .nh-navbar .nav-link.active::after {
+     content: "";
+     position: absolute;
+     bottom: 0.2rem;
+     left: 0.95rem;
+     right: 0.95rem;
+     height: 2px;
+     background-color: var(--nh-blue);
+     border-radius: 2px;
+ }
+
+ .nh-navbar .dropdown-menu {
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+     box-shadow: var(--nh-shadow-md);
+     padding: 0.6rem;
+     min-width: 240px;
+     margin-top: 0.4rem !important;
+ }
+
+ .nh-navbar .dropdown-item {
+     padding: 0.65rem 0.9rem;
+     border-radius: var(--nh-radius-sm);
+     color: var(--nh-text);
+     font-weight: 500;
+     font-size: 0.92rem;
+     transition: var(--nh-transition);
+ }
+
+ .nh-navbar .dropdown-item:hover,
+ .nh-navbar .dropdown-item:focus {
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-navy);
+ }
+
+ .nh-navbar .dropdown-toggle::after {
+     font-size: 0.75rem;
+     margin-left: 0.15rem;
+ }
+
+ /* ===== Footer Common ===== */
+ .nh-footer {
+     background-color: var(--nh-navy);
+     color: rgba(255, 255, 255, 0.78);
+     padding-top: 4.5rem;
+     padding-bottom: 0;
+ }
+
+ .nh-footer h5,
+ .nh-footer .footer-title {
+     color: var(--nh-white);
+     font-size: 1rem;
+     font-weight: 700;
+     margin-bottom: 1.4rem;
+     letter-spacing: 0.01em;
+ }
+
+ .nh-footer p {
+     color: rgba(255, 255, 255, 0.72);
+ }
+
+ .nh-footer a {
+     color: rgba(255, 255, 255, 0.74);
+     text-decoration: none;
+     font-size: 0.92rem;
+     transition: var(--nh-transition);
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+ }
+
+ .nh-footer a:hover {
+     color: var(--nh-white);
+     padding-left: 0.25rem;
+ }
+
+ .nh-footer .footer-link-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .nh-footer .footer-link-list li {
+     margin-bottom: 0.65rem;
+ }
+
+ .nh-footer .footer-logo {
+     height: 56px;
+     width: auto;
+     margin-bottom: 1.3rem;
+     filter: brightness(0) invert(1);
+ }
+
+ .nh-footer .footer-contact-item {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+     margin-bottom: 0.85rem;
+     font-size: 0.92rem;
+     color: rgba(255, 255, 255, 0.74);
+ }
+
+ .nh-footer .footer-contact-item i {
+     color: var(--nh-blue-soft);
+     font-size: 1rem;
+     margin-top: 0.15rem;
+ }
+
+ .nh-footer .footer-social {
+     display: flex;
+     gap: 0.6rem;
+     margin-top: 1.25rem;
+ }
+
+ .nh-footer .footer-social a {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 38px;
+     height: 38px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.08);
+     color: var(--nh-white);
+     font-size: 1rem;
+ }
+
+ .nh-footer .footer-social a:hover {
+     background-color: var(--nh-blue);
+     padding-left: 0;
+     transform: translateY(-2px);
+ }
+
+ .nh-footer .footer-bottom {
+     border-top: 1px solid rgba(255, 255, 255, 0.12);
+     padding: 1.5rem 0;
+     margin-top: 3rem;
+     font-size: 0.88rem;
+     color: rgba(255, 255, 255, 0.62);
+ }
+
+ .nh-footer .footer-bottom a {
+     font-size: 0.88rem;
+ }
+
+
+
+ /* ==========================================
+       HEADER CSS
+    ========================================== */
+
+ /* ===== Header ===== */
+ .nh-topbar {
+     background-color: var(--nh-navy);
+     color: rgba(255, 255, 255, 0.85);
+     font-size: 0.84rem;
+     padding: 0.45rem 0;
+ }
+
+ .nh-topbar a {
+     color: rgba(255, 255, 255, 0.85);
+     text-decoration: none;
+ }
+
+ .nh-topbar a:hover {
+     color: var(--nh-white);
+ }
+
+ .nh-topbar .topbar-item {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+ }
+
+ .nh-topbar .topbar-item i {
+     color: var(--nh-blue-soft);
+ }
+
+ /* ===== Desktop Navigation ===== */
+ .nh-navbar .container-fluid,
+ .nh-navbar .nh-container {
+     align-items: center;
+ }
+
+ .nh-navbar .navbar-nav {
+     align-items: center;
+     gap: 0.15rem;
+ }
+
+ .nh-navbar .btn-verify {
+     margin-left: 0.75rem;
+     padding: 0.55rem 1.25rem;
+     font-size: 0.88rem;
+ }
+
+
+
+ /* ==========================================
+       HOMEPAGE SECTION CSS
+    ========================================== */
+
+ /* ===== HERO SECTION CSS ===== */
+ /* Hero Section Styling */
+ .hero-section {
+     position: relative;
+     padding-top: 5rem;
+     padding-bottom: 5rem;
+     background-color: var(--nh-white);
+     overflow: hidden;
+ }
+
+ .hero-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 55%;
+     height: 100%;
+     background: linear-gradient(135deg, var(--nh-blue-tint) 0%, var(--nh-navy-tint) 100%);
+     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+     z-index: 0;
+ }
+
+ .hero-section .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .hero-eyebrow {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.45rem 1rem;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     border-radius: 50px;
+     font-size: 0.8rem;
+     font-weight: 600;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin-bottom: 1.5rem;
+ }
+
+ .hero-eyebrow i {
+     font-size: 0.85rem;
+ }
+
+ .hero-title {
+     color: var(--nh-navy);
+     font-weight: 800;
+     margin-bottom: 1.25rem;
+     letter-spacing: -0.02em;
+ }
+
+ .hero-title .text-highlight {
+     color: var(--nh-blue);
+ }
+
+ .hero-support {
+     font-size: 1.18rem;
+     color: var(--nh-text);
+     font-weight: 500;
+     line-height: 1.6;
+     margin-bottom: 1.25rem;
+ }
+
+ .hero-intro {
+     color: var(--nh-text-muted);
+     font-size: 1rem;
+     line-height: 1.75;
+     margin-bottom: 1.5rem;
+ }
+
+ .hero-features {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+     margin-bottom: 1.75rem;
+ }
+
+ .hero-feature {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+     padding: 1rem;
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+ }
+
+ .hero-feature-icon {
+     flex-shrink: 0;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 38px;
+     height: 38px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.1rem;
+ }
+
+ .hero-feature-title {
+     font-size: 0.9rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin-bottom: 0.15rem;
+     line-height: 1.3;
+ }
+
+ .hero-feature-text {
+     font-size: 0.82rem;
+     color: var(--nh-text-muted);
+     line-height: 1.5;
+     margin: 0;
+ }
+
+ .hero-additional {
+     font-size: 0.92rem;
+     color: var(--nh-text-muted);
+     line-height: 1.7;
+     padding: 1.1rem 1.25rem;
+     background-color: var(--nh-bg-section);
+     border-left: 3px solid var(--nh-blue);
+     border-radius: var(--nh-radius-sm);
+     margin-bottom: 1.75rem;
+ }
+
+ .hero-cta-group {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0.85rem;
+ }
+
+ .hero-visual {
+     position: relative;
+     padding: 1rem;
+ }
+
+ .hero-visual-img-wrap {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-lg);
+     aspect-ratio: 4 / 4.4;
+ }
+
+ .hero-visual-img-wrap img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .hero-visual-badge {
+     position: absolute;
+     bottom: 1.75rem;
+     left: -1.5rem;
+     background-color: var(--nh-white);
+     border-radius: var(--nh-radius);
+     padding: 1.1rem 1.35rem;
+     box-shadow: var(--nh-shadow-lg);
+     display: flex;
+     align-items: center;
+     gap: 0.85rem;
+     max-width: 230px;
+ }
+
+ .hero-visual-badge-icon {
+     flex-shrink: 0;
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.35rem;
+ }
+
+ .hero-visual-badge-title {
+     font-size: 0.82rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin: 0;
+     line-height: 1.3;
+ }
+
+ .hero-visual-badge-text {
+     font-size: 0.74rem;
+     color: var(--nh-text-muted);
+     margin: 0;
+ }
+
+ .hero-visual-stat {
+     position: absolute;
+     top: 1.75rem;
+     right: -0.75rem;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     padding: 0.9rem 1.15rem;
+     border-radius: var(--nh-radius);
+     box-shadow: var(--nh-shadow-lg);
+     text-align: center;
+ }
+
+ .hero-visual-stat-num {
+     font-size: 1.5rem;
+     font-weight: 800;
+     line-height: 1;
+ }
+
+ .hero-visual-stat-label {
+     font-size: 0.72rem;
+     font-weight: 500;
+     opacity: 0.9;
+ }
+
+
+
+
+
+ /* ===== INTRODUCTION SECTION CSS ===== */
+ /* Introduction Section Styling */
+ .intro-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .intro-visual {
+     position: relative;
+     padding-right: 1rem;
+ }
+
+ .intro-visual-img {
+     border-radius: var(--nh-radius-lg);
+     width: 100%;
+     height: 460px;
+     object-fit: cover;
+     box-shadow: var(--nh-shadow-md);
+ }
+
+ .intro-quote-block {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     padding: 1.75rem 1.5rem;
+     border-radius: var(--nh-radius);
+     position: relative;
+     margin-top: -3rem;
+     margin-left: 2rem;
+     box-shadow: var(--nh-shadow-lg);
+     max-width: 460px;
+ }
+
+ .intro-quote-block::before {
+     content: "\F6A0";
+     font-family: "bootstrap-icons";
+     position: absolute;
+     top: -0.85rem;
+     left: 1.5rem;
+     font-size: 2rem;
+     color: var(--nh-blue);
+     background-color: var(--nh-white);
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .intro-quote-text {
+     font-size: 0.98rem;
+     line-height: 1.65;
+     font-style: italic;
+     color: rgba(255, 255, 255, 0.92);
+     margin: 0;
+ }
+
+ .intro-content p {
+     margin-bottom: 1rem;
+ }
+
+ .intro-content .section-divider {
+     margin-top: 0;
+ }
+
+
+
+ /* ===== KEY SERVICES SECTION CSS ===== */
+ /* Key Services Section Styling */
+ .services-section {
+     background-color: var(--nh-white);
+ }
+
+ .service-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.75rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .service-card::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background-color: var(--nh-blue);
+     transform: scaleX(0);
+     transform-origin: left;
+     transition: var(--nh-transition);
+ }
+
+ .service-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-5px);
+ }
+
+ .service-card:hover::after {
+     transform: scaleX(1);
+ }
+
+ .service-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 60px;
+     height: 60px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.6rem;
+     margin-bottom: 1.5rem;
+     transition: var(--nh-transition);
+ }
+
+ .service-card:hover .service-card-icon {
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+ }
+
+ .service-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.2rem;
+     margin-bottom: 0.7rem;
+ }
+
+ .service-card-text {
+     color: var(--nh-text-muted);
+     font-size: 0.93rem;
+     line-height: 1.7;
+     margin-bottom: 1.3rem;
+ }
+
+ .service-card-link {
+     color: var(--nh-blue);
+     font-weight: 600;
+     font-size: 0.9rem;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     transition: var(--nh-transition);
+ }
+
+ .service-card-link:hover {
+     color: var(--nh-navy);
+     gap: 0.7rem;
+ }
+
+
+ /* ===== INSTITUTIONAL STANDARDS SECTION CSS ===== */
+ /* Institutional Standards Section Styling */
+ .institutional-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .institutional-visual {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+     aspect-ratio: 5 / 4;
+ }
+
+ .institutional-visual img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .institutional-visual-overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     padding: 1.5rem;
+     background: linear-gradient(to top, rgba(31, 53, 122, 0.92), rgba(31, 53, 122, 0));
+     color: var(--nh-white);
+ }
+
+ .institutional-visual-overlay-title {
+     font-size: 1rem;
+     font-weight: 700;
+     color: var(--nh-white);
+     margin: 0;
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+ }
+
+ .institutional-feature-list {
+     list-style: none;
+     padding: 0;
+     margin: 1.5rem 0;
+ }
+
+ .institutional-feature-list li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+     margin-bottom: 1rem;
+     color: var(--nh-text);
+     font-size: 0.96rem;
+     line-height: 1.6;
+ }
+
+ .institutional-feature-list li i {
+     color: var(--nh-blue);
+     font-size: 1.1rem;
+     margin-top: 0.2rem;
+     flex-shrink: 0;
+ }
+
+ .quality-mark-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.75rem;
+     padding: 0.9rem 1.25rem;
+     background-color: var(--nh-blue-tint);
+     border: 1px solid rgba(48, 124, 205, 0.2);
+     border-radius: var(--nh-radius-sm);
+     margin-top: 1.25rem;
+ }
+
+ .quality-mark-badge i {
+     color: var(--nh-blue);
+     font-size: 1.5rem;
+ }
+
+ .quality-mark-badge-title {
+     font-size: 0.92rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin: 0;
+     line-height: 1.3;
+ }
+
+ .quality-mark-badge-text {
+     font-size: 0.8rem;
+     color: var(--nh-text-muted);
+     margin: 0;
+ }
+
+
+
+ /* ===== COURSE STANDARDS SECTION CSS ===== */
+ /* Course Standards Section Styling */
+ .course-section {
+     background-color: var(--nh-white);
+ }
+
+ .course-visual {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+     background-color: var(--nh-bg-section);
+ }
+
+ .course-visual img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ .course-visual-tag {
+     position: absolute;
+     top: 1.25rem;
+     right: 1.25rem;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     padding: 0.5rem 1rem;
+     border-radius: 50px;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.03em;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+ }
+
+ .course-feature-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+     margin: 1.5rem 0;
+ }
+
+ .course-feature-item {
+     padding: 1rem;
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-bg-section);
+ }
+
+ .course-feature-item i {
+     color: var(--nh-blue);
+     font-size: 1.25rem;
+     margin-bottom: 0.5rem;
+     display: block;
+ }
+
+ .course-feature-item-title {
+     font-size: 0.88rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin-bottom: 0.15rem;
+ }
+
+ .course-feature-item-text {
+     font-size: 0.8rem;
+     color: var(--nh-text-muted);
+     line-height: 1.5;
+     margin: 0;
+ }
+
+
+ /* ===== INDIVIDUAL STANDARDS SECTION CSS ===== */
+ /* Individual Standards Section Styling */
+ .individual-section {
+     background-color: var(--nh-navy);
+     color: rgba(255, 255, 255, 0.85);
+ }
+
+ .individual-section h2,
+ .individual-section .section-title {
+     color: var(--nh-white);
+ }
+
+ .individual-section .section-subtitle {
+     color: rgba(255, 255, 255, 0.75);
+ }
+
+ .individual-section .section-eyebrow {
+     color: var(--nh-blue-soft);
+ }
+
+ .individual-section .section-eyebrow::before {
+     background-color: var(--nh-blue-soft);
+ }
+
+ .individual-section p {
+     color: rgba(255, 255, 255, 0.78);
+ }
+
+ .individual-level-card {
+     background-color: rgba(255, 255, 255, 0.06);
+     border: 1px solid rgba(255, 255, 255, 0.12);
+     border-radius: var(--nh-radius);
+     padding: 1.5rem;
+     height: 100%;
+     transition: var(--nh-transition);
+ }
+
+ .individual-level-card:hover {
+     background-color: rgba(48, 124, 205, 0.15);
+     border-color: var(--nh-blue-soft);
+     transform: translateY(-4px);
+ }
+
+ .individual-level-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 48px;
+     height: 48px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     font-size: 1.3rem;
+     margin-bottom: 1rem;
+ }
+
+ .individual-level-title {
+     color: var(--nh-white);
+     font-size: 1.05rem;
+     font-weight: 700;
+     margin-bottom: 0.4rem;
+ }
+
+ .individual-level-text {
+     font-size: 0.85rem;
+     color: rgba(255, 255, 255, 0.72);
+     line-height: 1.6;
+     margin: 0;
+ }
+
+
+
+ /* ===== ACCREDITATION SECTION CSS ===== */
+ /* Accreditation Section Styling */
+ .accreditation-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .accreditation-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+ }
+
+ .accreditation-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-lg);
+     transform: translateY(-5px);
+ }
+
+ .accreditation-card-header {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     color: var(--nh-white);
+     padding: 2rem;
+     text-align: center;
+     position: relative;
+ }
+
+ .accreditation-card-header::after {
+     content: "";
+     position: absolute;
+     bottom: -1px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 0;
+     height: 0;
+     border-left: 14px solid transparent;
+     border-right: 14px solid transparent;
+     border-top: 14px solid var(--nh-blue);
+ }
+
+ .accreditation-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 68px;
+     height: 68px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.15);
+     color: var(--nh-white);
+     font-size: 1.8rem;
+     margin-bottom: 1rem;
+ }
+
+ .accreditation-card-title {
+     color: var(--nh-white);
+     font-size: 1.25rem;
+     font-weight: 700;
+     margin: 0;
+ }
+
+ .accreditation-card-body {
+     padding: 2rem;
+     text-align: center;
+ }
+
+ .accreditation-card-text {
+     color: var(--nh-text-muted);
+     font-size: 0.95rem;
+     line-height: 1.7;
+     margin-bottom: 1.5rem;
+ }
+
+ .accreditation-card-list {
+     list-style: none;
+     padding: 0;
+     margin: 0 0 1.5rem 0;
+     text-align: left;
+ }
+
+ .accreditation-card-list li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.65rem;
+     padding: 0.5rem 0;
+     font-size: 0.88rem;
+     color: var(--nh-text);
+     border-bottom: 1px solid var(--nh-border-soft);
+ }
+
+ .accreditation-card-list li:last-child {
+     border-bottom: none;
+ }
+
+ .accreditation-card-list li i {
+     color: var(--nh-blue);
+     font-size: 1rem;
+     margin-top: 0.15rem;
+     flex-shrink: 0;
+ }
+
+
+
+ /* ===== ABOUT SECTION CSS ===== */
+ /* About Section Styling */
+ .about-section {
+     background-color: var(--nh-white);
+ }
+
+ .about-visual {
+     position: relative;
+     padding: 0;
+ }
+
+ .about-visual-img {
+     border-radius: var(--nh-radius-lg);
+     width: 100%;
+     height: 480px;
+     object-fit: cover;
+     box-shadow: var(--nh-shadow-md);
+ }
+
+ .about-visual-frame {
+     position: relative;
+ }
+
+ .about-visual-frame::before {
+     content: "";
+     position: absolute;
+     top: -1rem;
+     left: -1rem;
+     width: 100px;
+     height: 100px;
+     border-top: 4px solid var(--nh-blue);
+     border-left: 4px solid var(--nh-blue);
+     border-top-left-radius: var(--nh-radius-lg);
+     z-index: 1;
+ }
+
+ .about-visual-frame::after {
+     content: "";
+     position: absolute;
+     bottom: -1rem;
+     right: -1rem;
+     width: 100px;
+     height: 100px;
+     border-bottom: 4px solid var(--nh-navy);
+     border-right: 4px solid var(--nh-navy);
+     border-bottom-right-radius: var(--nh-radius-lg);
+     z-index: 1;
+ }
+
+ .about-feature-row {
+     display: flex;
+     gap: 1.5rem;
+     margin: 1.5rem 0;
+     flex-wrap: wrap;
+ }
+
+ .about-feature {
+     flex: 1 1 200px;
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+ }
+
+ .about-feature-icon {
+     flex-shrink: 0;
+     width: 44px;
+     height: 44px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.2rem;
+ }
+
+ .about-feature-title {
+     font-size: 0.95rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin-bottom: 0.15rem;
+ }
+
+ .about-feature-text {
+     font-size: 0.85rem;
+     color: var(--nh-text-muted);
+     line-height: 1.55;
+     margin: 0;
+ }
+
+
+ /* ===== STATISTICS SECTION CSS ===== */
+ /* Statistics Section Styling */
+ .stats-section {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .stats-section::before {
+     content: "";
+     position: absolute;
+     top: -50%;
+     right: -10%;
+     width: 400px;
+     height: 400px;
+     background-color: rgba(48, 124, 205, 0.12);
+     border-radius: 50%;
+     filter: blur(60px);
+ }
+
+ .stats-section::after {
+     content: "";
+     position: absolute;
+     bottom: -30%;
+     left: -5%;
+     width: 350px;
+     height: 350px;
+     background-color: rgba(74, 145, 220, 0.1);
+     border-radius: 50%;
+     filter: blur(60px);
+ }
+
+ .stats-section .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .stats-header {
+     text-align: center;
+     margin-bottom: 3rem;
+ }
+
+ .stats-header h2 {
+     color: var(--nh-white);
+ }
+
+ .stats-header .section-eyebrow {
+     color: var(--nh-blue-soft);
+ }
+
+ .stats-header .section-eyebrow::before {
+     background-color: var(--nh-blue-soft);
+ }
+
+ .stats-header .section-subtitle {
+     color: rgba(255, 255, 255, 0.72);
+     margin: 0 auto;
+ }
+
+ .stat-card {
+     text-align: center;
+     padding: 1.75rem 1rem;
+     border-radius: var(--nh-radius);
+     background-color: rgba(255, 255, 255, 0.05);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     height: 100%;
+     transition: var(--nh-transition);
+ }
+
+ .stat-card:hover {
+     background-color: rgba(48, 124, 205, 0.18);
+     border-color: var(--nh-blue-soft);
+     transform: translateY(-4px);
+ }
+
+ .stat-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 52px;
+     height: 52px;
+     border-radius: 50%;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     font-size: 1.35rem;
+     margin-bottom: 1rem;
+ }
+
+ .stat-number {
+     font-size: 2.6rem;
+     font-weight: 800;
+     color: var(--nh-white);
+     line-height: 1;
+     margin-bottom: 0.4rem;
+     letter-spacing: -0.02em;
+ }
+
+ .stat-number .stat-suffix {
+     color: var(--nh-blue-soft);
+ }
+
+ .stat-label {
+     font-size: 0.9rem;
+     color: rgba(255, 255, 255, 0.75);
+     font-weight: 500;
+     margin: 0;
+     line-height: 1.4;
+ }
+
+
+ /* ===== CTA SECTION CSS ===== */
+ /* CTA Section Styling */
+ .cta-section {
+     background: linear-gradient(135deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+     color: var(--nh-white);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .cta-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+     background-image: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+ }
+
+ .cta-section .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .cta-content {
+     text-align: center;
+     max-width: 760px;
+     margin: 0 auto;
+ }
+
+ .cta-content h2 {
+     color: var(--nh-white);
+     margin-bottom: 1rem;
+ }
+
+ .cta-content p {
+     color: rgba(255, 255, 255, 0.85);
+     font-size: 1.1rem;
+     line-height: 1.7;
+     margin-bottom: 2rem;
+ }
+
+ .cta-buttons {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: center;
+ }
+
+ .cta-buttons .btn {
+     min-width: 220px;
+     justify-content: center;
+ }
+
+ .cta-feature-list {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     justify-content: center;
+     margin-top: 2.5rem;
+     padding-top: 2.5rem;
+     border-top: 1px solid rgba(255, 255, 255, 0.15);
+ }
+
+ .cta-feature {
+     display: flex;
+     align-items: center;
+     gap: 0.65rem;
+     color: rgba(255, 255, 255, 0.88);
+     font-size: 0.92rem;
+     font-weight: 500;
+ }
+
+ .cta-feature i {
+     color: var(--nh-white);
+     font-size: 1.15rem;
+ }
+
+
+
+ /* ==========================================
+       FOOTER CSS
+    ========================================== */
+ /* Footer Styling */
+ .nh-footer .footer-newsletter p {
+     color: rgba(255, 255, 255, 0.7);
+     font-size: 0.9rem;
+ }
+
+ .nh-footer .footer-bottom-links {
+     display: flex;
+     gap: 1.5rem;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+ }
+
+
+ /* ==========================================
+   HERO SECTION - BASE STYLES
+========================================== */
+
+ .nh-hero {
+     position: relative;
+     width: 100%;
+     height: calc(100vh - 80px);
+     min-height: 600px;
+     background-color: var(--nh-navy-dark);
+     overflow: hidden;
+ }
+
+ .nh-hero-swiper,
+ .nh-hero-swiper .swiper-wrapper {
+     position: relative;
+     width: 100%;
+     height: 100%;
+ }
+
+ .nh-hero-slide {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     min-height: 600px;
+     background-size: cover;
+     background-position: center 35%;
+     background-repeat: no-repeat;
+     overflow: hidden;
+ }
+
+ /* ==========================================
+   HERO SECTION - BACKGROUND SLIDER
+========================================== */
+
+ .nh-hero-slide-1 {
+     background-image: url('https://images.unsplash.com/photo-1627518788331-b3b7fdaa382f?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0');
+ }
+
+ .nh-hero-slide-2 {
+     background-image: url('https://images.unsplash.com/photo-1648337564744-f919c7c2fc02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0');
+ }
+
+ .nh-hero-slide-3 {
+     background-image: url('https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=1216&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+ }
+
+ /* ==========================================
+   HERO SECTION - CONTENT STYLES
+========================================== */
+
+ .nh-hero-overlay {
+     position: absolute;
+     inset: 0;
+     z-index: 1;
+     background: linear-gradient(90deg,
+             rgba(24, 40, 95, 0.92) 0%,
+             rgba(24, 40, 95, 0.82) 35%,
+             rgba(31, 53, 122, 0.55) 70%,
+             rgba(31, 53, 122, 0.25) 100%);
+ }
+
+ .nh-hero-content-wrap {
+     position: relative;
+     z-index: 2;
+     display: flex;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     min-height: 100%;
+     padding: 5rem 0 7rem;
+ }
+
+ .nh-hero-content {
+     max-width: 40rem;
+ }
+
+ .nh-hero-eyebrow {
+     display: inline-block;
+     padding: 0.45rem 1rem;
+     margin-bottom: 1.4rem;
+     font-family: var(--nh-font-base);
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     color: var(--nh-white);
+     background: rgba(48, 124, 205, 0.22);
+     border: 1px solid rgba(74, 145, 220, 0.5);
+     border-radius: var(--nh-radius-sm);
+     -webkit-backdrop-filter: blur(6px);
+     backdrop-filter: blur(6px);
+ }
+
+ .nh-hero-title {
+     font-family: var(--nh-font-base);
+     font-size: clamp(2rem, 4vw, 3.4rem);
+     font-weight: 700;
+     line-height: 1.15;
+     letter-spacing: -0.01em;
+     color: var(--nh-white);
+     margin-bottom: 1.25rem;
+ }
+
+ .nh-hero-desc {
+     font-family: var(--nh-font-base);
+     font-size: clamp(1rem, 1.3vw, 1.15rem);
+     line-height: 1.7;
+     color: rgba(255, 255, 255, 0.88);
+     margin-bottom: 2rem;
+     max-width: 38rem;
+ }
+
+ .nh-hero-actions {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     margin-bottom: 2.5rem;
+ }
+
+ .nh-hero-actions .btn {
+     min-width: 11rem;
+ }
+
+ .nh-hero-trust {
+     display: flex;
+     align-items: baseline;
+     gap: 0.7rem;
+     padding-top: 1.5rem;
+     border-top: 1px solid rgba(255, 255, 255, 0.18);
+     max-width: 24rem;
+ }
+
+ .nh-hero-trust-num {
+     font-family: var(--nh-font-base);
+     font-size: 1.8rem;
+     font-weight: 700;
+     line-height: 1;
+     color: var(--nh-blue-soft);
+ }
+
+ .nh-hero-trust-text {
+     font-family: var(--nh-font-base);
+     font-size: 0.9rem;
+     color: rgba(255, 255, 255, 0.78);
+ }
+
+ /* ==========================================
+   HERO SECTION - TEXT ANIMATIONS
+========================================== */
+
+ .nh-hero-js-ready .nh-hero-content>* {
+     opacity: 0;
+ }
+
+ @keyframes nhHeroTextIn {
+     0% {
+         opacity: 0;
+         transform: translateX(-40px);
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateX(0);
+     }
+ }
+
+ @keyframes nhHeroTextOut {
+     0% {
+         opacity: 1;
+         transform: translateX(0);
+     }
+
+     100% {
+         opacity: 0;
+         transform: translateX(-25px);
+     }
+ }
+
+ .nh-hero-text-in>* {
+     animation: nhHeroTextIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+ }
+
+ .nh-hero-text-in>.nh-hero-eyebrow {
+     animation-delay: 0.10s;
+ }
+
+ .nh-hero-text-in>.nh-hero-title {
+     animation-delay: 0.22s;
+ }
+
+ .nh-hero-text-in>.nh-hero-desc {
+     animation-delay: 0.34s;
+ }
+
+ .nh-hero-text-in>.nh-hero-actions {
+     animation-delay: 0.46s;
+ }
+
+ .nh-hero-text-in>.nh-hero-trust {
+     animation-delay: 0.58s;
+ }
+
+ .nh-hero-text-out>* {
+     animation: nhHeroTextOut 0.55s ease forwards;
+ }
+
+ /* ==========================================
+   HERO SECTION - SLIDER NAVIGATION
+========================================== */
+
+ .nh-hero-prev,
+ .nh-hero-next {
+     position: absolute;
+     bottom: 1.75rem;
+     top: auto;
+     width: 48px;
+     height: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background: rgba(255, 255, 255, 0.14);
+     border: 1px solid rgba(255, 255, 255, 0.32);
+     color: var(--nh-white);
+     cursor: pointer;
+     -webkit-backdrop-filter: blur(6px);
+     backdrop-filter: blur(6px);
+     transition: var(--nh-transition);
+     z-index: 10;
+ }
+
+ .nh-hero-prev:hover,
+ .nh-hero-next:hover {
+     background: var(--nh-blue);
+     border-color: var(--nh-blue);
+ }
+
+ .nh-hero-prev:focus-visible,
+ .nh-hero-next:focus-visible {
+     outline: 2px solid var(--nh-blue-soft);
+     outline-offset: 3px;
+ }
+
+ .nh-hero-prev::after,
+ .nh-hero-next::after {
+     font-family: var(--nh-font-base);
+     font-size: 1.5rem;
+     font-weight: 700;
+     line-height: 1;
+ }
+
+ .nh-hero-prev::after {
+     content: '\2039';
+ }
+
+ .nh-hero-next::after {
+     content: '\203A';
+ }
+
+ .nh-hero-next {
+     right: 1.75rem;
+     left: auto;
+ }
+
+ .nh-hero-prev {
+     right: 4.75rem;
+     left: auto;
+ }
+
+ /* ==========================================
+   HERO SECTION - PAGINATION
+========================================== */
+
+ .nh-hero-pagination {
+     position: absolute;
+     bottom: 2.6rem !important;
+     left: 50% !important;
+     right: auto !important;
+     width: auto !important;
+     transform: translateX(-50%);
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     z-index: 10;
+ }
+
+ .nh-hero-pagination .swiper-pagination-bullet {
+     width: 10px;
+     height: 10px;
+     background: rgba(255, 255, 255, 0.5);
+     opacity: 1;
+     border-radius: 50%;
+     transition: var(--nh-transition);
+ }
+
+ .nh-hero-pagination .swiper-pagination-bullet-active {
+     width: 30px;
+     border-radius: 5px;
+     background: var(--nh-blue-soft);
+ }
+
+ /* ==========================================
+   HERO SECTION - REDUCED MOTION
+========================================== */
+
+ @media (prefers-reduced-motion: reduce) {
+     .nh-hero-js-ready .nh-hero-content>* {
+         opacity: 1 !important;
+     }
+
+     .nh-hero-text-in>*,
+     .nh-hero-text-out>* {
+         animation: none !important;
+     }
+ }
+
+
+ /* ===== About Page Hero CSS ===== */
+ /* About page inner hero / banner */
+ .about-hero {
+     position: relative;
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+     background: linear-gradient(135deg, var(--nh-navy-tint) 0%, var(--nh-blue-tint) 100%);
+     overflow: hidden;
+ }
+
+ .about-hero::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 45%;
+     height: 100%;
+     background-image: radial-gradient(circle at 80% 20%, rgba(48, 124, 205, 0.12) 0%, transparent 55%);
+     pointer-events: none;
+ }
+
+ .about-hero .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .about-hero-title {
+     color: var(--nh-navy);
+     font-weight: 800;
+     font-size: clamp(2.2rem, 4.5vw, 3rem);
+     margin-bottom: 0.75rem;
+     letter-spacing: -0.02em;
+ }
+
+ .about-hero-text {
+     color: var(--nh-text-muted);
+     font-size: 1.05rem;
+     max-width: 540px;
+     line-height: 1.75;
+     margin-bottom: 0;
+ }
+
+ .about-hero .about-nh-breadcrumb {
+     background-color: transparent;
+     border: none;
+     padding: 0;
+     margin-bottom: 1rem;
+ }
+
+ .about-hero .about-nh-breadcrumb .breadcrumb-item a,
+ .about-hero .about-nh-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-text-muted);
+ }
+
+ .about-hero .about-nh-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-navy);
+     font-weight: 600;
+ }
+
+ .about-hero-visual {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-lg);
+     aspect-ratio: 16 / 11;
+     background-color: var(--nh-blue-tint);
+ }
+
+ .about-hero-visual img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+ }
+
+ .about-hero-badge {
+     position: absolute;
+     bottom: 1.25rem;
+     left: 1.25rem;
+     background-color: var(--nh-white);
+     border-radius: var(--nh-radius);
+     padding: 0.9rem 1.15rem;
+     box-shadow: var(--nh-shadow-lg);
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+     max-width: 240px;
+ }
+
+ .about-hero-badge-icon {
+     flex-shrink: 0;
+     width: 42px;
+     height: 42px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.25rem;
+ }
+
+ .about-hero-badge-title {
+     font-size: 0.82rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin: 0;
+     line-height: 1.3;
+ }
+
+ .about-hero-badge-text {
+     font-size: 0.74rem;
+     color: var(--nh-text-muted);
+     margin: 0;
+ }
+
+ /* ===== Who We Are Section CSS ===== */
+ .about-who-visual {
+     position: relative;
+     padding-right: 0.5rem;
+ }
+
+ .about-who-img {
+     border-radius: var(--nh-radius-lg);
+     width: 100%;
+     height: 460px;
+     object-fit: cover;
+     box-shadow: var(--nh-shadow-md);
+ }
+
+ .about-who-exp-badge {
+     position: absolute;
+     bottom: -1.25rem;
+     right: -0.75rem;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     padding: 1.25rem 1.5rem;
+     border-radius: var(--nh-radius);
+     box-shadow: var(--nh-shadow-lg);
+     text-align: center;
+     min-width: 130px;
+ }
+
+ .about-who-exp-num {
+     font-size: 1.85rem;
+     font-weight: 800;
+     line-height: 1;
+     color: var(--nh-white);
+ }
+
+ .about-who-exp-label {
+     font-size: 0.75rem;
+     font-weight: 500;
+     opacity: 0.9;
+     margin-top: 0.25rem;
+ }
+
+ .about-who-content .about-text-highlight {
+     color: var(--nh-blue);
+     font-weight: 600;
+ }
+
+ .about-who-points {
+     list-style: none;
+     padding: 0;
+     margin: 1.5rem 0 0 0;
+ }
+
+ .about-who-points li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+     margin-bottom: 0.85rem;
+     color: var(--nh-text);
+     font-size: 0.95rem;
+     line-height: 1.6;
+ }
+
+ .about-who-points li i {
+     color: var(--nh-blue);
+     font-size: 1.1rem;
+     margin-top: 0.15rem;
+     flex-shrink: 0;
+ }
+
+ /* ===== Professional Membership CSS ===== */
+ .about-membership-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .about-membership-intro {
+     max-width: 760px;
+     margin: 0 auto 3rem;
+     text-align: center;
+ }
+
+ .about-membership-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1.5rem;
+ }
+
+ .about-membership-tile {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.75rem;
+     text-align: center;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .about-membership-tile::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 50%;
+     width: 0;
+     height: 3px;
+     background-color: var(--nh-blue);
+     transform: translateX(-50%);
+     transition: var(--nh-transition);
+ }
+
+ .about-membership-tile:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-4px);
+ }
+
+ .about-membership-tile:hover::before {
+     width: 60%;
+ }
+
+ .about-membership-tile-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.6rem;
+     margin-bottom: 1.25rem;
+ }
+
+ .about-membership-tile-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.1rem;
+     margin-bottom: 0.6rem;
+ }
+
+ .about-membership-tile-text {
+     color: var(--nh-text-muted);
+     font-size: 0.92rem;
+     line-height: 1.65;
+     margin: 0;
+ }
+
+ /* ===== Institutional Accreditation CSS ===== */
+ .about-inst-accred-visual {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+     aspect-ratio: 5 / 4;
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--nh-white);
+     padding: 2rem;
+     text-align: center;
+ }
+
+ .about-inst-accred-visual i.about-qa-icon {
+     font-size: 3.5rem;
+     color: var(--nh-white);
+     opacity: 0.95;
+     margin-bottom: 1rem;
+     display: block;
+ }
+
+ .about-inst-accred-visual-title {
+     color: var(--nh-white);
+     font-size: 1.35rem;
+     font-weight: 700;
+     margin-bottom: 0.5rem;
+ }
+
+ .about-inst-accred-visual-text {
+     color: rgba(255, 255, 255, 0.85);
+     font-size: 0.95rem;
+     margin: 0;
+     max-width: 320px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .about-inst-accred-points {
+     list-style: none;
+     padding: 0;
+     margin: 1.5rem 0;
+ }
+
+ .about-inst-accred-points li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+     padding: 0.75rem 0;
+     border-bottom: 1px solid var(--nh-border-soft);
+     color: var(--nh-text);
+     font-size: 0.95rem;
+     line-height: 1.6;
+ }
+
+ .about-inst-accred-points li:last-child {
+     border-bottom: none;
+ }
+
+ .about-inst-accred-points li i {
+     color: var(--nh-blue);
+     font-size: 1.15rem;
+     margin-top: 0.1rem;
+     flex-shrink: 0;
+ }
+
+ .about-inst-accred-points li strong {
+     color: var(--nh-navy);
+     font-weight: 700;
+ }
+
+ /* ===== Corporate HR Standards CSS ===== */
+ .about-corporate-section {
+     background-color: var(--nh-navy);
+     color: rgba(255, 255, 255, 0.82);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .about-corporate-section::before {
+     content: "";
+     position: absolute;
+     top: -20%;
+     right: -10%;
+     width: 380px;
+     height: 380px;
+     background-color: rgba(48, 124, 205, 0.12);
+     border-radius: 50%;
+     filter: blur(60px);
+     pointer-events: none;
+ }
+
+ .about-corporate-section .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .about-corporate-section h2,
+ .about-corporate-section .about-section-title {
+     color: var(--nh-white);
+ }
+
+ .about-corporate-section .about-section-eyebrow {
+     color: var(--nh-blue-soft);
+ }
+
+ .about-corporate-section .about-section-eyebrow::before {
+     background-color: var(--nh-blue-soft);
+ }
+
+ .about-corporate-section .about-section-subtitle {
+     color: rgba(255, 255, 255, 0.75);
+ }
+
+ .about-corporate-feature-row {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1.25rem;
+     margin-top: 2.5rem;
+ }
+
+ .about-corporate-feature {
+     background-color: rgba(255, 255, 255, 0.06);
+     border: 1px solid rgba(255, 255, 255, 0.12);
+     border-radius: var(--nh-radius);
+     padding: 1.75rem;
+     transition: var(--nh-transition);
+ }
+
+ .about-corporate-feature:hover {
+     background-color: rgba(48, 124, 205, 0.15);
+     border-color: var(--nh-blue-soft);
+     transform: translateY(-4px);
+ }
+
+ .about-corporate-feature-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 48px;
+     height: 48px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     font-size: 1.3rem;
+     margin-bottom: 1rem;
+ }
+
+ .about-corporate-feature-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: 1rem;
+     margin-bottom: 0.5rem;
+ }
+
+ .about-corporate-feature-text {
+     color: rgba(255, 255, 255, 0.72);
+     font-size: 0.88rem;
+     line-height: 1.65;
+     margin: 0;
+ }
+
+ /* ===== Integrated Approach CSS ===== */
+ .about-integrated-section {
+     background-color: var(--nh-white);
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+ }
+
+ .about-integrated-block {
+     background: linear-gradient(135deg, var(--nh-blue-tint) 0%, var(--nh-navy-tint) 100%);
+     border-left: 4px solid var(--nh-blue);
+     border-radius: var(--nh-radius);
+     padding: 2.5rem 2.75rem;
+     text-align: center;
+     max-width: 980px;
+     margin: 0 auto;
+ }
+
+ .about-integrated-block-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background-color: var(--nh-white);
+     color: var(--nh-blue);
+     font-size: 1.5rem;
+     margin-bottom: 1.25rem;
+     box-shadow: var(--nh-shadow-sm);
+ }
+
+ .about-integrated-block-text {
+     color: var(--nh-navy);
+     font-size: 1.12rem;
+     line-height: 1.75;
+     font-weight: 500;
+     margin: 0;
+ }
+
+ .about-integrated-block-text .about-text-highlight {
+     color: var(--nh-blue);
+     font-weight: 700;
+ }
+
+ /* ===== Vision & Mission CSS ===== */
+ .about-vision-mission-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .about-vm-card {
+     border-radius: var(--nh-radius-lg);
+     padding: 2.75rem 2.5rem;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+     transition: var(--nh-transition);
+ }
+
+ .about-vm-card:hover {
+     transform: translateY(-4px);
+     box-shadow: var(--nh-shadow-lg);
+ }
+
+ .about-vm-card-vision {
+     background: linear-gradient(160deg, var(--nh-white) 0%, var(--nh-blue-tint) 100%);
+     border: 1px solid rgba(48, 124, 205, 0.18);
+ }
+
+ .about-vm-card-mission {
+     background: linear-gradient(160deg, var(--nh-navy) 0%, var(--nh-navy-soft) 100%);
+     border: 1px solid var(--nh-navy-soft);
+     color: var(--nh-white);
+ }
+
+ .about-vm-card-mission .about-vm-card-title,
+ .about-vm-card-mission .about-vm-card-text {
+     color: var(--nh-white);
+ }
+
+ .about-vm-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: var(--nh-radius);
+     margin-bottom: 1.5rem;
+     font-size: 1.7rem;
+ }
+
+ .about-vm-card-vision .about-vm-card-icon {
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+ }
+
+ .about-vm-card-mission .about-vm-card-icon {
+     background-color: var(--nh-blue-soft);
+     color: var(--nh-white);
+ }
+
+ .about-vm-card-eyebrow {
+     font-size: 0.78rem;
+     font-weight: 700;
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     margin-bottom: 0.6rem;
+ }
+
+ .about-vm-card-vision .about-vm-card-eyebrow {
+     color: var(--nh-blue);
+ }
+
+ .about-vm-card-mission .about-vm-card-eyebrow {
+     color: var(--nh-blue-soft);
+ }
+
+ .about-vm-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.6rem;
+     margin-bottom: 1rem;
+ }
+
+ .about-vm-card-text {
+     color: var(--nh-text);
+     font-size: 1.05rem;
+     line-height: 1.8;
+     margin: 0;
+ }
+
+ .about-vm-card-mission .about-vm-card-text {
+     color: rgba(255, 255, 255, 0.92);
+ }
+
+ .about-vm-card-divider {
+     width: 48px;
+     height: 3px;
+     border-radius: 3px;
+     margin-bottom: 1.25rem;
+ }
+
+ .about-vm-card-vision .about-vm-card-divider {
+     background-color: var(--nh-blue);
+ }
+
+ .about-vm-card-mission .about-vm-card-divider {
+     background-color: var(--nh-blue-soft);
+ }
+
+ /* ===== Why NHRCA Section CSS ===== */
+ .about-why-intro-visual {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+     aspect-ratio: 4 / 3;
+     background-color: var(--nh-bg-section);
+ }
+
+ .about-why-intro-visual img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+ }
+
+ .about-why-intro-visual::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: linear-gradient(180deg, transparent 60%, rgba(31, 53, 122, 0.45) 100%);
+ }
+
+ .about-why-features-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .about-why-feature-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.75rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+ }
+
+ .about-why-feature-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-4px);
+ }
+
+ .about-why-feature-num {
+     position: absolute;
+     top: 1.25rem;
+     right: 1.25rem;
+     font-size: 2.5rem;
+     font-weight: 800;
+     color: var(--nh-blue-tint);
+     line-height: 1;
+     letter-spacing: -0.03em;
+ }
+
+ .about-why-feature-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 52px;
+     height: 52px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.4rem;
+     margin-bottom: 1.1rem;
+ }
+
+ .about-why-feature-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.05rem;
+     margin-bottom: 0.6rem;
+     padding-right: 2.5rem;
+     line-height: 1.35;
+ }
+
+ .about-why-feature-text {
+     color: var(--nh-text-muted);
+     font-size: 0.9rem;
+     line-height: 1.7;
+     margin: 0;
+ }
+
+ /* ===== Professional Advancement CSS ===== */
+ .about-advancement-section {
+     background-color: var(--nh-white);
+ }
+
+ .about-advancement-content {
+     max-width: 760px;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .about-advancement-icon-wrap {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 72px;
+     height: 72px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.9rem;
+     margin-bottom: 1.75rem;
+ }
+
+ .about-advancement-text {
+     color: var(--nh-text-muted);
+     font-size: 1.1rem;
+     line-height: 1.8;
+     margin-bottom: 1.75rem;
+ }
+
+ /* ===== About Page CTA CSS ===== */
+ .about-cta-section {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     color: var(--nh-white);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .about-cta-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 55%;
+     height: 100%;
+     background-image: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+     pointer-events: none;
+ }
+
+ .about-cta-section .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .about-cta-content {
+     text-align: center;
+     max-width: 760px;
+     margin: 0 auto;
+ }
+
+ .about-cta-content h2 {
+     color: var(--nh-white);
+     margin-bottom: 1rem;
+ }
+
+ .about-cta-content p {
+     color: rgba(255, 255, 255, 0.85);
+     font-size: 1.1rem;
+     line-height: 1.7;
+     margin-bottom: 2rem;
+ }
+
+ .about-cta-buttons {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: center;
+ }
+
+ .about-cta-buttons .btn {
+     min-width: 220px;
+     justify-content: center;
+ }
+
+
+
+
+
+ /* ==========================================
+       NHRCA STANDARD PAGE - HERO SECTION
+    =========================================== */
+ .standard-hero {
+     position: relative;
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+     background: linear-gradient(135deg, var(--nh-navy-tint) 0%, var(--nh-blue-tint) 100%);
+     overflow: hidden;
+ }
+
+ .standard-hero::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 45%;
+     height: 100%;
+     background-image: radial-gradient(circle at 80% 20%, rgba(48, 124, 205, 0.12) 0%, transparent 55%);
+     pointer-events: none;
+ }
+
+ .standard-hero .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .standard-hero-title {
+     color: var(--nh-navy);
+     font-weight: 800;
+     font-size: clamp(2.2rem, 4.5vw, 3rem);
+     margin-bottom: 0.75rem;
+     letter-spacing: -0.02em;
+ }
+
+ .standard-hero-text {
+     color: var(--nh-text-muted);
+     font-size: 1.05rem;
+     max-width: 540px;
+     line-height: 1.75;
+     margin-bottom: 0;
+ }
+
+ .standard-hero .nh-breadcrumb {
+     background-color: transparent;
+     border: none;
+     padding: 0;
+     margin-bottom: 1rem;
+ }
+
+ .standard-hero .nh-breadcrumb .breadcrumb-item a,
+ .standard-hero .nh-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-text-muted);
+ }
+
+ .standard-hero .nh-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-navy);
+     font-weight: 600;
+ }
+
+ .standard-hero-visual {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-lg);
+     aspect-ratio: 16 / 11;
+     background-color: var(--nh-blue-tint);
+ }
+
+ .standard-hero-visual img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+ }
+
+ .standard-hero-badge {
+     position: absolute;
+     bottom: 1.25rem;
+     left: 1.25rem;
+     background-color: var(--nh-white);
+     border-radius: var(--nh-radius);
+     padding: 0.9rem 1.15rem;
+     box-shadow: var(--nh-shadow-lg);
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+     max-width: 240px;
+ }
+
+ .standard-hero-badge-icon {
+     flex-shrink: 0;
+     width: 42px;
+     height: 42px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.25rem;
+ }
+
+ .standard-hero-badge-title {
+     font-size: 0.82rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin: 0;
+     line-height: 1.3;
+ }
+
+ .standard-hero-badge-text {
+     font-size: 0.74rem;
+     color: var(--nh-text-muted);
+     margin: 0;
+ }
+
+ /* ==========================================
+       NHRCA STANDARD PAGE - INTRODUCTION SECTION
+    =========================================== */
+ .standard-intro-visual {
+     position: relative;
+     padding-right: 0.5rem;
+ }
+
+ .standard-intro-img {
+     border-radius: var(--nh-radius-lg);
+     width: 100%;
+     height: 460px;
+     object-fit: cover;
+     box-shadow: var(--nh-shadow-md);
+ }
+
+ .standard-intro-research-badge {
+     position: absolute;
+     bottom: -1.25rem;
+     right: -0.75rem;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     padding: 1.25rem 1.5rem;
+     border-radius: var(--nh-radius);
+     box-shadow: var(--nh-shadow-lg);
+     text-align: center;
+     min-width: 130px;
+ }
+
+ .standard-intro-research-icon {
+     font-size: 1.5rem;
+     display: block;
+     margin-bottom: 0.25rem;
+ }
+
+ .standard-intro-research-label {
+     font-size: 0.78rem;
+     font-weight: 700;
+     line-height: 1.3;
+ }
+
+ .standard-intro-text .text-highlight {
+     color: var(--nh-blue);
+     font-weight: 600;
+ }
+
+ .standard-intro-points {
+     list-style: none;
+     padding: 0;
+     margin: 1.5rem 0 0 0;
+ }
+
+ .standard-intro-points li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+     margin-bottom: 0.85rem;
+     color: var(--nh-text);
+     font-size: 0.95rem;
+     line-height: 1.6;
+ }
+
+ .standard-intro-points li i {
+     color: var(--nh-blue);
+     font-size: 1.1rem;
+     margin-top: 0.15rem;
+     flex-shrink: 0;
+ }
+
+ /* ==========================================
+       NHRCA STANDARD PAGE - COMPLIANCE STANDARD SECTION
+    =========================================== */
+ .standard-compliance-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .standard-compliance-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.85rem 1.75rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+ }
+
+ .standard-compliance-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-4px);
+ }
+
+ .standard-compliance-num {
+     position: absolute;
+     top: 1.5rem;
+     right: 1.5rem;
+     font-size: 2.25rem;
+     font-weight: 800;
+     color: var(--nh-blue-tint);
+     line-height: 1;
+     letter-spacing: -0.03em;
+ }
+
+ .standard-compliance-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.5rem;
+     margin-bottom: 1.25rem;
+ }
+
+ .standard-compliance-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.1rem;
+     margin-bottom: 0.65rem;
+     padding-right: 2.5rem;
+     line-height: 1.35;
+ }
+
+ .standard-compliance-text {
+     color: var(--nh-text-muted);
+     font-size: 0.93rem;
+     line-height: 1.7;
+     margin: 0;
+ }
+
+ /* ==========================================
+       NHRCA STANDARD PAGE - OPERATIONAL STANDARD SECTION
+    ========================================== */
+ .standard-operational-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 2.5rem 2.5rem;
+     box-shadow: var(--nh-shadow-sm);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .standard-operational-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 5px;
+     height: 100%;
+     background: linear-gradient(180deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+ }
+
+ .standard-operational-icon-row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     margin-top: 1.5rem;
+ }
+
+ .standard-operational-pill {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.55rem 1rem;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-navy);
+     border-radius: 50px;
+     font-size: 0.88rem;
+     font-weight: 600;
+ }
+
+ .standard-operational-pill i {
+     color: var(--nh-blue);
+     font-size: 1rem;
+ }
+
+ /* ==========================================
+       NHRCA STANDARD PAGE - HR COURSE STANDARD SECTION
+    =========================================== */
+ .standard-course-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .standard-course-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.85rem 1.75rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+ }
+
+ .standard-course-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-4px);
+ }
+
+ .standard-course-num {
+     position: absolute;
+     top: 1.5rem;
+     right: 1.5rem;
+     font-size: 2.25rem;
+     font-weight: 800;
+     color: var(--nh-blue-tint);
+     line-height: 1;
+     letter-spacing: -0.03em;
+ }
+
+ .standard-course-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.5rem;
+     margin-bottom: 1.25rem;
+ }
+
+ .standard-course-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.1rem;
+     margin-bottom: 0.65rem;
+     padding-right: 2.5rem;
+     line-height: 1.35;
+ }
+
+ .standard-course-text {
+     color: var(--nh-text-muted);
+     font-size: 0.93rem;
+     line-height: 1.7;
+     margin: 0;
+ }
+
+ /* ==========================================
+       NHRCA STANDARD PAGE - COMPETENCY FRAMEWORK OVERVIEW
+    =========================================== */
+ .standard-framework-intro {
+     max-width: 800px;
+     margin: 0 auto 3rem;
+     text-align: center;
+ }
+
+ .standard-cluster-overview-grid {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1.25rem;
+ }
+
+ .standard-cluster-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 2rem 1.5rem;
+     text-align: center;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+     height: 100%;
+ }
+
+ .standard-cluster-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background-color: var(--nh-blue);
+     transition: var(--nh-transition);
+ }
+
+ .standard-cluster-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-lg);
+     transform: translateY(-5px);
+ }
+
+ .standard-cluster-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.7rem;
+     margin-bottom: 1.25rem;
+ }
+
+ .standard-cluster-card-num {
+     font-size: 0.78rem;
+     font-weight: 700;
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     color: var(--nh-blue);
+     margin-bottom: 0.5rem;
+ }
+
+ .standard-cluster-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.15rem;
+     margin-bottom: 0.65rem;
+ }
+
+ .standard-cluster-card-text {
+     color: var(--nh-text-muted);
+     font-size: 0.88rem;
+     line-height: 1.6;
+     margin: 0;
+ }
+
+ /* ==========================================
+       NHRCA STANDARD PAGE - COMPETENCY CLUSTER SECTIONS
+    =========================================== */
+ .standard-cluster-section {
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+ }
+
+ .standard-cluster-header {
+     display: flex;
+     align-items: flex-start;
+     gap: 1.25rem;
+     margin-bottom: 2rem;
+     padding-bottom: 1.5rem;
+     border-bottom: 1px solid var(--nh-border);
+ }
+
+ .standard-cluster-header-icon {
+     flex-shrink: 0;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: var(--nh-radius);
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     font-size: 1.5rem;
+ }
+
+ .standard-cluster-header-num {
+     font-size: 0.78rem;
+     font-weight: 700;
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     color: var(--nh-blue);
+     margin-bottom: 0.35rem;
+ }
+
+ .standard-cluster-header-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.5rem;
+     margin-bottom: 0.35rem;
+ }
+
+ .standard-cluster-header-text {
+     color: var(--nh-text-muted);
+     font-size: 0.95rem;
+     line-height: 1.6;
+     margin: 0;
+ }
+
+ .standard-competency-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.5rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+ }
+
+ .standard-competency-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-3px);
+ }
+
+ .standard-competency-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 44px;
+     height: 44px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.2rem;
+     margin-bottom: 1rem;
+ }
+
+ .standard-competency-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1rem;
+     margin-bottom: 0.5rem;
+     line-height: 1.35;
+ }
+
+ .standard-competency-text {
+     color: var(--nh-text-muted);
+     font-size: 0.88rem;
+     line-height: 1.65;
+     margin: 0;
+ }
+
+ /* Cluster-specific accent colors (subtle, within brand palette) */
+ .standard-cluster-personal .standard-cluster-header-icon {
+     background-color: var(--nh-navy);
+ }
+
+ .standard-cluster-professional .standard-cluster-header-icon {
+     background-color: var(--nh-blue);
+ }
+
+ .standard-cluster-leadership .standard-cluster-header-icon {
+     background-color: var(--nh-navy-soft);
+ }
+
+ .standard-cluster-entrepreneurial .standard-cluster-header-icon {
+     background-color: var(--nh-blue-dark);
+ }
+
+ /* Subtle background variation between clusters */
+ .standard-cluster-professional {
+     background-color: var(--nh-bg-section);
+ }
+
+ .standard-cluster-entrepreneurial {
+     background-color: var(--nh-bg-section);
+    }
+
+
+
+
+
+
+    /* ==========================================
+       INSTITUTIONAL STANDARD - HERO SECTION
+    =========================================== */
+    /* Dark navy hero inspired by the uploaded screenshot */
+    .institutional-hero {
+      position: relative;
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+      background-color: var(--nh-navy);
+      color: var(--nh-white);
+      overflow: hidden;
+    }
+    .institutional-hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-image: radial-gradient(circle at 75% 30%, rgba(48, 124, 205, 0.18) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .institutional-hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-blue-soft) 100%);
+    }
+    .institutional-hero .container { position: relative; z-index: 1; }
+    .institutional-hero-breadcrumb {
+      margin-bottom: 1.25rem;
+    }
+    .institutional-hero-breadcrumb .breadcrumb {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      font-size: 0.88rem;
+    }
+    .institutional-hero-breadcrumb .breadcrumb-item a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: var(--nh-transition);
+    }
+    .institutional-hero-breadcrumb .breadcrumb-item a:hover {
+      color: var(--nh-white);
+    }
+    .institutional-hero-breadcrumb .breadcrumb-item.active {
+      color: var(--nh-white);
+      font-weight: 600;
+    }
+    .institutional-hero-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      content: "/";
+      color: rgba(255, 255, 255, 0.45);
+      padding: 0 0.5rem;
+    }
+    .institutional-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      background-color: rgba(48, 124, 205, 0.25);
+      color: var(--nh-blue-soft);
+      border: 1px solid rgba(48, 124, 205, 0.4);
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .institutional-hero-title {
+      color: var(--nh-white);
+      font-weight: 800;
+      font-size: clamp(2rem, 4.2vw, 2.85rem);
+      margin-bottom: 0.85rem;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .institutional-hero-subtitle {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1.12rem;
+      line-height: 1.6;
+      max-width: 620px;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    /* ==========================================
+       INSTITUTIONAL STANDARD - INTRODUCTION & CORE COMPONENTS
+    =========================================== */
+    .institutional-intro-text .text-highlight {
+      color: var(--nh-blue);
+      font-weight: 600;
+    }
+    .institutional-core-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-left: 4px solid var(--nh-blue);
+      border-radius: var(--nh-radius);
+      padding: 2rem 1.85rem;
+      box-shadow: var(--nh-shadow-sm);
+      position: relative;
+    }
+    .institutional-core-card-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: var(--nh-radius-sm);
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      font-size: 1.4rem;
+      margin-bottom: 1.15rem;
+    }
+    .institutional-core-card-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+    }
+    .institutional-core-card-text {
+      color: var(--nh-text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+    .institutional-core-pill-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .institutional-core-pill-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+      color: var(--nh-text);
+      font-weight: 500;
+    }
+    .institutional-core-pill-list li i {
+      color: var(--nh-blue);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .institutional-core-pill-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--nh-navy);
+      color: var(--nh-white);
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================
+       INSTITUTIONAL STANDARD - SEVEN STANDARD CARDS
+    =========================================== */
+    .institutional-standards-section {
+      background-color: var(--nh-bg-section);
+    }
+    .institutional-standards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+    .institutional-standard-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--nh-transition);
+    }
+    .institutional-standard-card:hover {
+      border-color: var(--nh-blue-soft);
+      box-shadow: var(--nh-shadow-md);
+      transform: translateY(-3px);
+    }
+    /* 7th card spans full width */
+    .institutional-standard-card-full {
+      grid-column: 1 / -1;
+    }
+    .institutional-card-header {
+      background-color: var(--nh-navy);
+      color: var(--nh-white);
+      padding: 1.15rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .institutional-card-header-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: var(--nh-radius-sm);
+      background-color: rgba(255, 255, 255, 0.12);
+      color: var(--nh-white);
+      font-size: 0.95rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .institutional-card-header-title {
+      color: var(--nh-white);
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin: 0;
+      line-height: 1.3;
+    }
+    .institutional-card-body {
+      padding: 1.5rem 1.5rem 1.75rem;
+      flex: 1 1 auto;
+    }
+    .institutional-card-intro {
+      color: var(--nh-text);
+      font-size: 0.94rem;
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--nh-border-soft);
+      font-style: italic;
+    }
+    .institutional-subsection {
+      margin-bottom: 1.1rem;
+    }
+    .institutional-subsection:last-child {
+      margin-bottom: 0;
+    }
+    .institutional-subsection-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 0.3rem;
+      line-height: 1.4;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+    }
+    .institutional-subsection-num {
+      color: var(--nh-blue);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .institutional-subsection-text {
+      color: var(--nh-text-muted);
+      font-size: 0.9rem;
+      line-height: 1.65;
+      margin: 0;
+      padding-left: 0;
+    }
+    /* 7th card body uses a 2-column subsection layout on desktop */
+    .institutional-standard-card-full .institutional-card-body {
+      padding: 1.75rem 1.75rem 2rem;
+    }
+    .institutional-subsection-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    /* ==========================================
+       INSTITUTIONAL STANDARD - INSTITUTIONAL EXCELLENCE
+    =========================================== */
+    .institutional-excellence-section {
+      background-color: var(--nh-white);
+    }
+    .institutional-excellence-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius-lg);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      box-shadow: var(--nh-shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+    .institutional-excellence-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+      border-radius: 0 0 4px 4px;
+    }
+    .institutional-excellence-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
+    .institutional-excellence-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: clamp(1.6rem, 2.5vw, 2rem);
+      margin-bottom: 1.25rem;
+    }
+    .institutional-excellence-text {
+      color: var(--nh-text-muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .institutional-excellence-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem 2.5rem;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--nh-border-soft);
+    }
+    .institutional-excellence-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--nh-navy);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+    .institutional-excellence-feature i {
+      color: var(--nh-blue);
+      font-size: 1.15rem;
+    }

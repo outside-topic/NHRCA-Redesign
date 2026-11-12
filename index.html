@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHRCA | National Human Resource Certification Academy, UK</title>
+    <meta name="description"
+        content="The National Human Resource Certification Academy (NHRCA), UK promotes globally relevant standards, professional competence, and responsible people management practices in Human Resource Management." />
+    <meta name="keywords"
+        content="NHRCA, HR Certification, HR Accreditation, Human Resource Standards, UK Certification Body, HR Professional Development" />
+    <meta name="author" content="National Human Resource Certification Academy" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="NHRCA | National Human Resource Certification Academy, UK" />
+    <meta property="og:description"
+        content="Promoting globally relevant standards, professional competence, and responsible people management practices." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nhrca.uk/" />
+    <meta property="og:image" content="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+       HEADER
+  =========================================== -->
+    <header>
+        <!-- Topbar -->
+        <div class="nh-topbar d-none d-lg-block">
+            <div class="container nh-container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <span class="topbar-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+                        <span class="topbar-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="topbar-item"><i class="bi bi-shield-check"></i> UK Professional Certification
+                            Body</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg nh-navbar sticky-top" id="mainNavbar" aria-label="Main navigation">
+            <div class="container nh-container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="https://nhrca.uk/" aria-label="NHRCA Home">
+                    <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png"
+                        alt="National Human Resource Certification Academy - NHRCA UK Logo" class="nh-navbar-logo"
+                        width="180" height="52" />
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://nhrca.uk/" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="standardsDropdown">
+                                Standards
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="standardsDropdown">
+                                <li><a class="dropdown-item" href="https://nhrca.uk/nhrca-standard"><i
+                                            class="bi bi-award me-2"></i>NHRCA Standard</a></li>
+                                <li><a class="dropdown-item" href="https://nhrca.uk/institutional-standard"><i
+                                            class="bi bi-building me-2"></i>Institutional Standard</a></li>
+                                <li><a class="dropdown-item" href="https://nhrca.uk/course-standard"><i
+                                            class="bi bi-journal-text me-2"></i>Course Standard</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://nhrca.uk/framework">Framework</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="accreditationDropdown">
+                                Accreditation
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="accreditationDropdown">
+                                <li><a class="dropdown-item" href="https://nhrca.uk/course-accreditation"><i
+                                            class="bi bi-mortarboard me-2"></i>Course Accreditation</a></li>
+                                <li><a class="dropdown-item" href="https://nhrca.uk/institute-accreditation"><i
+                                            class="bi bi-bank me-2"></i>Institute Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://nhrca.uk/credential">Credential</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="corporateDropdown">
+                                Certify Corporate
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="corporateDropdown">
+                                <li><a class="dropdown-item" href="https://nhrca.uk/nhrca-shrp"><i
+                                            class="bi bi-briefcase me-2"></i>NHRCA Standard for Human Resource Practice
+                                        (NHRCA-SHRP)</a></li>
+                                <li><a class="dropdown-item" href="https://nhrca.uk/apply-for-accreditation"><i
+                                            class="bi bi-file-earmark-check me-2"></i>Apply for Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://nhrca.uk/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-blue btn-verify" href="https://nhrca.uk/verify"><i
+                                    class="bi bi-patch-check"></i> Verify</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="nh-hero">
+        <div class="swiper nh-hero-swiper">
+            <div class="swiper-wrapper">
+
+                <!-- ============== SLIDE 1 ============== -->
+                <div class="swiper-slide nh-hero-slide nh-hero-slide-1">
+                    <div class="nh-hero-overlay"></div>
+                    <div class="nh-hero-content-wrap">
+                        <div class="container nh-container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-xl-6">
+                                    <div class="nh-hero-content">
+                                        <span class="nh-hero-eyebrow d-none">Professional Training Academy</span>
+                                        <h1 class="nh-hero-title">NHRCA for HR certification standard</h1>
+                                        <p class="nh-hero-desc">
+                                            NHRCA standard is a UK standard for HR professionals at different levels of the profession.
+                                        </p>
+                                        <div class="nh-hero-actions">
+                                            <a href="#courses" class="btn btn-blue btn-lg d-none">Explore Courses</a>
+                                            <a href="#about" class="btn btn-outline-light btn-lg">Read More</a>
+                                        </div>
+                                        <div class="nh-hero-trust">
+                                            <span class="nh-hero-trust-num">15K+</span>
+                                            <span class="nh-hero-trust-text">Professionals Trained Worldwide</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============== SLIDE 2 ============== -->
+                <div class="swiper-slide nh-hero-slide nh-hero-slide-2">
+                    <div class="nh-hero-overlay"></div>
+                    <div class="nh-hero-content-wrap">
+                        <div class="container nh-container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-xl-6">
+                                    <div class="nh-hero-content">
+                                        <span class="nh-hero-eyebrow d-none">Certified Learning Programs</span>
+                                        <h1 class="nh-hero-title">NHRCA for Institute Accreditation</h1>
+                                        <p class="nh-hero-desc">
+                                            NHRCA accredits different HR Institutes and their courses to make it acceptable across the globe.
+                                        </p>
+                                        <div class="nh-hero-actions">
+                                            <a href="#courses" class="btn btn-blue btn-lg d-none">Explore Courses</a>
+                                            <a href="#about" class="btn btn-outline-light btn-lg">Read More</a>
+                                        </div>
+                                        <div class="nh-hero-trust">
+                                            <span class="nh-hero-trust-num">200+</span>
+                                            <span class="nh-hero-trust-text">Expert-Led Specialized Courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============== SLIDE 3 ============== -->
+                <div class="swiper-slide nh-hero-slide nh-hero-slide-3">
+                    <div class="nh-hero-overlay"></div>
+                    <div class="nh-hero-content-wrap">
+                        <div class="container nh-container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-xl-6">
+                                    <div class="nh-hero-content">
+                                        <span class="nh-hero-eyebrow d-none">Globally Recognized Certifications</span>
+                                        <h1 class="nh-hero-title">NHRCA for HR certification standard</h1>
+                                        <p class="nh-hero-desc">
+                                           NHRCA standard is a UK standard for HR professionals at different levels of the profession.
+                                        </p>
+                                        <div class="nh-hero-actions">
+                                            <a href="#courses" class="btn btn-blue btn-lg d-none">Explore Courses</a>
+                                            <a href="#about" class="btn btn-outline-light btn-lg">Read More</a>
+                                        </div>
+                                        <div class="nh-hero-trust">
+                                            <span class="nh-hero-trust-num">98%</span>
+                                            <span class="nh-hero-trust-text">Certification Pass Rate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ============== SLIDER NAVIGATION ============== -->
+            <div class="nh-hero-prev me-3" aria-label="Previous slide" role="button" tabindex="0"></div>
+            <div class="nh-hero-next" aria-label="Next slide" role="button" tabindex="0"></div>
+            <div class="nh-hero-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       HOMEPAGE SECTIONS
+  =========================================== -->
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" id="hero">
+        <div class="container nh-container">
+            <div class="row align-items-center g-5">
+                <!-- Hero Content -->
+                <div class="col-lg-6">
+                    <span class="hero-eyebrow"><i class="bi bi-globe2"></i> UK Professional Certification Academy</span>
+                    <h1 class="hero-title">Empowering the Future of the <span class="text-highlight">HR
+                            Profession</span></h1>
+                    <p class="hero-support">Promoting globally relevant standards, professional competence, and
+                        responsible people management practices.</p>
+                    <p class="hero-intro">In an increasingly dynamic and complex business environment, effective human
+                        resource management has become a critical driver of organizational success. The National Human
+                        Resource Certification Academy (NHRCA), UK is dedicated to strengthening the HR profession by
+                        promoting globally relevant standards, professional competence, and responsible people
+                        management practices.</p>
+
+                    <!-- Hero Features -->
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <span class="hero-feature-icon"><i class="bi bi-lightbulb"></i></span>
+                            <div>
+                                <p class="hero-feature-title">Strategic Insight</p>
+                                <p class="hero-feature-text">Developing HR professionals who lead with ethical judgment
+                                    and operational excellence.</p>
+                            </div>
+                        </div>
+                        <div class="hero-feature">
+                            <span class="hero-feature-icon"><i class="bi bi-globe"></i></span>
+                            <div>
+                                <p class="hero-feature-title">Global Best Practices</p>
+                                <p class="hero-feature-text">Ensuring practices align with evolving workforce challenges
+                                    and global standards.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="hero-additional">Through its structured certification frameworks, quality assurance
+                        systems, and professional recognition pathways, NHRCA supports the development of HR
+                        professionals who can lead organizations with strategic insight, ethical judgment, and
+                        operational excellence.</p>
+
+                    <div class="hero-cta-group">
+                        <a href="https://nhrca.uk/nhrca-standard" class="btn btn-blue btn-lg"><i
+                                class="bi bi-award"></i> Explore Our Standards</a>
+                        <a href="https://nhrca.uk/verify" class="btn btn-outline-navy btn-lg"><i
+                                class="bi bi-patch-check"></i> Verify Credentials</a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="hero-visual-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=900&q=80"
+                                alt="Professional HR manager working in a modern corporate office" loading="eager" />
+                        </div>
+                        <div class="hero-visual-stat">
+                            <div class="hero-visual-stat-num">37</div>
+                            <div class="hero-visual-stat-label">Countries</div>
+                        </div>
+                        <div class="hero-visual-badge">
+                            <span class="hero-visual-badge-icon"><i class="bi bi-patch-check-fill"></i></span>
+                            <div>
+                                <p class="hero-visual-badge-title">Quality Assured</p>
+                                <p class="hero-visual-badge-text">Internationally recognized HR certification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INTRODUCTION / OUR PURPOSE SECTION ===== -->
+    <section class="section intro-section d-none" id="introduction">
+        <div class="container nh-container">
+            <div class="row align-items-center g-5">
+                <!-- Visual -->
+                <div class="col-lg-6">
+                    <div class="intro-visual">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80"
+                            alt="HR professionals collaborating in a corporate environment" class="intro-visual-img"
+                            loading="lazy" />
+                        <div class="intro-quote-block">
+                            <p class="intro-quote-text">Through its commitment to professional standards, quality
+                                assurance, and lifelong learning, NHRCA continues to empower individuals and
+                                organizations to build resilient, ethical, and high-performing workplaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="col-lg-6">
+                    <div class="intro-content">
+                        <span class="section-eyebrow">Our Purpose</span>
+                        <h2 class="section-title">Advancing HR Excellence Through Recognized Standards</h2>
+                        <div class="section-divider"></div>
+                        <p>NHRCA certifications and recognition frameworks emphasize practical capability, leadership in
+                            human capital management, and continuous professional development.</p>
+                        <p>By fostering a culture of excellence and accountability, NHRCA contributes to the advancement
+                            of the HR profession and the strengthening of human capital systems across industries and
+                            regions.</p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="https://nhrca.uk/about-us" class="btn btn-navy"><i class="bi bi-info-circle"></i>
+                                Learn About NHRCA</a>
+                            <a href="https://nhrca.uk/framework" class="nh-link">Explore the Framework <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KEY SERVICES / QUICK ACCESS SECTION ===== -->
+    <section class="section services-section" id="services">
+        <div class="container nh-container">
+            <div class="text-center mb-5">
+                <span class="section-eyebrow justify-content-center">Quick Access</span>
+                <h2 class="section-title">Explore NHRCA Key Areas</h2>
+                <p class="section-subtitle mx-auto">Access the standards, frameworks, and accreditation pathways that
+                    define professional HR excellence at NHRCA.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-card-icon"><i class="bi bi-award"></i></div>
+                        <h3 class="service-card-title">NHRCA Standard</h3>
+                        <p class="service-card-text">Explore professional HR standards, competencies, and certification
+                            benchmarks.</p>
+                        <a href="https://nhrca.uk/nhrca-standard" class="service-card-link">Learn More <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-card-icon"><i class="bi bi-diagram-3"></i></div>
+                        <h3 class="service-card-title">NHRCA Framework</h3>
+                        <p class="service-card-text">Discover the competency framework supporting HR professional
+                            development.</p>
+                        <a href="https://nhrca.uk/framework" class="service-card-link">Learn More <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-card-icon"><i class="bi bi-bank"></i></div>
+                        <h3 class="service-card-title">Institute Accreditation</h3>
+                        <p class="service-card-text">Learn about institutional accreditation and quality assurance.</p>
+                        <a href="https://nhrca.uk/institute-accreditation" class="service-card-link">Learn More <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-card-icon"><i class="bi bi-mortarboard"></i></div>
+                        <h3 class="service-card-title">Course Accreditation</h3>
+                        <p class="service-card-text">Understand the standards for accredited HR courses and
+                            qualifications.</p>
+                        <a href="https://nhrca.uk/course-accreditation" class="service-card-link">Learn More <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INSTITUTIONAL STANDARDS SECTION ===== -->
+    <section class="section institutional-section" id="institutional-standards">
+        <div class="container nh-container">
+            <div class="row align-items-center g-5">
+                <!-- Visual -->
+                <div class="col-lg-6">
+                    <div class="institutional-visual">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80"
+                            alt="Modern educational institution building representing accredited HR training"
+                            loading="lazy" />
+                        <div class="institutional-visual-overlay">
+                            <p class="institutional-visual-overlay-title"><i class="bi bi-patch-check-fill"></i> NHRCA
+                                Quality Mark</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="col-lg-6">
+                    <span class="section-eyebrow">Institutional Standards</span>
+                    <h2 class="section-title">NHRCA Institutional Standards</h2>
+                    <div class="section-divider"></div>
+                    <p>The National Human Resource Certification Academy (NHRCA), UK is committed to promoting and
+                        upholding high standards in human resource education and professional development worldwide.</p>
+                    <p>Institutions such as training providers, colleges, and universities offering programs in Human
+                        Resource Management are expected to maintain structured academic and professional standards to
+                        ensure the quality, relevance, and credibility of HR education.</p>
+                    <p>Institutions that successfully align their programs with the NHRCA Institutional Standards may be
+                        authorized to use the NHRCA Quality Mark, signifying that their HR programs meet the quality
+                        assurance criteria and professional competency standards established by NHRCA.</p>
+                    <div class="quality-mark-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <div>
+                            <p class="quality-mark-badge-title">NHRCA Quality Mark</p>
+                            <p class="quality-mark-badge-text">Recognized sign of institutional compliance</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://nhrca.uk/institutional-standard" class="btn btn-blue"><i
+                                class="bi bi-arrow-right-circle"></i> Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COURSE STANDARDS SECTION ===== -->
+    <section class="section course-section" id="course-standards">
+        <div class="container nh-container">
+            <div class="row align-items-center g-5">
+                <!-- Content -->
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <span class="section-eyebrow">Course Standards</span>
+                    <h2 class="section-title">NHRCA Standard: Course</h2>
+                    <div class="section-divider"></div>
+                    <p>The National Human Resource Certification Academy (NHRCA), UK establishes professional standards
+                        for courses, qualifications, and degree programs related to Human Resource Management.</p>
+                    <p>These standards ensure that HR education and training programs maintain quality, relevance, and
+                        alignment with modern professional competencies.</p>
+
+                    <div class="course-feature-grid">
+                        <div class="course-feature-item">
+                            <i class="bi bi-check-circle"></i>
+                            <p class="course-feature-item-title">Quality Assurance</p>
+                            <p class="course-feature-item-text">Programs meet defined quality benchmarks.</p>
+                        </div>
+                        <div class="course-feature-item">
+                            <i class="bi bi-people"></i>
+                            <p class="course-feature-item-title">Professional Alignment</p>
+                            <p class="course-feature-item-text">Aligned with modern HR competencies.</p>
+                        </div>
+                        <div class="course-feature-item">
+                            <i class="bi bi-globe2"></i>
+                            <p class="course-feature-item-title">Recognized Benchmarks</p>
+                            <p class="course-feature-item-text">Adherence to professional standards.</p>
+                        </div>
+                        <div class="course-feature-item">
+                            <i class="bi bi-patch-check"></i>
+                            <p class="course-feature-item-title">NHRCA Quality Mark</p>
+                            <p class="course-feature-item-text">Authorized use for qualifying courses.</p>
+                        </div>
+                    </div>
+
+                    <p>Institutions offering HR-related courses may align their programs with the NHRCA Course Standards
+                        to demonstrate adherence to recognized professional benchmarks. Programs that meet these
+                        standards are authorized to display the NHRCA Quality Mark, signifying that the course is
+                        delivered in accordance with the quality assurance framework established by NHRCA.</p>
+                    <a href="https://nhrca.uk/course-standard" class="btn btn-navy mt-2"><i
+                            class="bi bi-arrow-right-circle"></i> Learn More</a>
+                </div>
+                <!-- Visual -->
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <div class="course-visual">
+                        <img src="https://nhrca.uk/frontend/imgs/certificate-01.jpeg"
+                            alt="NHRCA course accreditation certificate example" class="nh-img" loading="lazy" />
+                        <span class="course-visual-tag"><i class="bi bi-patch-check-fill"></i> Accredited Course</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INDIVIDUAL PROFESSIONAL STANDARDS SECTION ===== -->
+    <section class="section individual-section" id="individual-standards">
+        <div class="container nh-container">
+            <div class="row align-items-center g-5">
+                <!-- Content -->
+                <div class="col-lg-6">
+                    <span class="section-eyebrow">Individual Standards</span>
+                    <h2 class="section-title">NHRCA Individual Standards</h2>
+                    <div class="section-divider"></div>
+                    <p>The National Human Resource Certification Academy (NHRCA), UK establishes professional standards
+                        for the certification of Human Resource professionals.</p>
+                    <p>These standards classify HR certifications based on functional specialization and professional
+                        seniority, ensuring that qualifications accurately reflect the competencies and responsibilities
+                        associated with different career levels.</p>
+                    <p>Through its structured certification framework, NHRCA promotes clear professional pathways for HR
+                        practitioners, supporting the development, recognition, and progression of competent human
+                        resource professionals.</p>
+                    <div class="individual-cta-group mt-4">
+                        <a href="https://nhrca.uk/nhrca-standard" class="btn btn-blue btn-lg"><i
+                                class="bi bi-award"></i> Explore Professional Standards</a>
+                    </div>
+                </div>
+                <!-- Visual: Certification levels -->
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="individual-level-card">
+                                <div class="individual-level-icon"><i class="bi bi-mortarboard"></i></div>
+                                <h4 class="individual-level-title">Functional Specialization</h4>
+                                <p class="individual-level-text">Certifications aligned to specific HR functional
+                                    domains and areas of practice.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="individual-level-card">
+                                <div class="individual-level-icon"><i class="bi bi-bar-chart-steps"></i></div>
+                                <h4 class="individual-level-title">Professional Seniority</h4>
+                                <p class="individual-level-text">Classified by career level, reflecting responsibility
+                                    and competence.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="individual-level-card">
+                                <div class="individual-level-icon"><i class="bi bi-diagram-3"></i></div>
+                                <h4 class="individual-level-title">Clear Pathways</h4>
+                                <p class="individual-level-text">Structured progression routes for HR practitioners at
+                                    every stage.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="individual-level-card">
+                                <div class="individual-level-icon"><i class="bi bi-patch-check"></i></div>
+                                <h4 class="individual-level-title">Professional Recognition</h4>
+                                <p class="individual-level-text">Formal recognition of demonstrated HR competence and
+                                    capability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACCREDITATION SECTION ===== -->
+    <section class="section accreditation-section" id="accreditation">
+        <div class="container nh-container">
+            <div class="text-center mb-5">
+                <span class="section-eyebrow justify-content-center">Accreditation</span>
+                <h2 class="section-title">NHRCA Accreditation</h2>
+                <p class="section-subtitle mx-auto">The National Human Resource Certification Academy (NHRCA), UK
+                    accredits institutes, colleges, and training providers offering human resource certifications,
+                    qualifications, and courses in accordance with the standards established by the NHRCA Council.</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <!-- Course Accreditation Card -->
+                <div class="col-md-8 col-lg-5">
+                    <div class="accreditation-card">
+                        <div class="accreditation-card-header">
+                            <div class="accreditation-card-icon"><i class="bi bi-mortarboard"></i></div>
+                            <h3 class="accreditation-card-title">Course Accreditation</h3>
+                        </div>
+                        <div class="accreditation-card-body">
+                            <p class="accreditation-card-text">Accreditation for HR courses and qualifications that meet
+                                NHRCA professional standards, ensuring quality and consistency in HR education.</p>
+                            <ul class="accreditation-card-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Quality-assured course content</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Aligned with professional competencies</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Authorized NHRCA Accreditation Mark</li>
+                            </ul>
+                            <a href="https://nhrca.uk/course-accreditation" class="btn btn-blue w-100"><i
+                                    class="bi bi-arrow-right-circle"></i> Course Accreditation</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Institute Accreditation Card -->
+                <div class="col-md-8 col-lg-5">
+                    <div class="accreditation-card">
+                        <div class="accreditation-card-header">
+                            <div class="accreditation-card-icon"><i class="bi bi-bank"></i></div>
+                            <h3 class="accreditation-card-title">Institute Accreditation</h3>
+                        </div>
+                        <div class="accreditation-card-body">
+                            <p class="accreditation-card-text">Accreditation for institutions delivering HR programs,
+                                ensuring professional standardization and recognized quality across HR education.</p>
+                            <ul class="accreditation-card-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Institutional quality assurance</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Professional standardization</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Authorized NHRCA Accreditation Mark</li>
+                            </ul>
+                            <a href="https://nhrca.uk/institute-accreditation" class="btn btn-navy w-100"><i
+                                    class="bi bi-arrow-right-circle"></i> Institute Accreditation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="text-muted-soft mb-0">Institutions that meet these standards are authorized to use the NHRCA
+                    Accreditation Mark as recognition of their compliance with NHRCA professional standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT NHRCA SECTION ===== -->
+    <section class="section about-section" id="about">
+        <div class="container nh-container">
+            <div class="row align-items-center g-5">
+                <!-- Visual -->
+                <div class="col-lg-6">
+                    <div class="about-visual">
+                        <div class="about-visual-frame">
+                            <img src="https://nhrca.uk/frontend/imgs/about-image.webp"
+                                alt="About NHRCA - National Human Resource Certification Academy professional team"
+                                class="about-visual-img" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="col-lg-6">
+                    <span class="section-eyebrow">About NHRCA</span>
+                    <h2 class="section-title">Advancing Quality HR Certification, Professional Standards, and HR
+                        Expertise</h2>
+                    <div class="section-divider"></div>
+                    <p>NHRCA operates as a self-regulated professional certification institute dedicated to advancing
+                        quality certification, strengthening professional HR standards, and supporting the development
+                        of competent human resource practitioners to promote effective and responsible HR practices
+                        globally.</p>
+
+                    <div class="about-feature-row">
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="bi bi-shield-check"></i></div>
+                            <div>
+                                <p class="about-feature-title">Quality Certification</p>
+                                <p class="about-feature-text">Rigorous certification frameworks aligned with global
+                                    standards.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="bi bi-people"></i></div>
+                            <div>
+                                <p class="about-feature-title">Professional Standards</p>
+                                <p class="about-feature-text">Strengthening HR standards across industries and regions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://nhrca.uk/about-us" class="btn btn-blue btn-lg"><i class="bi bi-info-circle"></i>
+                        Discover More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRUSTED BY THOUSANDS / STATISTICS SECTION ===== -->
+    <section class="section stats-section" id="statistics">
+        <div class="container nh-container">
+            <div class="stats-header">
+                <span class="section-eyebrow justify-content-center">Our Reach</span>
+                <h2 class="section-title">Trusted by Thousands of Professionals</h2>
+                <p class="section-subtitle">NHRCA connects a growing global community of institutions, accredited
+                    courses, and HR professionals committed to professional excellence.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-building"></i></div>
+                        <div class="stat-number" data-count="73">0</div>
+                        <p class="stat-label">Institutes Connected</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-mortarboard"></i></div>
+                        <div class="stat-number" data-count="126" data-suffix="+">0</div>
+                        <p class="stat-label">Courses Accredited</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-people"></i></div>
+                        <div class="stat-number" data-count="1374">0</div>
+                        <p class="stat-label">Professionals Connected</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-globe2"></i></div>
+                        <div class="stat-number" data-count="37">0</div>
+                        <p class="stat-label">Countries Covered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION SECTION ===== -->
+    <section class="section cta-section" id="cta">
+        <div class="container nh-container">
+            <div class="cta-content">
+                <span class="nh-badge nh-badge-white mb-3"><i class="bi bi-stars"></i> Join the NHRCA Community</span>
+                <h2>Build Professional Excellence with NHRCA</h2>
+                <p>Whether you are an HR professional advancing your credentials, a training institution seeking
+                    accreditation, or an organization exploring corporate HR standards, NHRCA provides the frameworks
+                    and recognition to support your journey.</p>
+                <div class="cta-buttons">
+                    <a href="https://nhrca.uk/credential" class="btn btn-white btn-lg"><i class="bi bi-award"></i>
+                        Explore Credentials</a>
+                    <a href="https://nhrca.uk/apply-for-accreditation" class="btn btn-outline-light btn-lg"><i
+                            class="bi bi-file-earmark-check"></i> Apply for Accreditation</a>
+                    <a href="https://nhrca.uk/verify" class="btn btn-outline-light btn-lg"><i
+                            class="bi bi-patch-check"></i> Verify Certificate</a>
+                </div>
+                <div class="cta-feature-list">
+                    <span class="cta-feature"><i class="bi bi-check-circle-fill"></i> Globally Relevant Standards</span>
+                    <span class="cta-feature"><i class="bi bi-check-circle-fill"></i> Professional Recognition</span>
+                    <span class="cta-feature"><i class="bi bi-check-circle-fill"></i> Quality Assured Pathways</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       FOOTER
+  =========================================== -->
+    <footer class="nh-footer">
+        <div class="container nh-container">
+            <div class="row g-4 g-lg-5 pb-4">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-4 col-md-12">
+                    <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" alt="NHRCA UK Logo"
+                        class="footer-logo" />
+                    <p>The National Human Resource Certification Academy (NHRCA), UK promotes globally relevant
+                        standards, professional competence, and responsible people management practices in Human
+                        Resource Management.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="https://nhrca.uk/">Home</a></li>
+                        <li><a href="https://nhrca.uk/about-us">About Us</a></li>
+                        <li><a href="https://nhrca.uk/contact">Contact</a></li>
+                        <li><a href="https://nhrca.uk/verify">Verify</a></li>
+                        <li><a href="https://nhrca.uk/credential">Credential</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Standards -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h5 class="footer-title">Standards &amp; Framework</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="https://nhrca.uk/nhrca-standard">NHRCA Standard</a></li>
+                        <li><a href="https://nhrca.uk/institutional-standard">Institutional Standard</a></li>
+                        <li><a href="https://nhrca.uk/course-standard">Course Standard</a></li>
+                        <li><a href="https://nhrca.uk/framework">NHRCA Framework</a></li>
+                        <li><a href="https://nhrca.uk/nhrca-shrp">NHRCA-SHRP</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Accreditation -->
+                <div class="col-lg-3 col-md-5 col-12">
+                    <h5 class="footer-title">Accreditation</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="https://nhrca.uk/course-accreditation">Course Accreditation</a></li>
+                        <li><a href="https://nhrca.uk/institute-accreditation">Institute Accreditation</a></li>
+                        <li><a href="https://nhrca.uk/apply-for-accreditation">Apply for Accreditation</a></li>
+                    </ul>
+                    <div class="mt-3">
+                        <span class="footer-contact-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+                        <span class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center g-2">
+                    <div class="col-md-6">
+                        &copy; 2026 National Human Resource Certification Academy. All rights reserved.
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="https://nhrca.uk/privacy-policy">Privacy Policy</a>
+                            <a href="https://nhrca.uk/refund-policy">Refund Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <!-- Hero Section JS -->
+    <script src="js/hero-section.js" defer></script>
+
+    <!-- Global JS -->
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
