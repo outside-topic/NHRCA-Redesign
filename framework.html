@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Framework | NHRCA - National Human Resource Certification Academy, UK</title>
+  <meta name="description" content="The NHRCA Professional Framework defines a structured progression pathway for HR professionals across five stages, with education, experience, and focused competency area requirements." />
+  <meta name="keywords" content="NHRCA Framework, HR Professional Framework, HR Career Progression, HR Competency Framework, HR Professional Levels" />
+  <meta name="author" content="National Human Resource Certification Academy" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Framework | NHRCA - National Human Resource Certification Academy, UK" />
+  <meta property="og:description" content="A structured pathway for HR professionals to develop, practice, lead, and contribute to the advancement of the HR profession." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nhrca.uk/framework" />
+  <meta property="og:image" content="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+<header>
+    <!-- Topbar -->
+    <div class="nh-topbar d-none d-lg-block">
+      <div class="container nh-container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-4">
+            <span class="topbar-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+            <span class="topbar-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <span class="topbar-item"><i class="bi bi-shield-check"></i> UK Professional Certification Body</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nh-navbar sticky-top" id="mainNavbar" aria-label="Main navigation">
+      <div class="container nh-container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="https://nhrca.uk/" aria-label="NHRCA Home">
+          <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" alt="National Human Resource Certification Academy - NHRCA UK Logo" class="nh-navbar-logo" width="190" height="52" onerror="this.onerror=null;this.src='imgs/nhrca-logo-fallback.svg';" />
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="https://nhrca.uk/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nhrca.uk/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nhrca.uk/about-us">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="standardsDropdown">
+                Standards
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="standardsDropdown">
+                <li><a class="dropdown-item" href="https://nhrca.uk/nhrca-standard"><i class="bi bi-award me-2"></i>NHRCA Standard</a></li>
+                <li><a class="dropdown-item" href="https://nhrca.uk/institutional-standard"><i class="bi bi-building me-2"></i>Institutional Standard</a></li>
+                <li><a class="dropdown-item" href="https://nhrca.uk/course-standard"><i class="bi bi-journal-text me-2"></i>Course Standard</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://nhrca.uk/framework" aria-current="page">Framework</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="accreditationDropdown">
+                Accreditation
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="accreditationDropdown">
+                <li><a class="dropdown-item" href="https://nhrca.uk/course-accreditation"><i class="bi bi-mortarboard me-2"></i>Course Accreditation</a></li>
+                <li><a class="dropdown-item" href="https://nhrca.uk/institute-accreditation"><i class="bi bi-bank me-2"></i>Institute Accreditation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nhrca.uk/credential">Credential</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="corporateDropdown">
+                Certify Corporate
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="corporateDropdown">
+                <li><a class="dropdown-item" href="https://nhrca.uk/nhrca-shrp"><i class="bi bi-briefcase me-2"></i>NHRCA Standard for Human Resource Practice (NHRCA-SHRP)</a></li>
+                <li><a class="dropdown-item" href="https://nhrca.uk/apply-for-accreditation"><i class="bi bi-file-earmark-check me-2"></i>Apply for Accreditation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-blue btn-verify" href="https://nhrca.uk/verify"><i class="bi bi-patch-check"></i> Verify</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       FRAMEWORK PAGE SECTIONS
+  =========================================== -->
+  <!-- ==========================================
+       FRAMEWORK PAGE SECTIONS
+  =========================================== -->
+
+  <!-- ===== FRAMEWORK HERO ===== -->
+  <section class="framework-hero" id="framework-hero">
+    <div class="container nh-container">
+      <nav aria-label="breadcrumb" class="framework-hero-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="https://nhrca.uk/"><i class="bi bi-house-door"></i> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Framework</li>
+        </ol>
+      </nav>
+      <span class="framework-hero-badge"><i class="bi bi-diagram-3"></i> Professional Framework</span>
+      <h1 class="framework-hero-title">NHRCA Professional Framework</h1>
+      <p class="framework-hero-subtitle">A structured pathway for HR professionals to develop, practice, lead, and contribute to the advancement of the HR profession.</p>
+    </div>
+  </section>
+
+  <!-- ===== FRAMEWORK INTRODUCTION ===== -->
+  <section class="section d-none" id="framework-introduction">
+    <div class="container nh-container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-7">
+          <span class="section-eyebrow">Introduction</span>
+          <h2 class="section-title">Professional Progression Framework</h2>
+          <div class="section-divider"></div>
+          <div class="framework-intro-text">
+            <p>The NHRCA Professional Framework defines a structured pathway for HR professionals across <span class="text-highlight">different professional levels</span>, based on education, professional experience, and focused competency areas.</p>
+            <p>The framework reflects increasing levels of professional contribution &mdash; from <span class="text-highlight">HR administration</span> and <span class="text-highlight">HR core functions</span> through to <span class="text-highlight">strategic HR</span> &mdash; guiding professionals as they develop, practice, lead, and contribute to the advancement of the HR profession.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="framework-intro-overview">
+            <h3 class="framework-overview-title"><i class="bi bi-list-check"></i> Framework Overview</h3>
+            <ul class="framework-overview-list">
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Five professional stages</strong> from Learn &amp; Practice to Legendary HR Professional.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Education &amp; experience</strong> requirements defined per stage.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Focused competency areas</strong> across HR Administration, HR Core Function, and Strategic HR.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Increasing contribution</strong> from operational to strategic and advisory levels.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROFESSIONAL PROGRESSION TIMELINE ===== -->
+  <section class="section framework-progression-section" id="progression-timeline">
+    <div class="container nh-container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow justify-content-center">Progression Pathway</span>
+        <h2 class="section-title">Professional Progression Framework</h2>
+        <p class="section-subtitle mx-auto">Five stages of professional development, from foundational HR practice to legendary contribution to the HR profession.</p>
+      </div>
+
+      <!-- Timeline overview (horizontal on desktop, vertical on mobile) -->
+      <div class="framework-timeline">
+        <div class="framework-timeline-row">
+          <!-- Stage 1 -->
+          <div class="framework-stage">
+            <span class="framework-stage-marker">1</span>
+            <span class="framework-stage-theme">Practice &amp; Lead</span>
+            <p class="framework-stage-title">Associate HR Professional</p>
+          </div>
+          <!-- Stage 2 -->
+          <div class="framework-stage">
+            <span class="framework-stage-marker">2</span>
+            <span class="framework-stage-theme">Learn &amp; Practice</span>
+            <p class="framework-stage-title">HR Professional</p>
+          </div>
+          <!-- Stage 3 -->
+          <div class="framework-stage">
+            <span class="framework-stage-marker">3</span>
+            <span class="framework-stage-theme">Advice &amp; Contribute</span>
+            <p class="framework-stage-title">Senior HR Professional</p>
+          </div>
+          <!-- Stage 4 -->
+          <div class="framework-stage framework-stage-legendary">
+            <span class="framework-stage-marker"><i class="bi bi-stars"></i></span>
+            <span class="framework-stage-theme">Legendary</span>
+            <p class="framework-stage-title">Legendary HR Professional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDIVIDUAL LEVEL CARDS ===== -->
+  <section class="section" id="framework-levels">
+    <div class="container nh-container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow justify-content-center">Stage Details</span>
+        <h2 class="section-title">Professional Level Details</h2>
+        <p class="section-subtitle mx-auto">Education, experience, and focused competency areas for each stage of the framework.</p>
+      </div>
+
+      <div class="framework-levels-grid">
+
+        <!-- Stage 1 Card -->
+        <div class="framework-level-card">
+          <div class="framework-level-card-header">
+            <span class="framework-level-num">1</span>
+            <div class="framework-level-title-wrap">
+              <span class="framework-level-theme">Learn &amp; Practice</span>
+              <h3 class="framework-level-title">Associate HR Professional</h3>
+            </div>
+          </div>
+          <div class="framework-level-body">
+            <div class="framework-info-row">
+              <span class="framework-info-icon"><i class="bi bi-mortarboard"></i></span>
+              <div>
+                <p class="framework-info-label">Education</p>
+                <p class="framework-info-value">Graduation</p>
+              </div>
+            </div>
+            <div class="framework-info-row">
+              <span class="framework-info-icon"><i class="bi bi-briefcase"></i></span>
+              <div>
+                <p class="framework-info-label">Experience</p>
+                <p class="framework-info-value">0 to 3 years</p>
+              </div>
+            </div>
+            <div class="framework-focus-block">
+              <p class="framework-focus-label">Focused Area</p>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">HR Administration</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span>
+                  </span>
+                  <span class="framework-focus-level-text">High</span>
+                </span>
+              </div>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">HR Core Function</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Moderate</span>
+                </span>
+              </div>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">Strategic HR</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot"></span><span class="framework-focus-dot"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Low</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2 Card -->
+        <div class="framework-level-card">
+          <div class="framework-level-card-header">
+            <span class="framework-level-num">2</span>
+            <div class="framework-level-title-wrap">
+              <span class="framework-level-theme">Practice &amp; Lead</span>
+              <h3 class="framework-level-title">HR Professional</h3>
+            </div>
+          </div>
+          <div class="framework-level-body">
+            <div class="framework-info-row">
+              <span class="framework-info-icon"><i class="bi bi-mortarboard"></i></span>
+              <div>
+                <p class="framework-info-label">Education</p>
+                <p class="framework-info-value">Graduation</p>
+              </div>
+            </div>
+            <div class="framework-info-row">
+              <span class="framework-info-icon"><i class="bi bi-briefcase"></i></span>
+              <div>
+                <p class="framework-info-label">Experience</p>
+                <p class="framework-info-value">Minimum 5 years with Level-1 qualification or 8 years with HR education.</p>
+              </div>
+            </div>
+            <div class="framework-focus-block">
+              <p class="framework-focus-label">Focused Area</p>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">HR Administration</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Moderate</span>
+                </span>
+              </div>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">HR Core Function</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span>
+                  </span>
+                  <span class="framework-focus-level-text">High</span>
+                </span>
+              </div>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">Strategic HR</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Moderate</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3 Card -->
+        <div class="framework-level-card">
+          <div class="framework-level-card-header">
+            <span class="framework-level-num">3</span>
+            <div class="framework-level-title-wrap">
+              <span class="framework-level-theme">Learn &amp; Practice</span>
+              <h3 class="framework-level-title">Senior HR Professional</h3>
+            </div>
+          </div>
+          <div class="framework-level-body">
+            <div class="framework-info-row">
+              <span class="framework-info-icon"><i class="bi bi-mortarboard"></i></span>
+              <div>
+                <p class="framework-info-label">Education</p>
+                <p class="framework-info-value">Graduation</p>
+              </div>
+            </div>
+            <div class="framework-info-row">
+              <span class="framework-info-icon"><i class="bi bi-briefcase"></i></span>
+              <div>
+                <p class="framework-info-label">Experience</p>
+                <p class="framework-info-value">Minimum 8 years with Level-2 qualification or 12 years with HR education.</p>
+              </div>
+            </div>
+            <div class="framework-focus-block">
+              <p class="framework-focus-label">Focused Area</p>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">HR Administration</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot"></span><span class="framework-focus-dot"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Very Low</span>
+                </span>
+              </div>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">Core Function</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Moderate</span>
+                </span>
+              </div>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">Strategic HR</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span>
+                  </span>
+                  <span class="framework-focus-level-text">High</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 4 Card -->
+        <div class="framework-level-card">
+          <div class="framework-level-card-header">
+            <span class="framework-level-num">4</span>
+            <div class="framework-level-title-wrap">
+              <span class="framework-level-theme">Advice &amp; Contribute</span>
+              <h3 class="framework-level-title">Legendary HR Professional</h3>
+            </div>
+          </div>
+          <div class="framework-level-body">
+            <div class="framework-info-row">
+              <span class="framework-info-icon"><i class="bi bi-mortarboard"></i></span>
+              <div>
+                <p class="framework-info-label">Education</p>
+                <p class="framework-info-value">Graduation</p>
+              </div>
+            </div>
+            <div class="framework-info-row">
+              <span class="framework-info-icon"><i class="bi bi-briefcase"></i></span>
+              <div>
+                <p class="framework-info-label">Experience</p>
+                <p class="framework-info-value">Minimum 15 years with Level-3 qualification or 20 years with HR education.</p>
+              </div>
+            </div>
+            <div class="framework-special">
+              <p class="framework-special-label"><i class="bi bi-star"></i> Special Requirement</p>
+              <p class="framework-special-text">Proven track record to contribute HR development either in Academic or in professional area.</p>
+            </div>
+            <div class="framework-focus-block">
+              <p class="framework-focus-label">Focused Area</p>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">HR Administration</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot"></span><span class="framework-focus-dot"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Very Low</span>
+                </span>
+              </div>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">HR Core Function</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Moderate</span>
+                </span>
+              </div>
+              <div class="framework-focus-item">
+                <span class="framework-focus-name">Strategic HR</span>
+                <span class="framework-focus-level">
+                  <span class="framework-focus-dots">
+                    <span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span><span class="framework-focus-dot filled"></span>
+                  </span>
+                  <span class="framework-focus-level-text">Very High</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPETENCY FOCUS COMPARISON ===== -->
+  <section class="section framework-comparison-section" id="competency-comparison">
+    <div class="container nh-container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow justify-content-center">Competency Focus</span>
+        <h2 class="section-title">Focused Area Comparison</h2>
+        <p class="section-subtitle mx-auto">A side-by-side comparison of competency focus across the four stages with supplied focused-area data. Levels are visual representations of the qualitative descriptions provided.</p>
+      </div>
+
+      <div class="framework-comparison-table-wrap">
+        <table class="framework-comparison-table">
+          <thead>
+            <tr>
+              <th>Professional Stage</th>
+              <th class="framework-comp-center">HR Administration</th>
+              <th class="framework-comp-center">HR Core Function / Core Function</th>
+              <th class="framework-comp-center">Strategic HR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="framework-comp-stage"><span class="framework-comp-stage-num">1</span>Learn &amp; Practice</span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span></span>
+                  <span class="framework-comp-level-text">High</span>
+                </span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot"></span></span>
+                  <span class="framework-comp-level-text">Moderate</span>
+                </span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot"></span><span class="framework-comp-dot"></span></span>
+                  <span class="framework-comp-level-text">Low</span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="framework-comp-stage"><span class="framework-comp-stage-num">2</span>Associate HR Professional</span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot"></span></span>
+                  <span class="framework-comp-level-text">Moderate</span>
+                </span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span></span>
+                  <span class="framework-comp-level-text">High</span>
+                </span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot"></span></span>
+                  <span class="framework-comp-level-text">Moderate</span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="framework-comp-stage"><span class="framework-comp-stage-num">3</span>HR Professional</span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot"></span><span class="framework-comp-dot"></span></span>
+                  <span class="framework-comp-level-text">Very Low</span>
+                </span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot"></span></span>
+                  <span class="framework-comp-level-text">Moderate</span>
+                </span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span></span>
+                  <span class="framework-comp-level-text">High</span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="framework-comp-stage"><span class="framework-comp-stage-num">4</span>Senior HR Professional</span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot"></span><span class="framework-comp-dot"></span></span>
+                  <span class="framework-comp-level-text">Very Low</span>
+                </span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot"></span></span>
+                  <span class="framework-comp-level-text">Moderate</span>
+                </span>
+              </td>
+              <td class="framework-comp-center">
+                <span class="framework-comp-level">
+                  <span class="framework-comp-dots"><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span><span class="framework-comp-dot filled"></span></span>
+                  <span class="framework-comp-level-text">Very High</span>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-center text-muted-soft mt-3 mb-0" style="font-size: 0.85rem;">Note: Stage 3 uses &ldquo;Core Function&rdquo; in the original framework, while other stages use &ldquo;HR Core Function&rdquo;. The original wording is preserved. Levels are visual representations of qualitative descriptions, not numerical scores.</p>
+    </div>
+  </section>
+
+  <!-- ===== FRAMEWORK SUMMARY ===== -->
+  <section class="section framework-summary-section" id="framework-summary">
+    <div class="container nh-container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="framework-summary-card">
+            <div class="framework-summary-icon"><i class="bi bi-diagram-3"></i></div>
+            <h2 class="framework-summary-title">Developing HR Professionals at Every Level</h2>
+            <p class="framework-summary-text">The NHRCA Professional Framework presents different stages of professional development, with different education, experience, and competency focus requirements &mdash; guiding HR professionals from foundational practice through strategic leadership and advisory contribution.</p>
+            <div class="framework-summary-features">
+              <span class="framework-summary-feature"><i class="bi bi-mortarboard"></i> Education Pathway</span>
+              <span class="framework-summary-feature"><i class="bi bi-briefcase"></i> Experience Milestones</span>
+              <span class="framework-summary-feature"><i class="bi bi-graph-up"></i> Competency Progression</span>
+              <span class="framework-summary-feature"><i class="bi bi-people"></i> Strategic Contribution</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="nh-footer">
+    <div class="container nh-container">
+      <div class="row g-4 g-lg-5 pb-4">
+        <!-- Column 1: Brand -->
+        <div class="col-lg-4 col-md-12">
+          <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" alt="NHRCA UK Logo" class="footer-logo" onerror="this.onerror=null;this.src='imgs/nhrca-logo-fallback.svg';" />
+          <p>The National Human Resource Certification Academy (NHRCA), UK promotes globally relevant standards, professional competence, and responsible people management practices in Human Resource Management.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/">Home</a></li>
+            <li><a href="https://nhrca.uk/about-us">About Us</a></li>
+            <li><a href="https://nhrca.uk/contact">Contact</a></li>
+            <li><a href="https://nhrca.uk/verify">Verify</a></li>
+            <li><a href="https://nhrca.uk/credential">Credential</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Standards -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5 class="footer-title">Standards &amp; Framework</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/nhrca-standard">NHRCA Standard</a></li>
+            <li><a href="https://nhrca.uk/institutional-standard">Institutional Standard</a></li>
+            <li><a href="https://nhrca.uk/course-standard">Course Standard</a></li>
+            <li><a href="https://nhrca.uk/framework">NHRCA Framework</a></li>
+            <li><a href="https://nhrca.uk/nhrca-shrp">NHRCA-SHRP</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Accreditation -->
+        <div class="col-lg-3 col-md-5 col-12">
+          <h5 class="footer-title">Accreditation</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/course-accreditation">Course Accreditation</a></li>
+            <li><a href="https://nhrca.uk/institute-accreditation">Institute Accreditation</a></li>
+            <li><a href="https://nhrca.uk/apply-for-accreditation">Apply for Accreditation</a></li>
+          </ul>
+          <div class="mt-3">
+            <span class="footer-contact-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+            <span class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="row align-items-center g-2">
+          <div class="col-md-6">
+            &copy; 2026 National Human Resource Certification Academy. All rights reserved.
+          </div>
+          <div class="col-md-6">
+            <div class="footer-bottom-links">
+              <a href="https://nhrca.uk/privacy-policy">Privacy Policy</a>
+              <a href="https://nhrca.uk/refund-policy">Refund Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    /* ==========================================
+       GLOBAL JAVASCRIPT (reused from Homepage)
+    =========================================== */
+
+    /* ===== NAVBAR JAVASCRIPT ===== */
+    (function () {
+      const navbar = document.getElementById('mainNavbar');
+      if (!navbar) return;
+      const onScroll = () => {
+        if (window.scrollY > 30) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    /* ===== DROPDOWN ACCESSIBILITY JAVASCRIPT ===== */
+    document.querySelectorAll('.nh-navbar .dropdown-item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        const collapse = document.getElementById('mainNav');
+        if (collapse && collapse.classList.contains('show') && window.innerWidth < 992) {
+          const bsCollapse = bootstrap.Collapse.getInstance(collapse) || new bootstrap.Collapse(collapse, { toggle: false });
+          bsCollapse.hide();
+        }
+      });
+    });
+
+    /* ===== FRAMEWORK PAGE HERO FADE-IN JAVASCRIPT ===== */
+    (function () {
+      const hero = document.querySelector('.framework-hero');
+      if (!hero) return;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) return;
+      hero.style.opacity = '0';
+      hero.style.transform = 'translateY(12px)';
+      hero.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          hero.style.opacity = '1';
+          hero.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    })();
+  </script>
+
+</body>
+</html>

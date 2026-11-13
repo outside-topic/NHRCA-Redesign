@@ -3361,18 +3361,1577 @@
 
  .standard-cluster-entrepreneurial {
      background-color: var(--nh-bg-section);
-    }
+ }
 
+
+
+
+
+
+ /* ==========================================
+       INSTITUTIONAL STANDARD - HERO SECTION
+    =========================================== */
+ /* Dark navy hero inspired by the uploaded screenshot */
+ .institutional-hero {
+     position: relative;
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     overflow: hidden;
+ }
+
+ .institutional-hero::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+     background-image: radial-gradient(circle at 75% 30%, rgba(48, 124, 205, 0.18) 0%, transparent 55%);
+     pointer-events: none;
+ }
+
+ .institutional-hero::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-blue-soft) 100%);
+ }
+
+ .institutional-hero .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .institutional-hero-breadcrumb {
+     margin-bottom: 1.25rem;
+ }
+
+ .institutional-hero-breadcrumb .breadcrumb {
+     margin: 0;
+     padding: 0;
+     background: transparent;
+     font-size: 0.88rem;
+ }
+
+ .institutional-hero-breadcrumb .breadcrumb-item a {
+     color: rgba(255, 255, 255, 0.7);
+     text-decoration: none;
+     transition: var(--nh-transition);
+ }
+
+ .institutional-hero-breadcrumb .breadcrumb-item a:hover {
+     color: var(--nh-white);
+ }
+
+ .institutional-hero-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-white);
+     font-weight: 600;
+ }
+
+ .institutional-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+     content: "/";
+     color: rgba(255, 255, 255, 0.45);
+     padding: 0 0.5rem;
+ }
+
+ .institutional-hero-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.4rem 0.95rem;
+     background-color: rgba(48, 124, 205, 0.25);
+     color: var(--nh-blue-soft);
+     border: 1px solid rgba(48, 124, 205, 0.4);
+     border-radius: 50px;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin-bottom: 1.25rem;
+ }
+
+ .institutional-hero-title {
+     color: var(--nh-white);
+     font-weight: 800;
+     font-size: clamp(2rem, 4.2vw, 2.85rem);
+     margin-bottom: 0.85rem;
+     letter-spacing: -0.02em;
+     line-height: 1.15;
+ }
+
+ .institutional-hero-subtitle {
+     color: rgba(255, 255, 255, 0.78);
+     font-size: 1.12rem;
+     line-height: 1.6;
+     max-width: 620px;
+     margin: 0;
+     font-weight: 400;
+ }
+
+ /* ==========================================
+       INSTITUTIONAL STANDARD - INTRODUCTION & CORE COMPONENTS
+    =========================================== */
+ .institutional-intro-text .text-highlight {
+     color: var(--nh-blue);
+     font-weight: 600;
+ }
+
+ .institutional-core-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-left: 4px solid var(--nh-blue);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.85rem;
+     box-shadow: var(--nh-shadow-sm);
+     position: relative;
+ }
+
+ .institutional-core-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 52px;
+     height: 52px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.4rem;
+     margin-bottom: 1.15rem;
+ }
+
+ .institutional-core-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.3rem;
+     margin-bottom: 0.75rem;
+ }
+
+ .institutional-core-card-text {
+     color: var(--nh-text-muted);
+     font-size: 0.95rem;
+     line-height: 1.7;
+     margin-bottom: 1.25rem;
+ }
+
+ .institutional-core-pill-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 0.55rem;
+ }
+
+ .institutional-core-pill-list li {
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+     font-size: 0.88rem;
+     color: var(--nh-text);
+     font-weight: 500;
+ }
+
+ .institutional-core-pill-list li i {
+     color: var(--nh-blue);
+     font-size: 1rem;
+     flex-shrink: 0;
+ }
+
+ .institutional-core-pill-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     font-size: 0.75rem;
+     font-weight: 700;
+     flex-shrink: 0;
+ }
+
+ /* ==========================================
+       INSTITUTIONAL STANDARD - SEVEN STANDARD CARDS
+    =========================================== */
+ .institutional-standards-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .institutional-standards-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1.75rem;
+ }
+
+ .institutional-standard-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     transition: var(--nh-transition);
+ }
+
+ .institutional-standard-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-3px);
+ }
+
+ /* 7th card spans full width */
+ .institutional-standard-card-full {
+     grid-column: 1 / -1;
+ }
+
+ .institutional-card-header {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     padding: 1.15rem 1.5rem;
+     display: flex;
+     align-items: center;
+     gap: 0.85rem;
+ }
+
+ .institutional-card-header-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 36px;
+     height: 36px;
+     border-radius: var(--nh-radius-sm);
+     background-color: rgba(255, 255, 255, 0.12);
+     color: var(--nh-white);
+     font-size: 0.95rem;
+     font-weight: 700;
+     flex-shrink: 0;
+ }
+
+ .institutional-card-header-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: 1.1rem;
+     margin: 0;
+     line-height: 1.3;
+ }
+
+ .institutional-card-body {
+     padding: 1.5rem 1.5rem 1.75rem;
+     flex: 1 1 auto;
+ }
+
+ .institutional-card-intro {
+     color: var(--nh-text);
+     font-size: 0.94rem;
+     line-height: 1.65;
+     margin-bottom: 1.25rem;
+     padding-bottom: 1.25rem;
+     border-bottom: 1px solid var(--nh-border-soft);
+     font-style: italic;
+ }
+
+ .institutional-subsection {
+     margin-bottom: 1.1rem;
+ }
+
+ .institutional-subsection:last-child {
+     margin-bottom: 0;
+ }
+
+ .institutional-subsection-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 0.92rem;
+     margin-bottom: 0.3rem;
+     line-height: 1.4;
+     display: flex;
+     align-items: baseline;
+     gap: 0.4rem;
+ }
+
+ .institutional-subsection-num {
+     color: var(--nh-blue);
+     font-weight: 700;
+     flex-shrink: 0;
+ }
+
+ .institutional-subsection-text {
+     color: var(--nh-text-muted);
+     font-size: 0.9rem;
+     line-height: 1.65;
+     margin: 0;
+     padding-left: 0;
+ }
+
+ /* 7th card body uses a 2-column subsection layout on desktop */
+ .institutional-standard-card-full .institutional-card-body {
+     padding: 1.75rem 1.75rem 2rem;
+ }
+
+ .institutional-subsection-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1.5rem;
+ }
+
+ /* ==========================================
+       INSTITUTIONAL STANDARD - INSTITUTIONAL EXCELLENCE
+    =========================================== */
+ .institutional-excellence-section {
+     background-color: var(--nh-white);
+ }
+
+ .institutional-excellence-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 3rem 2.5rem;
+     text-align: center;
+     box-shadow: var(--nh-shadow-sm);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .institutional-excellence-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 80px;
+     height: 4px;
+     background: linear-gradient(90deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     border-radius: 0 0 4px 4px;
+ }
+
+ .institutional-excellence-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.7rem;
+     margin-bottom: 1.5rem;
+ }
+
+ .institutional-excellence-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: clamp(1.6rem, 2.5vw, 2rem);
+     margin-bottom: 1.25rem;
+ }
+
+ .institutional-excellence-text {
+     color: var(--nh-text-muted);
+     font-size: 1.05rem;
+     line-height: 1.8;
+     max-width: 760px;
+     margin: 0 auto;
+ }
+
+ .institutional-excellence-features {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 1.5rem 2.5rem;
+     margin-top: 2rem;
+     padding-top: 2rem;
+     border-top: 1px solid var(--nh-border-soft);
+ }
+
+ .institutional-excellence-feature {
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+     color: var(--nh-navy);
+     font-size: 0.92rem;
+     font-weight: 600;
+ }
+
+ .institutional-excellence-feature i {
+     color: var(--nh-blue);
+     font-size: 1.15rem;
+ }
+
+
+
+
+
+ /* ==========================================
+       FRAMEWORK PAGE - HERO SECTION
+    =========================================== */
+ .framework-hero {
+     position: relative;
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     overflow: hidden;
+ }
+
+ .framework-hero::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+     background-image: radial-gradient(circle at 75% 30%, rgba(48, 124, 205, 0.18) 0%, transparent 55%);
+     pointer-events: none;
+ }
+
+ .framework-hero::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-blue-soft) 100%);
+ }
+
+ .framework-hero .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .framework-hero-breadcrumb {
+     margin-bottom: 1.25rem;
+ }
+
+ .framework-hero-breadcrumb .breadcrumb {
+     margin: 0;
+     padding: 0;
+     background: transparent;
+     font-size: 0.88rem;
+ }
+
+ .framework-hero-breadcrumb .breadcrumb-item a {
+     color: rgba(255, 255, 255, 0.7);
+     text-decoration: none;
+     transition: var(--nh-transition);
+ }
+
+ .framework-hero-breadcrumb .breadcrumb-item a:hover {
+     color: var(--nh-white);
+ }
+
+ .framework-hero-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-white);
+     font-weight: 600;
+ }
+
+ .framework-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+     content: "/";
+     color: rgba(255, 255, 255, 0.45);
+     padding: 0 0.5rem;
+ }
+
+ .framework-hero-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.4rem 0.95rem;
+     background-color: rgba(48, 124, 205, 0.25);
+     color: var(--nh-blue-soft);
+     border: 1px solid rgba(48, 124, 205, 0.4);
+     border-radius: 50px;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin-bottom: 1.25rem;
+ }
+
+ .framework-hero-title {
+     color: var(--nh-white);
+     font-weight: 800;
+     font-size: clamp(2rem, 4.2vw, 2.85rem);
+     margin-bottom: 0.85rem;
+     letter-spacing: -0.02em;
+     line-height: 1.15;
+ }
+
+ .framework-hero-subtitle {
+     color: rgba(255, 255, 255, 0.78);
+     font-size: 1.12rem;
+     line-height: 1.6;
+     max-width: 660px;
+     margin: 0;
+     font-weight: 400;
+ }
+
+ /* ==========================================
+       FRAMEWORK PAGE - INTRODUCTION
+    =========================================== */
+ .framework-intro-text .text-highlight {
+     color: var(--nh-blue);
+     font-weight: 600;
+ }
+
+ .framework-intro-overview {
+     background-color: var(--nh-bg-section);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 2rem 1.85rem;
+     height: 100%;
+ }
+
+ .framework-overview-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.2rem;
+     margin-bottom: 1.25rem;
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+ }
+
+ .framework-overview-title i {
+     color: var(--nh-blue);
+     font-size: 1.4rem;
+ }
+
+ .framework-overview-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 0.85rem;
+ }
+
+ .framework-overview-list li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+     font-size: 0.93rem;
+     color: var(--nh-text);
+     line-height: 1.55;
+ }
+
+ .framework-overview-list li i {
+     color: var(--nh-blue);
+     font-size: 1.1rem;
+     margin-top: 0.15rem;
+     flex-shrink: 0;
+ }
+
+ .framework-overview-list li strong {
+     color: var(--nh-navy);
+     font-weight: 700;
+ }
+
+ /* ==========================================
+       FRAMEWORK PAGE - PROGRESSION TIMELINE
+    =========================================== */
+ .framework-progression-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .framework-timeline {
+     position: relative;
+     padding-top: 1rem;
+ }
+
+ /* Horizontal connecting line on desktop (lg+) */
+ .framework-timeline::before {
+     content: "";
+     position: absolute;
+     top: 2.75rem;
+     left: 4%;
+     right: 4%;
+     height: 3px;
+     background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+     border-radius: 3px;
+     z-index: 0;
+ }
+
+ .framework-timeline-row {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1rem;
+     position: relative;
+     z-index: 1;
+ }
+
+ .framework-stage {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+ }
+
+ .framework-stage-marker {
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background-color: var(--nh-white);
+     border: 3px solid var(--nh-blue);
+     color: var(--nh-navy);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.15rem;
+     font-weight: 800;
+     margin-bottom: 1rem;
+     box-shadow: var(--nh-shadow-sm);
+     flex-shrink: 0;
+     position: relative;
+     z-index: 2;
+ }
+
+ .framework-stage-legendary .framework-stage-marker {
+     background-color: var(--nh-navy);
+     border-color: var(--nh-blue-soft);
+     color: var(--nh-white);
+ }
+
+ .framework-stage-theme {
+     display: inline-block;
+     font-size: 0.74rem;
+     font-weight: 700;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     color: var(--nh-blue);
+     background-color: var(--nh-blue-tint);
+     padding: 0.3rem 0.7rem;
+     border-radius: 50px;
+     margin-bottom: 0.65rem;
+     line-height: 1.3;
+ }
+
+ .framework-stage-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 0.98rem;
+     line-height: 1.3;
+     margin-bottom: 0;
+     min-height: 2.6em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ /* ==========================================
+       FRAMEWORK PAGE - LEVEL CARDS (detailed)
+    =========================================== */
+ .framework-levels-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1.5rem;
+ }
+
+ .framework-level-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     overflow: hidden;
+     transition: var(--nh-transition);
+     display: flex;
+     flex-direction: column;
+ }
+
+ .framework-level-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-3px);
+ }
+
+ .framework-level-card-header {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     padding: 1.35rem 1.5rem;
+     display: flex;
+     align-items: center;
+     gap: 0.85rem;
+ }
+
+ .framework-level-card-legendary .framework-level-card-header {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-navy-soft) 100%);
+ }
+
+ .framework-level-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     border-radius: var(--nh-radius-sm);
+     background-color: rgba(255, 255, 255, 0.14);
+     color: var(--nh-white);
+     font-size: 1.05rem;
+     font-weight: 800;
+     flex-shrink: 0;
+ }
+
+ .framework-level-card-legendary .framework-level-num {
+     background-color: var(--nh-blue-soft);
+ }
+
+ .framework-level-title-wrap {
+     flex: 1 1 auto;
+ }
+
+ .framework-level-theme {
+     display: inline-block;
+     font-size: 0.7rem;
+     font-weight: 700;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     color: var(--nh-blue-soft);
+     margin-bottom: 0.2rem;
+ }
+
+ .framework-level-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: 1.05rem;
+     margin: 0;
+     line-height: 1.3;
+ }
+
+ .framework-level-body {
+     padding: 1.5rem;
+     flex: 1 1 auto;
+ }
+
+ .framework-info-row {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+     padding: 0.75rem 0;
+     border-bottom: 1px solid var(--nh-border-soft);
+ }
+
+ .framework-info-row:last-of-type {
+     border-bottom: none;
+ }
+
+ .framework-info-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 36px;
+     height: 36px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1rem;
+     flex-shrink: 0;
+ }
+
+ .framework-info-label {
+     font-size: 0.76rem;
+     font-weight: 700;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--nh-text-muted);
+     margin-bottom: 0.2rem;
+ }
+
+ .framework-info-value {
+     font-size: 0.93rem;
+     color: var(--nh-navy);
+     font-weight: 600;
+     line-height: 1.5;
+ }
+
+ .framework-focus-block {
+     margin-top: 1rem;
+     padding-top: 1rem;
+     border-top: 1px solid var(--nh-border-soft);
+ }
+
+ .framework-focus-label {
+     font-size: 0.76rem;
+     font-weight: 700;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--nh-text-muted);
+     margin-bottom: 0.75rem;
+ }
+
+ .framework-focus-item {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 0.75rem;
+     margin-bottom: 0.6rem;
+ }
+
+ .framework-focus-item:last-child {
+     margin-bottom: 0;
+ }
+
+ .framework-focus-name {
+     font-size: 0.85rem;
+     color: var(--nh-text);
+     font-weight: 500;
+ }
+
+ .framework-focus-level {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+ }
+
+ .framework-focus-dots {
+     display: inline-flex;
+     gap: 3px;
+ }
+
+ .framework-focus-dot {
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+     background-color: var(--nh-border);
+ }
+
+ .framework-focus-dot.filled {
+     background-color: var(--nh-blue);
+ }
+
+ .framework-focus-level-text {
+     font-size: 0.76rem;
+     font-weight: 600;
+     color: var(--nh-text-muted);
+     min-width: 64px;
+     text-align: right;
+ }
+
+ .framework-special {
+     margin-top: 1rem;
+     padding: 0.85rem 1rem;
+     background-color: var(--nh-navy-tint);
+     border-left: 3px solid var(--nh-navy);
+     border-radius: var(--nh-radius-sm);
+ }
+
+ .framework-special-label {
+     font-size: 0.74rem;
+     font-weight: 700;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--nh-navy);
+     margin-bottom: 0.3rem;
+     display: flex;
+     align-items: center;
+     gap: 0.4rem;
+ }
+
+ .framework-special-text {
+     font-size: 0.85rem;
+     color: var(--nh-text);
+     line-height: 1.55;
+     margin: 0;
+ }
+
+ /* Legendary card (Stage 5) — no detailed data, distinguished presentation */
+ .framework-level-card-legendary .framework-level-body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 2.5rem 1.75rem;
+ }
+
+ .framework-legendary-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     font-size: 1.7rem;
+     margin-bottom: 1.25rem;
+ }
+
+ .framework-legendary-text {
+     color: var(--nh-text-muted);
+     font-size: 0.92rem;
+     line-height: 1.65;
+     margin: 0;
+ }
+
+ /* ==========================================
+       FRAMEWORK PAGE - COMPETENCY COMPARISON
+    =========================================== */
+ .framework-comparison-section {
+     background-color: var(--nh-white);
+ }
+
+ .framework-comparison-table-wrap {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-sm);
+ }
+
+ .framework-comparison-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 0;
+ }
+
+ .framework-comparison-table thead th {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     padding: 1.1rem 1.25rem;
+     font-weight: 700;
+     font-size: 0.88rem;
+     text-align: left;
+     letter-spacing: 0.02em;
+     border-right: 1px solid rgba(255, 255, 255, 0.08);
+ }
+
+ .framework-comparison-table thead th:last-child {
+     border-right: none;
+ }
+
+ .framework-comparison-table thead th.framework-comp-center {
+     text-align: center;
+ }
+
+ .framework-comparison-table tbody td {
+     padding: 1.1rem 1.25rem;
+     border-bottom: 1px solid var(--nh-border-soft);
+     border-right: 1px solid var(--nh-border-soft);
+     font-size: 0.92rem;
+     vertical-align: middle;
+ }
+
+ .framework-comparison-table tbody td:last-child {
+     border-right: none;
+ }
+
+ .framework-comparison-table tbody tr:last-child td {
+     border-bottom: none;
+ }
+
+ .framework-comparison-table tbody tr:nth-child(even) td {
+     background-color: var(--nh-bg-section);
+ }
+
+ .framework-comparison-table tbody tr:hover td {
+     background-color: var(--nh-blue-tint);
+ }
+
+ .framework-comp-stage {
+     color: var(--nh-navy);
+     font-weight: 700;
+ }
+
+ .framework-comp-stage-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 28px;
+     height: 28px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 0.82rem;
+     font-weight: 700;
+     margin-right: 0.6rem;
+ }
+
+ .framework-comp-center {
+     text-align: center;
+ }
+
+ .framework-comp-level {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+ }
+
+ .framework-comp-dots {
+     display: inline-flex;
+     gap: 4px;
+ }
+
+ .framework-comp-dot {
+     width: 9px;
+     height: 9px;
+     border-radius: 50%;
+     background-color: var(--nh-border);
+ }
+
+ .framework-comp-dot.filled {
+     background-color: var(--nh-blue);
+ }
+
+ .framework-comp-level-text {
+     font-size: 0.82rem;
+     font-weight: 600;
+     color: var(--nh-text);
+ }
+
+ /* ==========================================
+       FRAMEWORK PAGE - FINAL SUMMARY
+    =========================================== */
+ .framework-summary-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .framework-summary-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 3rem 2.5rem;
+     text-align: center;
+     box-shadow: var(--nh-shadow-sm);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .framework-summary-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 80px;
+     height: 4px;
+     background: linear-gradient(90deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     border-radius: 0 0 4px 4px;
+ }
+
+ .framework-summary-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.7rem;
+     margin-bottom: 1.5rem;
+ }
+
+ .framework-summary-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: clamp(1.6rem, 2.5vw, 2rem);
+     margin-bottom: 1.25rem;
+ }
+
+ .framework-summary-text {
+     color: var(--nh-text-muted);
+     font-size: 1.05rem;
+     line-height: 1.8;
+     max-width: 720px;
+     margin: 0 auto 2rem;
+ }
+
+ .framework-summary-features {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 1.5rem 2.5rem;
+     padding-top: 2rem;
+     border-top: 1px solid var(--nh-border-soft);
+ }
+
+ .framework-summary-feature {
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+     color: var(--nh-navy);
+     font-size: 0.92rem;
+     font-weight: 600;
+ }
+
+ .framework-summary-feature i {
+     color: var(--nh-blue);
+     font-size: 1.15rem;
+ }
+
+
+
+
+ /* ==========================================
+       COURSE ACCREDITATION - HERO SECTION
+    =========================================== */
+ .course-accreditation-hero {
+     position: relative;
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     overflow: hidden;
+ }
+
+ .course-accreditation-hero::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+     background-image: radial-gradient(circle at 75% 30%, rgba(48, 124, 205, 0.18) 0%, transparent 55%);
+     pointer-events: none;
+ }
+
+ .course-accreditation-hero::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-blue-soft) 100%);
+ }
+
+ .course-accreditation-hero .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .course-accreditation-hero-breadcrumb {
+     margin-bottom: 1.25rem;
+ }
+
+ .course-accreditation-hero-breadcrumb .breadcrumb {
+     margin: 0;
+     padding: 0;
+     background: transparent;
+     font-size: 0.88rem;
+ }
+
+ .course-accreditation-hero-breadcrumb .breadcrumb-item a {
+     color: rgba(255, 255, 255, 0.7);
+     text-decoration: none;
+     transition: var(--nh-transition);
+ }
+
+ .course-accreditation-hero-breadcrumb .breadcrumb-item a:hover {
+     color: var(--nh-white);
+ }
+
+ .course-accreditation-hero-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-white);
+     font-weight: 600;
+ }
+
+ .course-accreditation-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+     content: "/";
+     color: rgba(255, 255, 255, 0.45);
+     padding: 0 0.5rem;
+ }
+
+ .course-accreditation-hero-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.4rem 0.95rem;
+     background-color: rgba(48, 124, 205, 0.25);
+     color: var(--nh-blue-soft);
+     border: 1px solid rgba(48, 124, 205, 0.4);
+     border-radius: 50px;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin-bottom: 1.25rem;
+ }
+
+ .course-accreditation-hero-title {
+     color: var(--nh-white);
+     font-weight: 800;
+     font-size: clamp(2rem, 4.2vw, 2.85rem);
+     margin-bottom: 0.85rem;
+     letter-spacing: -0.02em;
+     line-height: 1.15;
+ }
+
+ .course-accreditation-hero-subtitle {
+     color: rgba(255, 255, 255, 0.78);
+     font-size: 1.12rem;
+     line-height: 1.6;
+     max-width: 640px;
+     margin: 0;
+     font-weight: 400;
+ }
+
+ /* ==========================================
+       COURSE ACCREDITATION - BENEFITS SECTION
+    =========================================== */
+ .course-accreditation-benefits-section {
+     background-color: var(--nh-bg-section);
+ }
+
+ .course-accreditation-benefits-intro {
+     max-width: 780px;
+     margin: 0 auto 3rem;
+     text-align: center;
+ }
+
+ .course-accreditation-benefits-intro p {
+     color: var(--nh-text-muted);
+     font-size: 1.02rem;
+     line-height: 1.75;
+     margin: 0;
+ }
+
+ .course-accreditation-benefits-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1.5rem;
+ }
+
+ .course-accreditation-benefit-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.75rem;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+     height: 100%;
+ }
+
+ .course-accreditation-benefit-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background-color: var(--nh-blue);
+     transform: scaleX(0);
+     transform-origin: left;
+     transition: var(--nh-transition);
+ }
+
+ .course-accreditation-benefit-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-4px);
+ }
+
+ .course-accreditation-benefit-card:hover::before {
+     transform: scaleX(1);
+ }
+
+ .course-accreditation-benefit-num {
+     position: absolute;
+     top: 1.25rem;
+     right: 1.5rem;
+     font-size: 2.25rem;
+     font-weight: 800;
+     color: var(--nh-blue-tint);
+     line-height: 1;
+     letter-spacing: -0.03em;
+ }
+
+ .course-accreditation-benefit-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.5rem;
+     margin-bottom: 1.25rem;
+ }
+
+ .course-accreditation-benefit-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.1rem;
+     margin-bottom: 0.65rem;
+     padding-right: 2.5rem;
+     line-height: 1.35;
+ }
+
+ .course-accreditation-benefit-text {
+     color: var(--nh-text-muted);
+     font-size: 0.93rem;
+     line-height: 1.7;
+     margin: 0;
+ }
+
+ /* ==========================================
+       COURSE ACCREDITATION - PROCESS SECTION
+    =========================================== */
+ .course-accreditation-process-section {
+     background-color: var(--nh-white);
+ }
+
+ .course-accreditation-process-intro {
+     max-width: 780px;
+     margin: 0 auto 3rem;
+     text-align: center;
+ }
+
+ .course-accreditation-process-intro p {
+     color: var(--nh-text-muted);
+     font-size: 1.02rem;
+     line-height: 1.75;
+     margin: 0;
+ }
+
+ /* Step 1 — the only documented step, given a prominent presentation */
+ .course-accreditation-step {
+     max-width: 820px;
+     margin: 0 auto;
+ }
+
+ .course-accreditation-step-card {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     border-radius: var(--nh-radius-lg);
+     padding: 2.5rem 2.5rem;
+     position: relative;
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+ }
+
+ .course-accreditation-step-card::before {
+     content: "";
+     position: absolute;
+     top: -40px;
+     right: -40px;
+     width: 180px;
+     height: 180px;
+     background-color: rgba(255, 255, 255, 0.06);
+     border-radius: 50%;
+     pointer-events: none;
+ }
+
+ .course-accreditation-step-header {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     margin-bottom: 1.5rem;
+     position: relative;
+     z-index: 1;
+ }
+
+ .course-accreditation-step-number {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.15);
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     color: var(--nh-white);
+     font-size: 1.3rem;
+     font-weight: 800;
+     flex-shrink: 0;
+ }
+
+ .course-accreditation-step-label {
+     color: var(--nh-blue-soft);
+     font-size: 0.78rem;
+     font-weight: 700;
+     letter-spacing: 0.12em;
+     text-transform: uppercase;
+     margin-bottom: 0.2rem;
+ }
+
+ .course-accreditation-step-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: 1.35rem;
+     margin: 0;
+     line-height: 1.3;
+ }
+
+ .course-accreditation-step-text {
+     color: rgba(255, 255, 255, 0.9);
+     font-size: 1.05rem;
+     line-height: 1.7;
+     margin: 0;
+     position: relative;
+     z-index: 1;
+ }
+
+ .course-accreditation-step-text a {
+     color: var(--nh-white);
+     font-weight: 700;
+     text-decoration: underline;
+     text-underline-offset: 3px;
+     transition: var(--nh-transition);
+ }
+
+ .course-accreditation-step-text a:hover {
+     color: var(--nh-blue-soft);
+ }
+
+ .course-accreditation-step-email {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     margin-top: 1.25rem;
+     padding: 0.65rem 1.1rem;
+     background-color: rgba(255, 255, 255, 0.12);
+     border-radius: 50px;
+     color: var(--nh-white);
+     font-size: 0.92rem;
+     font-weight: 600;
+     position: relative;
+     z-index: 1;
+ }
+
+ .course-accreditation-step-email i {
+     font-size: 1rem;
+ }
+
+ /* Note about subsequent steps */
+ .course-accreditation-process-note {
+     max-width: 820px;
+     margin: 1.75rem auto 0;
+     padding: 1.25rem 1.5rem;
+     background-color: var(--nh-bg-section);
+     border: 1px solid var(--nh-border);
+     border-left: 3px solid var(--nh-blue);
+     border-radius: var(--nh-radius-sm);
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+ }
+
+ .course-accreditation-process-note i {
+     color: var(--nh-blue);
+     font-size: 1.2rem;
+     margin-top: 0.1rem;
+     flex-shrink: 0;
+ }
+
+ .course-accreditation-process-note p {
+     color: var(--nh-text-muted);
+     font-size: 0.9rem;
+     line-height: 1.6;
+     margin: 0;
+ }
+
+ /* ==========================================
+       COURSE ACCREDITATION - APPLY CTA
+    =========================================== */
+ .course-accreditation-cta-section {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     color: var(--nh-white);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .course-accreditation-cta-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 55%;
+     height: 100%;
+     background-image: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+     pointer-events: none;
+ }
+
+ .course-accreditation-cta-section .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .course-accreditation-cta-content {
+     text-align: center;
+     max-width: 760px;
+     margin: 0 auto;
+ }
+
+ .course-accreditation-cta-eyebrow {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.4rem 0.95rem;
+     background-color: rgba(255, 255, 255, 0.12);
+     color: var(--nh-white);
+     border-radius: 50px;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin-bottom: 1.25rem;
+ }
+
+ .course-accreditation-cta-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: clamp(1.75rem, 3vw, 2.25rem);
+     margin-bottom: 1rem;
+     letter-spacing: -0.01em;
+ }
+
+ .course-accreditation-cta-text {
+     color: rgba(255, 255, 255, 0.88);
+     font-size: 1.1rem;
+     line-height: 1.7;
+     margin-bottom: 1.75rem;
+ }
+
+ .course-accreditation-cta-text a {
+     color: var(--nh-white);
+     font-weight: 700;
+     text-decoration: underline;
+     text-underline-offset: 3px;
+ }
+
+ .course-accreditation-cta-email {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.6rem;
+     padding: 0.75rem 1.35rem;
+     background-color: rgba(255, 255, 255, 0.1);
+     border: 1px solid rgba(255, 255, 255, 0.25);
+     border-radius: 50px;
+     color: var(--nh-white);
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 2rem;
+ }
+
+ .course-accreditation-cta-email i {
+     font-size: 1.15rem;
+ }
+
+ .course-accreditation-cta-buttons {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: center;
+ }
+
+ .course-accreditation-cta-buttons .btn {
+     min-width: 220px;
+     justify-content: center;
+ }
 
 
 
 
 
     /* ==========================================
-       INSTITUTIONAL STANDARD - HERO SECTION
+       INSTITUTE ACCREDITATION - HERO SECTION
     =========================================== */
-    /* Dark navy hero inspired by the uploaded screenshot */
-    .institutional-hero {
+    .institute-accreditation-hero {
       position: relative;
       padding-top: 3.5rem;
       padding-bottom: 3.5rem;
@@ -3380,7 +4939,7 @@
       color: var(--nh-white);
       overflow: hidden;
     }
-    .institutional-hero::before {
+    .institute-accreditation-hero::before {
       content: "";
       position: absolute;
       top: 0;
@@ -3390,7 +4949,7 @@
       background-image: radial-gradient(circle at 75% 30%, rgba(48, 124, 205, 0.18) 0%, transparent 55%);
       pointer-events: none;
     }
-    .institutional-hero::after {
+    .institute-accreditation-hero::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -3399,34 +4958,30 @@
       height: 4px;
       background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-blue-soft) 100%);
     }
-    .institutional-hero .container { position: relative; z-index: 1; }
-    .institutional-hero-breadcrumb {
-      margin-bottom: 1.25rem;
-    }
-    .institutional-hero-breadcrumb .breadcrumb {
+    .institute-accreditation-hero .container { position: relative; z-index: 1; }
+    .institute-accreditation-hero-breadcrumb { margin-bottom: 1.25rem; }
+    .institute-accreditation-hero-breadcrumb .breadcrumb {
       margin: 0;
       padding: 0;
       background: transparent;
       font-size: 0.88rem;
     }
-    .institutional-hero-breadcrumb .breadcrumb-item a {
+    .institute-accreditation-hero-breadcrumb .breadcrumb-item a {
       color: rgba(255, 255, 255, 0.7);
       text-decoration: none;
       transition: var(--nh-transition);
     }
-    .institutional-hero-breadcrumb .breadcrumb-item a:hover {
-      color: var(--nh-white);
-    }
-    .institutional-hero-breadcrumb .breadcrumb-item.active {
+    .institute-accreditation-hero-breadcrumb .breadcrumb-item a:hover { color: var(--nh-white); }
+    .institute-accreditation-hero-breadcrumb .breadcrumb-item.active {
       color: var(--nh-white);
       font-weight: 600;
     }
-    .institutional-hero-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    .institute-accreditation-hero-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       content: "/";
       color: rgba(255, 255, 255, 0.45);
       padding: 0 0.5rem;
     }
-    .institutional-hero-badge {
+    .institute-accreditation-hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
@@ -3441,7 +4996,7 @@
       text-transform: uppercase;
       margin-bottom: 1.25rem;
     }
-    .institutional-hero-title {
+    .institute-accreditation-hero-title {
       color: var(--nh-white);
       font-weight: 800;
       font-size: clamp(2rem, 4.2vw, 2.85rem);
@@ -3449,268 +5004,332 @@
       letter-spacing: -0.02em;
       line-height: 1.15;
     }
-    .institutional-hero-subtitle {
+    .institute-accreditation-hero-subtitle {
       color: rgba(255, 255, 255, 0.78);
       font-size: 1.12rem;
       line-height: 1.6;
-      max-width: 620px;
+      max-width: 640px;
       margin: 0;
       font-weight: 400;
     }
 
     /* ==========================================
-       INSTITUTIONAL STANDARD - INTRODUCTION & CORE COMPONENTS
+       INSTITUTE ACCREDITATION - BENEFITS SECTION
     =========================================== */
-    .institutional-intro-text .text-highlight {
-      color: var(--nh-blue);
-      font-weight: 600;
+    .institute-accreditation-benefits-section {
+      background-color: var(--nh-bg-section);
     }
-    .institutional-core-card {
+    .institute-accreditation-benefits-intro {
+      max-width: 820px;
+      margin: 0 auto 3rem;
+      text-align: center;
+    }
+    .institute-accreditation-benefits-intro p {
+      color: var(--nh-text-muted);
+      font-size: 1.02rem;
+      line-height: 1.75;
+      margin: 0;
+    }
+    .institute-accreditation-benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .institute-accreditation-benefit-card {
       background-color: var(--nh-white);
       border: 1px solid var(--nh-border);
-      border-left: 4px solid var(--nh-blue);
       border-radius: var(--nh-radius);
-      padding: 2rem 1.85rem;
-      box-shadow: var(--nh-shadow-sm);
+      padding: 1.85rem 1.65rem;
+      transition: var(--nh-transition);
       position: relative;
+      overflow: hidden;
+      height: 100%;
+      text-align: center;
     }
-    .institutional-core-card-icon {
+    .institute-accreditation-benefit-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var(--nh-blue);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: var(--nh-transition);
+    }
+    .institute-accreditation-benefit-card:hover {
+      border-color: var(--nh-blue-soft);
+      box-shadow: var(--nh-shadow-md);
+      transform: translateY(-4px);
+    }
+    .institute-accreditation-benefit-card:hover::before { transform: scaleX(1); }
+    .institute-accreditation-benefit-icon {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 52px;
-      height: 52px;
-      border-radius: var(--nh-radius-sm);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
       background-color: var(--nh-blue-tint);
       color: var(--nh-blue);
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin-bottom: 1.15rem;
     }
-    .institutional-core-card-title {
+    .institute-accreditation-benefit-num {
+      position: absolute;
+      top: 1rem;
+      right: 1.1rem;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--nh-blue-tint);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .institute-accreditation-benefit-title {
       color: var(--nh-navy);
       font-weight: 700;
-      font-size: 1.3rem;
-      margin-bottom: 0.75rem;
-    }
-    .institutional-core-card-text {
-      color: var(--nh-text-muted);
-      font-size: 0.95rem;
-      line-height: 1.7;
-      margin-bottom: 1.25rem;
-    }
-    .institutional-core-pill-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.55rem;
-    }
-    .institutional-core-pill-list li {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 0.88rem;
-      color: var(--nh-text);
-      font-weight: 500;
-    }
-    .institutional-core-pill-list li i {
-      color: var(--nh-blue);
       font-size: 1rem;
-      flex-shrink: 0;
-    }
-    .institutional-core-pill-num {
-      display: inline-flex;
+      margin-bottom: 0.6rem;
+      line-height: 1.35;
+      min-height: 2.7em;
+      display: flex;
       align-items: center;
       justify-content: center;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background-color: var(--nh-navy);
-      color: var(--nh-white);
-      font-size: 0.75rem;
-      font-weight: 700;
-      flex-shrink: 0;
+    }
+    .institute-accreditation-benefit-text {
+      color: var(--nh-text-muted);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      margin: 0;
     }
 
     /* ==========================================
-       INSTITUTIONAL STANDARD - SEVEN STANDARD CARDS
+       INSTITUTE ACCREDITATION - PROCESS TIMELINE
     =========================================== */
-    .institutional-standards-section {
-      background-color: var(--nh-bg-section);
-    }
-    .institutional-standards-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.75rem;
-    }
-    .institutional-standard-card {
+    .institute-accreditation-process-section {
       background-color: var(--nh-white);
-      border: 1px solid var(--nh-border);
-      border-radius: var(--nh-radius);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: var(--nh-transition);
     }
-    .institutional-standard-card:hover {
-      border-color: var(--nh-blue-soft);
-      box-shadow: var(--nh-shadow-md);
-      transform: translateY(-3px);
+    .institute-accreditation-process-intro {
+      max-width: 820px;
+      margin: 0 auto 3rem;
+      text-align: center;
     }
-    /* 7th card spans full width */
-    .institutional-standard-card-full {
-      grid-column: 1 / -1;
+    .institute-accreditation-process-intro p {
+      color: var(--nh-text-muted);
+      font-size: 1.02rem;
+      line-height: 1.75;
+      margin: 0;
     }
-    .institutional-card-header {
-      background-color: var(--nh-navy);
-      color: var(--nh-white);
-      padding: 1.15rem 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
+    /* Vertical timeline with alternating left/right cards on desktop,
+       single-column on tablet/mobile. */
+    .institute-accreditation-timeline {
+      position: relative;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0.5rem 0;
     }
-    .institutional-card-header-num {
+    .institute-accreditation-timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: linear-gradient(180deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+      transform: translateX(-50%);
+      border-radius: 3px;
+    }
+    .institute-accreditation-step {
+      position: relative;
+      width: 50%;
+      padding: 0 2.5rem 2.5rem 0;
+      margin-left: 0;
+    }
+    .institute-accreditation-step:nth-child(even) {
+      margin-left: 50%;
+      padding: 0 0 2.5rem 2.5rem;
+    }
+    .institute-accreditation-step:last-child {
+      padding-bottom: 0;
+    }
+    .institute-accreditation-step-marker {
+      position: absolute;
+      top: 0;
+      right: -22px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--nh-white);
+      border: 3px solid var(--nh-blue);
+      color: var(--nh-navy);
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 36px;
-      height: 36px;
+      font-size: 1rem;
+      font-weight: 800;
+      z-index: 2;
+      box-shadow: var(--nh-shadow-sm);
+    }
+    .institute-accreditation-step:nth-child(even) .institute-accreditation-step-marker {
+      right: auto;
+      left: -22px;
+    }
+    .institute-accreditation-step-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius);
+      padding: 1.5rem 1.5rem;
+      transition: var(--nh-transition);
+    }
+    .institute-accreditation-step-card:hover {
+      border-color: var(--nh-blue-soft);
+      box-shadow: var(--nh-shadow-md);
+      transform: translateY(-2px);
+    }
+    .institute-accreditation-step-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
       border-radius: var(--nh-radius-sm);
-      background-color: rgba(255, 255, 255, 0.12);
-      color: var(--nh-white);
-      font-size: 0.95rem;
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      font-size: 1.2rem;
+      margin-bottom: 0.85rem;
+    }
+    .institute-accreditation-step-label {
+      font-size: 0.74rem;
       font-weight: 700;
-      flex-shrink: 0;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--nh-blue);
+      margin-bottom: 0.3rem;
     }
-    .institutional-card-header-title {
-      color: var(--nh-white);
-      font-weight: 700;
-      font-size: 1.1rem;
-      margin: 0;
-      line-height: 1.3;
-    }
-    .institutional-card-body {
-      padding: 1.5rem 1.5rem 1.75rem;
-      flex: 1 1 auto;
-    }
-    .institutional-card-intro {
-      color: var(--nh-text);
-      font-size: 0.94rem;
-      line-height: 1.65;
-      margin-bottom: 1.25rem;
-      padding-bottom: 1.25rem;
-      border-bottom: 1px solid var(--nh-border-soft);
-      font-style: italic;
-    }
-    .institutional-subsection {
-      margin-bottom: 1.1rem;
-    }
-    .institutional-subsection:last-child {
-      margin-bottom: 0;
-    }
-    .institutional-subsection-title {
+    .institute-accreditation-step-title {
       color: var(--nh-navy);
       font-weight: 700;
-      font-size: 0.92rem;
-      margin-bottom: 0.3rem;
-      line-height: 1.4;
-      display: flex;
-      align-items: baseline;
-      gap: 0.4rem;
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.35;
     }
-    .institutional-subsection-num {
-      color: var(--nh-blue);
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-    .institutional-subsection-text {
+    .institute-accreditation-step-text {
       color: var(--nh-text-muted);
       font-size: 0.9rem;
       line-height: 1.65;
       margin: 0;
-      padding-left: 0;
-    }
-    /* 7th card body uses a 2-column subsection layout on desktop */
-    .institutional-standard-card-full .institutional-card-body {
-      padding: 1.75rem 1.75rem 2rem;
-    }
-    .institutional-subsection-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
     }
 
     /* ==========================================
-       INSTITUTIONAL STANDARD - INSTITUTIONAL EXCELLENCE
+       INSTITUTE ACCREDITATION - PRIMARY INTEREST FORM
     =========================================== */
-    .institutional-excellence-section {
-      background-color: var(--nh-white);
+    .institute-accreditation-form-section {
+      background-color: var(--nh-bg-section);
     }
-    .institutional-excellence-card {
-      background-color: var(--nh-white);
-      border: 1px solid var(--nh-border);
+    .institute-accreditation-form-card {
+      background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
       border-radius: var(--nh-radius-lg);
       padding: 3rem 2.5rem;
       text-align: center;
-      box-shadow: var(--nh-shadow-sm);
+      color: var(--nh-white);
       position: relative;
       overflow: hidden;
+      box-shadow: var(--nh-shadow-md);
     }
-    .institutional-excellence-card::before {
+    .institute-accreditation-form-card::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
-      border-radius: 0 0 4px 4px;
+      top: -50px;
+      right: -50px;
+      width: 220px;
+      height: 220px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      pointer-events: none;
     }
-    .institutional-excellence-icon {
+    .institute-accreditation-form-card::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: -40px;
+      width: 180px;
+      height: 180px;
+      background-color: rgba(48, 124, 205, 0.12);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .institute-accreditation-form-card .container-inner {
+      position: relative;
+      z-index: 1;
+    }
+    .institute-accreditation-form-icon {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       width: 64px;
       height: 64px;
       border-radius: 50%;
-      background-color: var(--nh-blue-tint);
-      color: var(--nh-blue);
+      background-color: rgba(255, 255, 255, 0.15);
+      color: var(--nh-white);
       font-size: 1.7rem;
       margin-bottom: 1.5rem;
     }
-    .institutional-excellence-title {
-      color: var(--nh-navy);
-      font-weight: 700;
-      font-size: clamp(1.6rem, 2.5vw, 2rem);
+    .institute-accreditation-form-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      background-color: rgba(255, 255, 255, 0.12);
+      color: var(--nh-white);
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
       margin-bottom: 1.25rem;
     }
-    .institutional-excellence-text {
-      color: var(--nh-text-muted);
-      font-size: 1.05rem;
-      line-height: 1.8;
-      max-width: 760px;
-      margin: 0 auto;
+    .institute-accreditation-form-title {
+      color: var(--nh-white);
+      font-weight: 700;
+      font-size: clamp(1.6rem, 2.5vw, 2rem);
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
     }
-    .institutional-excellence-features {
+    .institute-accreditation-form-text {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      max-width: 640px;
+      margin: 0 auto 2rem;
+    }
+    .institute-accreditation-form-buttons {
       display: flex;
       flex-wrap: wrap;
+      gap: 1rem;
       justify-content: center;
-      gap: 1.5rem 2.5rem;
-      margin-top: 2rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--nh-border-soft);
     }
-    .institutional-excellence-feature {
-      display: flex;
+    .institute-accreditation-form-buttons .btn {
+      min-width: 220px;
+      justify-content: center;
+    }
+    .institute-accreditation-form-contact {
+      display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
-      color: var(--nh-navy);
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.65rem 1.25rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      color: var(--nh-white);
       font-size: 0.92rem;
       font-weight: 600;
     }
-    .institutional-excellence-feature i {
-      color: var(--nh-blue);
-      font-size: 1.15rem;
+    .institute-accreditation-form-contact a {
+      color: var(--nh-white);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
+
+   

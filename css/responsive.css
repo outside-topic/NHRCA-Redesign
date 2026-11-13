@@ -224,12 +224,88 @@
     .standard-operational-card {
         padding: 2rem 1.75rem;
     }
-     .institutional-hero { padding-top: 2.75rem; padding-bottom: 2.75rem; }
-      .institutional-core-card { margin-top: 2rem; }
-      .institutional-standards-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      .institutional-standard-card-full { grid-column: auto; }
-      .institutional-subsection-grid { grid-template-columns: repeat(2, 1fr); }
-      .institutional-excellence-card { padding: 2.5rem 2rem; }
+
+    .institutional-hero {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .institutional-core-card {
+        margin-top: 2rem;
+    }
+
+    .institutional-standards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .institutional-standard-card-full {
+        grid-column: auto;
+    }
+
+    .institutional-subsection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .institutional-excellence-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .framework-hero {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .framework-intro-overview {
+        margin-top: 2rem;
+    }
+
+    /* Timeline: 5 columns still works on tablet, but smaller gaps */
+    .framework-timeline-row {
+        gap: 0.5rem;
+    }
+
+    .framework-stage-marker {
+        width: 48px;
+        height: 48px;
+        font-size: 1rem;
+    }
+
+    .framework-stage-theme {
+        font-size: 0.68rem;
+    }
+
+    .framework-stage-title {
+        font-size: 0.88rem;
+    }
+
+    .framework-levels-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .course-accreditation-hero { padding-top: 2.75rem; padding-bottom: 2.75rem; }
+      .course-accreditation-benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .course-accreditation-step-card { padding: 2rem 1.75rem; }
+      .institute-accreditation-hero { padding-top: 2.75rem; padding-bottom: 2.75rem; }
+      .institute-accreditation-benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .institute-accreditation-benefit-title { min-height: 0; }
+      /* Timeline: 2-column becomes single column vertical */
+      .institute-accreditation-timeline::before {
+        left: 22px;
+        transform: none;
+      }
+      .institute-accreditation-step,
+      .institute-accreditation-step:nth-child(even) {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 0 2rem 3.5rem;
+      }
+      .institute-accreditation-step:last-child { padding-bottom: 0; }
+      .institute-accreditation-step-marker,
+      .institute-accreditation-step:nth-child(even) .institute-accreditation-step-marker {
+        right: auto;
+        left: 0;
+      }
+      .institute-accreditation-form-card { padding: 2.5rem 2rem; }
 }
 
 
@@ -525,16 +601,136 @@
     .standard-competency-card {
         padding: 1.35rem;
     }
-     .institutional-hero { padding-top: 2rem; padding-bottom: 2.25rem; }
-      .institutional-hero-subtitle { font-size: 1.02rem; }
-      .institutional-core-card { padding: 1.75rem 1.5rem; }
-      .institutional-card-header { padding: 1rem 1.25rem; }
-      .institutional-card-header-title { font-size: 1rem; }
-      .institutional-card-body { padding: 1.25rem; }
-      .institutional-subsection-grid { grid-template-columns: 1fr; gap: 1.1rem; }
-      .institutional-excellence-card { padding: 2rem 1.5rem; }
-      .institutional-excellence-features { gap: 1rem 1.5rem; }
-      .institutional-excellence-feature { font-size: 0.85rem; flex: 1 1 100%; justify-content: center; }
+
+    .institutional-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .institutional-hero-subtitle {
+        font-size: 1.02rem;
+    }
+
+    .institutional-core-card {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .institutional-card-header {
+        padding: 1rem 1.25rem;
+    }
+
+    .institutional-card-header-title {
+        font-size: 1rem;
+    }
+
+    .institutional-card-body {
+        padding: 1.25rem;
+    }
+
+    .institutional-subsection-grid {
+        grid-template-columns: 1fr;
+        gap: 1.1rem;
+    }
+
+    .institutional-excellence-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .institutional-excellence-features {
+        gap: 1rem 1.5rem;
+    }
+
+    .institutional-excellence-feature {
+        font-size: 0.85rem;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .framework-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .framework-hero-subtitle {
+        font-size: 1.02rem;
+    }
+
+    /* Timeline: vertical on mobile */
+    .framework-timeline::before {
+        top: 0;
+        left: 27px;
+        right: auto;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(180deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+    }
+
+    .framework-timeline-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .framework-stage {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+    }
+
+    .framework-stage-marker {
+        margin-bottom: 0;
+    }
+
+    .framework-stage-title {
+        min-height: 0;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .framework-levels-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .framework-summary-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .framework-summary-features {
+        gap: 1rem 1.5rem;
+    }
+
+    .framework-summary-feature {
+        font-size: 0.85rem;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    /* Comparison table: horizontal scroll on mobile */
+    .framework-comparison-table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .framework-comparison-table {
+        min-width: 560px;
+    }
+    .course-accreditation-hero { padding-top: 2rem; padding-bottom: 2.25rem; }
+      .course-accreditation-hero-subtitle { font-size: 1.02rem; }
+      .course-accreditation-benefits-grid { grid-template-columns: 1fr; }
+      .course-accreditation-benefit-card { padding: 1.5rem; }
+      .course-accreditation-step-card { padding: 1.75rem 1.5rem; }
+      .course-accreditation-step-header { gap: 0.75rem; }
+      .course-accreditation-step-number { width: 48px; height: 48px; font-size: 1.1rem; }
+      .course-accreditation-step-title { font-size: 1.15rem; }
+      .course-accreditation-cta-buttons .btn { width: 100%; min-width: auto; }
+      .course-accreditation-process-note { flex-direction: column; gap: 0.5rem; }
+       .institute-accreditation-hero { padding-top: 2rem; padding-bottom: 2.25rem; }
+      .institute-accreditation-hero-subtitle { font-size: 1.02rem; }
+      .institute-accreditation-benefits-grid { grid-template-columns: 1fr; }
+      .institute-accreditation-benefit-card { padding: 1.5rem; }
+      .institute-accreditation-step-card { padding: 1.25rem; }
+      .institute-accreditation-form-card { padding: 2rem 1.5rem; }
+      .institute-accreditation-form-buttons .btn { width: 100%; min-width: auto; }
 }
 
 
@@ -628,7 +824,65 @@
     .standard-cluster-card {
         padding: 1.5rem 1.25rem;
     }
-    .institutional-hero-title { font-size: 1.7rem; }
-      .institutional-card-header-title { font-size: 0.95rem; }
-      .institutional-subsection-title { font-size: 0.88rem; }
+
+    .institutional-hero-title {
+        font-size: 1.7rem;
+    }
+
+    .institutional-card-header-title {
+        font-size: 0.95rem;
+    }
+
+    .institutional-subsection-title {
+        font-size: 0.88rem;
+    }
+
+    .framework-hero-title {
+        font-size: 1.7rem;
+    }
+
+    .framework-stage-theme {
+        font-size: 0.62rem;
+        padding: 0.25rem 0.55rem;
+    }
+
+    .framework-stage-title {
+        font-size: 0.82rem;
+    }
+
+    .framework-level-card-header {
+        padding: 1rem 1.1rem;
+    }
+
+    .framework-level-title {
+        font-size: 0.95rem;
+    }
+
+    .framework-timeline::before {
+        left: 23px;
+    }
+
+    .framework-stage-marker {
+        width: 46px;
+        height: 46px;
+    }
+    .course-accreditation-hero-title { font-size: 1.7rem; }
+      .course-accreditation-benefit-num { font-size: 1.9rem; }
+      .course-accreditation-benefit-title { font-size: 1rem; padding-right: 2rem; }
+      .course-accreditation-step-title { font-size: 1.05rem; }
+      .institute-accreditation-hero-title { font-size: 1.7rem; }
+      .institute-accreditation-benefit-num { font-size: 1.4rem; }
+      .institute-accreditation-benefit-title { font-size: 0.95rem; }
+      .institute-accreditation-step-title { font-size: 1rem; }
+      .institute-accreditation-timeline::before { left: 18px; }
+      .institute-accreditation-step,
+      .institute-accreditation-step:nth-child(even) {
+        padding-left: 3rem;
+      }
+      .institute-accreditation-step-marker,
+      .institute-accreditation-step:nth-child(even) .institute-accreditation-step-marker {
+        width: 38px;
+        height: 38px;
+        font-size: 0.85rem;
+      }
 }
