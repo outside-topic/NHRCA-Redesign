@@ -282,30 +282,147 @@
     .framework-levels-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .course-accreditation-hero { padding-top: 2.75rem; padding-bottom: 2.75rem; }
-      .course-accreditation-benefits-grid { grid-template-columns: repeat(2, 1fr); }
-      .course-accreditation-step-card { padding: 2rem 1.75rem; }
-      .institute-accreditation-hero { padding-top: 2.75rem; padding-bottom: 2.75rem; }
-      .institute-accreditation-benefits-grid { grid-template-columns: repeat(2, 1fr); }
-      .institute-accreditation-benefit-title { min-height: 0; }
-      /* Timeline: 2-column becomes single column vertical */
-      .institute-accreditation-timeline::before {
+
+    .course-accreditation-hero {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .course-accreditation-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .course-accreditation-step-card {
+        padding: 2rem 1.75rem;
+    }
+
+    .institute-accreditation-hero {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .institute-accreditation-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .institute-accreditation-benefit-title {
+        min-height: 0;
+    }
+
+    /* Timeline: 2-column becomes single column vertical */
+    .institute-accreditation-timeline::before {
         left: 22px;
         transform: none;
-      }
-      .institute-accreditation-step,
-      .institute-accreditation-step:nth-child(even) {
+    }
+
+    .institute-accreditation-step,
+    .institute-accreditation-step:nth-child(even) {
         width: 100%;
         margin-left: 0;
         padding: 0 0 2rem 3.5rem;
-      }
-      .institute-accreditation-step:last-child { padding-bottom: 0; }
-      .institute-accreditation-step-marker,
-      .institute-accreditation-step:nth-child(even) .institute-accreditation-step-marker {
+    }
+
+    .institute-accreditation-step:last-child {
+        padding-bottom: 0;
+    }
+
+    .institute-accreditation-step-marker,
+    .institute-accreditation-step:nth-child(even) .institute-accreditation-step-marker {
         right: auto;
         left: 0;
+    }
+
+    .institute-accreditation-form-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .courses-hero {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .course-details-hero {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .course-details-main {
+        grid-template-columns: 1fr;
+    }
+
+    .course-details-sidebar {
+        position: static;
+    }
+
+    .course-details-points-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-details-accreditation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .corporate-hero {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .corporate-intro-panel {
+        margin-top: 2rem;
+    }
+
+    .corporate-dimensions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .course-standard-hero {
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .course-standard-objectives-card {
+        margin-top: 2rem;
+    }
+
+    .course-standard-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .course-standard-commitment-divider {
+        display: none;
+    }
+    .credential-hero { padding-top: 2.75rem; padding-bottom: 2.75rem; }
+      .credential-profile-row { grid-template-columns: 1fr; }
+      .credential-profile-sidebar { position: static; flex-direction: column; }
+      .credential-objective-grid { grid-template-columns: repeat(2, 1fr); }
+      .credential-benefits-tabs { grid-template-columns: 1fr; }
+      .credential-eligibility-tabs { grid-template-columns: 1fr; }
+      .credential-assessment-tabs { grid-template-columns: 1fr; }
+      .credential-benefits-nav,
+      .credential-eligibility-nav,
+      .credential-assessment-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.5rem;
+        gap: 0.5rem;
       }
-      .institute-accreditation-form-card { padding: 2.5rem 2rem; }
+      .credential-benefit-tab-btn,
+      .credential-eligibility-tab-btn,
+      .credential-assessment-tab-btn {
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
 }
 
 
@@ -714,23 +831,233 @@
     .framework-comparison-table {
         min-width: 560px;
     }
-    .course-accreditation-hero { padding-top: 2rem; padding-bottom: 2.25rem; }
-      .course-accreditation-hero-subtitle { font-size: 1.02rem; }
-      .course-accreditation-benefits-grid { grid-template-columns: 1fr; }
-      .course-accreditation-benefit-card { padding: 1.5rem; }
-      .course-accreditation-step-card { padding: 1.75rem 1.5rem; }
-      .course-accreditation-step-header { gap: 0.75rem; }
-      .course-accreditation-step-number { width: 48px; height: 48px; font-size: 1.1rem; }
-      .course-accreditation-step-title { font-size: 1.15rem; }
-      .course-accreditation-cta-buttons .btn { width: 100%; min-width: auto; }
-      .course-accreditation-process-note { flex-direction: column; gap: 0.5rem; }
-       .institute-accreditation-hero { padding-top: 2rem; padding-bottom: 2.25rem; }
-      .institute-accreditation-hero-subtitle { font-size: 1.02rem; }
-      .institute-accreditation-benefits-grid { grid-template-columns: 1fr; }
-      .institute-accreditation-benefit-card { padding: 1.5rem; }
-      .institute-accreditation-step-card { padding: 1.25rem; }
-      .institute-accreditation-form-card { padding: 2rem 1.5rem; }
-      .institute-accreditation-form-buttons .btn { width: 100%; min-width: auto; }
+
+    .course-accreditation-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .course-accreditation-hero-subtitle {
+        font-size: 1.02rem;
+    }
+
+    .course-accreditation-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-accreditation-benefit-card {
+        padding: 1.5rem;
+    }
+
+    .course-accreditation-step-card {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .course-accreditation-step-header {
+        gap: 0.75rem;
+    }
+
+    .course-accreditation-step-number {
+        width: 48px;
+        height: 48px;
+        font-size: 1.1rem;
+    }
+
+    .course-accreditation-step-title {
+        font-size: 1.15rem;
+    }
+
+    .course-accreditation-cta-buttons .btn {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .course-accreditation-process-note {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .institute-accreditation-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .institute-accreditation-hero-subtitle {
+        font-size: 1.02rem;
+    }
+
+    .institute-accreditation-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .institute-accreditation-benefit-card {
+        padding: 1.5rem;
+    }
+
+    .institute-accreditation-step-card {
+        padding: 1.25rem;
+    }
+
+    .institute-accreditation-form-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .institute-accreditation-form-buttons .btn {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .courses-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .courses-hero-text {
+        font-size: 1.02rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-toolbar {
+        gap: 1rem;
+    }
+
+    .courses-toolbar-title {
+        font-size: 1.35rem;
+    }
+
+    .courses-filter {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 0.3rem;
+    }
+
+    .courses-filter-item {
+        flex-shrink: 0;
+    }
+
+    .courses-card-content {
+        padding: 1.25rem;
+    }
+
+    .courses-card-title {
+        font-size: 1.05rem;
+    }
+
+    .courses-card-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .courses-card-view {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .course-details-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .course-details-hero-meta {
+        gap: 0.4rem 0.75rem;
+    }
+
+    .course-details-hero-meta-item {
+        font-size: 0.82rem;
+    }
+
+    .course-details-tabs-nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .course-details-tab-btn {
+        flex-shrink: 0;
+    }
+
+    .course-details-panel-heading {
+        font-size: 1.2rem;
+    }
+
+    .course-details-sidebar-price-current {
+        font-size: 1.75rem;
+    }
+
+    .corporate-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .corporate-hero-support {
+        font-size: 1.02rem;
+    }
+
+    .corporate-dimensions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .corporate-dimension-card {
+        padding: 1.5rem;
+    }
+
+    .corporate-dimension-number {
+        font-size: 2.2rem;
+    }
+
+    .corporate-cta-buttons .btn {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .course-standard-hero {
+        padding-top: 2rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .course-standard-hero-subtitle {
+        font-size: 1.02rem;
+    }
+
+    .course-standard-card {
+        padding: 1.5rem;
+    }
+
+    .course-standard-number {
+        font-size: 2.5rem;
+    }
+
+    .course-standard-card-title {
+        font-size: 1.1rem;
+    }
+
+    .course-standard-objectives-card {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .course-standard-commitment-supporting {
+        text-align: left;
+    }
+    .credential-hero { padding-top: 2rem; padding-bottom: 2.25rem; }
+      .credential-hero-subtitle { font-size: 1.02rem; }
+      .credential-main-tabs { gap: 0.4rem; padding-top: 1.75rem; overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; -webkit-overflow-scrolling: touch; }
+      .credential-main-tab-btn { padding: 0.65rem 1.25rem; font-size: 0.85rem; flex-shrink: 0; }
+      .credential-profile-main { padding: 1.75rem 1.5rem; }
+      .credential-profile-badge { width: 90px; height: 90px; }
+      .credential-objective-grid { grid-template-columns: 1fr; }
+      .credential-benefits-panel,
+      .credential-eligibility-panel,
+      .credential-assessment-panel { padding: 1.5rem; }
+      .credential-apply-cta-buttons .btn { width: 100%; min-width: auto; }
 }
 
 
@@ -866,23 +1193,119 @@
         width: 46px;
         height: 46px;
     }
-    .course-accreditation-hero-title { font-size: 1.7rem; }
-      .course-accreditation-benefit-num { font-size: 1.9rem; }
-      .course-accreditation-benefit-title { font-size: 1rem; padding-right: 2rem; }
-      .course-accreditation-step-title { font-size: 1.05rem; }
-      .institute-accreditation-hero-title { font-size: 1.7rem; }
-      .institute-accreditation-benefit-num { font-size: 1.4rem; }
-      .institute-accreditation-benefit-title { font-size: 0.95rem; }
-      .institute-accreditation-step-title { font-size: 1rem; }
-      .institute-accreditation-timeline::before { left: 18px; }
-      .institute-accreditation-step,
-      .institute-accreditation-step:nth-child(even) {
+
+    .course-accreditation-hero-title {
+        font-size: 1.7rem;
+    }
+
+    .course-accreditation-benefit-num {
+        font-size: 1.9rem;
+    }
+
+    .course-accreditation-benefit-title {
+        font-size: 1rem;
+        padding-right: 2rem;
+    }
+
+    .course-accreditation-step-title {
+        font-size: 1.05rem;
+    }
+
+    .institute-accreditation-hero-title {
+        font-size: 1.7rem;
+    }
+
+    .institute-accreditation-benefit-num {
+        font-size: 1.4rem;
+    }
+
+    .institute-accreditation-benefit-title {
+        font-size: 0.95rem;
+    }
+
+    .institute-accreditation-step-title {
+        font-size: 1rem;
+    }
+
+    .institute-accreditation-timeline::before {
+        left: 18px;
+    }
+
+    .institute-accreditation-step,
+    .institute-accreditation-step:nth-child(even) {
         padding-left: 3rem;
-      }
-      .institute-accreditation-step-marker,
-      .institute-accreditation-step:nth-child(even) .institute-accreditation-step-marker {
+    }
+
+    .institute-accreditation-step-marker,
+    .institute-accreditation-step:nth-child(even) .institute-accreditation-step-marker {
         width: 38px;
         height: 38px;
         font-size: 0.85rem;
-      }
+    }
+
+    .courses-hero-title {
+        font-size: 1.7rem;
+    }
+
+    .courses-card-price-current {
+        font-size: 1.25rem;
+    }
+
+    .courses-card-title {
+        font-size: 1rem;
+    }
+
+    .course-details-hero-title {
+        font-size: 1.4rem;
+    }
+
+    .course-details-tab-btn {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.82rem;
+    }
+
+    .course-details-panel-heading {
+        font-size: 1.1rem;
+    }
+
+    .corporate-hero-title {
+        font-size: 1.6rem;
+    }
+
+    .corporate-dimension-header {
+        gap: 0.6rem;
+    }
+
+    .corporate-dimension-number {
+        font-size: 2rem;
+    }
+
+    .corporate-dimension-title {
+        font-size: 0.98rem;
+    }
+
+    .course-standard-hero-title {
+        font-size: 1.7rem;
+    }
+
+    .course-standard-card-header {
+        gap: 0.75rem;
+    }
+
+    .course-standard-number {
+        font-size: 2.2rem;
+    }
+
+    .course-standard-card-title {
+        font-size: 1rem;
+    }
+
+    .course-standard-competency-title {
+        font-size: 0.88rem;
+    }
+    .credential-hero-title { font-size: 1.7rem; }
+      .credential-profile-title { font-size: 1.25rem; }
+      .credential-main-tab-btn { padding: 0.55rem 1rem; font-size: 0.8rem; }
+      .credential-assessment-weight { font-size: 0.68rem; padding: 0.2rem 0.5rem; }
+      .credential-assessment-panel-title { font-size: 1.1rem; }
 }

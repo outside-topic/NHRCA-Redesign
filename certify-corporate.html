@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NHRCA-SHRP Standards | NHRCA - National Human Resource Certification Academy, UK</title>
+  <meta name="description" content="The NHRCA Standard for Human Resource Practice (NHRCA-SHRP) evaluates organizational HR maturity across ten fundamental dimensions of responsible and professional human resource practice." />
+  <meta name="keywords" content="NHRCA-SHRP, HR Practice Standards, Corporate HR Standards, HR Framework, HR Maturity Assessment, NHRCA Certify Corporate" />
+  <meta name="author" content="National Human Resource Certification Academy" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NHRCA-SHRP Standards | NHRCA - National Human Resource Certification Academy, UK" />
+  <meta property="og:description" content="A structured framework evaluating HR practices across ten key dimensions to assess organizational alignment with professional HR standards and global best practices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nhrca.uk/nhrca-shrp" />
+  <meta property="og:image" content="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header>
+        <!-- Topbar -->
+        <div class="nh-topbar d-none d-lg-block">
+            <div class="container nh-container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <span class="topbar-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+                        <span class="topbar-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="topbar-item"><i class="bi bi-shield-check"></i> UK Professional Certification
+                            Body</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg nh-navbar sticky-top" id="mainNavbar" aria-label="Main navigation">
+            <div class="container nh-container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="https://nhrca.uk/" aria-label="NHRCA Home">
+                    <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png"
+                        alt="" class="nh-navbar-logo"
+                        width="180" height="52" />
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://nhrca.uk/" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="standardsDropdown">
+                                Standards
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="standardsDropdown">
+                                <li><a class="dropdown-item" href="nhrca_standard.html"><i
+                                            class="bi bi-award me-2"></i>NHRCA Standard</a></li>
+                                <li><a class="dropdown-item" href="institutional.html"><i
+                                            class="bi bi-building me-2"></i>Institutional Standard</a></li>
+                                <li><a class="dropdown-item" href="course-standard.html"><i
+                                            class="bi bi-journal-text me-2"></i>Course Standard</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="framework.html">Framework</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="accreditationDropdown">
+                                Accreditation
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="accreditationDropdown">
+                                <li><a class="dropdown-item" href="course-accreditation.html"><i
+                                            class="bi bi-mortarboard me-2"></i>Course Accreditation</a></li>
+                                <li><a class="dropdown-item" href="institute-accreditation.html"><i
+                                            class="bi bi-bank me-2"></i>Institute Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="credential.html">Credential</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="corporateDropdown">
+                                Certify Corporate
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="corporateDropdown">
+                                <li><a class="dropdown-item" href="certify-corporate.html"><i
+                                            class="bi bi-briefcase me-2"></i>NHRCA Standard </a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="bi bi-file-earmark-check me-2"></i>Apply for Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://nhrca.uk/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-blue btn-verify" href="https://nhrca.uk/verify"><i
+                                    class="bi bi-patch-check"></i> Verify</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+  <!-- ===== CORPORATE HERO ===== -->
+  <section class="corporate-hero" id="corporate-hero">
+    <div class="container nh-container">
+      <nav aria-label="breadcrumb" class="corporate-hero-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="https://nhrca.uk/"><i class="bi bi-house-door"></i> Home</a></li>
+          <li class="breadcrumb-item">Certify Corporate</li>
+          <li class="breadcrumb-item active" aria-current="page">NHRCA-SHRP Standards</li>
+        </ol>
+      </nav>
+      <span class="corporate-hero-eyebrow"><i class="bi bi-briefcase"></i> Certify Corporate</span>
+      <h1 class="corporate-hero-title">NHRCA Standard for Human Resource Practice (NHRCA-SHRP)</h1>
+      <p class="corporate-hero-support">Professional Standards</p>
+    </div>
+  </section>
+
+  <!-- ===== INTRODUCTION ===== -->
+  <section class="section" id="corporate-introduction">
+    <div class="container nh-container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-7">
+          <span class="section-eyebrow">Introduction</span>
+          <h2 class="section-title">NHRCA Standard for Human Resource Practice (NHRCA-SHRP)</h2>
+          <div class="section-divider"></div>
+          <div class="corporate-intro-text">
+            <p>NHRCA is committed to promoting standardized and effective human resource practices to support responsible workplaces and sustainable organizational development. Through extensive research and professional insight, the <span class="text-highlight">NHRCA Council</span> has developed a structured framework to measure the quality and maturity of HR practices within organizations.</p>
+            <p>The <span class="text-highlight">NHRCA-SHRP framework</span> evaluates HR practices across <span class="text-highlight">ten key dimensions</span> to assess organizational alignment with professional HR standards and <span class="text-highlight">global best practices</span>.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="corporate-intro-panel">
+            <h3 class="corporate-intro-panel-title"><i class="bi bi-diagram-3"></i> Framework Overview</h3>
+            <ul class="corporate-intro-panel-list">
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>10 Key Dimensions</strong> evaluating organizational HR maturity.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Structured framework</strong> developed by the NHRCA Council.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Assesses alignment with <strong>global best practices</strong>.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Supports <strong>responsible workplace</strong> development.</span></li>
+            </ul>
+            <div class="corporate-intro-panel-stat">
+              <span class="corporate-intro-panel-stat-num">10</span>
+              <p class="corporate-intro-panel-stat-label">Fundamental dimensions of human resource practice evaluated by the NHRCA-SHRP framework.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FRAMEWORK DIMENSIONS ===== -->
+  <section class="section corporate-dimensions-section" id="framework-dimensions">
+    <div class="container nh-container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow justify-content-center">Our Professional Framework</span>
+        <h2 class="section-title">Framework Dimensions</h2>
+        <div class="section-divider mx-auto" style="margin-left:auto;margin-right:auto;"></div>
+        <p class="section-subtitle mx-auto">The NHRCA-SHRP framework evaluates organizational maturity across these ten fundamental areas of human resource practice.</p>
+      </div>
+
+      <div class="corporate-dimensions-grid">
+        <!-- Dimension 01 - Equal Employment -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">01</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-people"></i></span>
+            <h3 class="corporate-dimension-title">Equal Employment</h3>
+          </div>
+          <p class="corporate-dimension-text">Every candidate has the right to equal employment opportunity within any organization. The <strong>NHRCA Standard HR Practice Scale</strong> ensures that organizations uphold this principle consistently by promoting fair, transparent, and non-discriminatory employment practices.</p>
+        </div>
+
+        <!-- Dimension 02 - Personal Data Privacy -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">02</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-shield-lock"></i></span>
+            <h3 class="corporate-dimension-title">Personal Data Privacy</h3>
+          </div>
+          <p class="corporate-dimension-text">Data Privacy is a critical requirement in responsible HR practice. All personal information related to employees and their family members must be securely maintained and protected from unauthorized access or disclosure. The <strong>NHRCA-SHRP framework</strong> emphasizes strict data protection practices to safeguard confidentiality and support a trustworthy and secure workplace environment.</p>
+        </div>
+
+        <!-- Dimension 03 - Equality Culture -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">03</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-people-fill"></i></span>
+            <h3 class="corporate-dimension-title">Equality Culture</h3>
+          </div>
+          <p class="corporate-dimension-text">All employees should be treated within a culture of equality. This principle ensures that every individual is subject to the same standards, with policies, procedures, and rules applied fairly and consistently across the organization. The <strong>NHRCA-SHRP framework</strong> upholds this commitment to equitable and unbiased workplace practices.</p>
+        </div>
+
+        <!-- Dimension 04 - Safe and Secure Workplace -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">04</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-shield-check"></i></span>
+            <h3 class="corporate-dimension-title">Safe and Secure Workplace</h3>
+          </div>
+          <p class="corporate-dimension-text">Workplace safety and security are fundamental rights for every employee and essential principles for responsible organizations. Employers must ensure physical, psychological, and social wellbeing within the workplace. The <strong>NHRCA-SHRP framework</strong> strongly emphasizes the establishment and maintenance of safe, secure, and supportive working environments for all employees.</p>
+        </div>
+
+        <!-- Dimension 05 - Policy Compliance -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">05</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-file-earmark-check"></i></span>
+            <h3 class="corporate-dimension-title">Policy Compliance</h3>
+          </div>
+          <p class="corporate-dimension-text">Compliance with applicable laws, policies, and procedures is essential for every organization. The existence of clear policies, adherence to employment regulations and relevant legal frameworks, and the consistent implementation of organizational procedures are critical factors in establishing a responsible and reputable workplace. The NHRCA-SHRP framework places strong emphasis on this principle when evaluating the standard of HR practices within organizations.</p>
+        </div>
+
+        <!-- Dimension 06 - Employment Ethics -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">06</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-flag"></i></span>
+            <h3 class="corporate-dimension-title">Employment Ethics</h3>
+          </div>
+          <p class="corporate-dimension-text">Ethical principles form a fundamental component of standard HR practices. The <strong>NHRCA&ndash;SHRP framework</strong> emphasizes the assurance of strong ethical standards within the workplace to promote responsible and professional HR practices. Ethical standards should be embedded across all aspects of HR operations, including core HR functions, employee relationships, workplace behavior, and employment conditions.</p>
+        </div>
+
+        <!-- Dimension 07 - Diversity and Inclusion -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">07</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-globe2"></i></span>
+            <h3 class="corporate-dimension-title">Diversity and Inclusion</h3>
+          </div>
+          <p class="corporate-dimension-text">Based on the principle of equal employment opportunity, NHRCA promotes the establishment of diversity and inclusion within organizations. This standard encourages workplaces to ensure fair representation and inclusion of individuals from diverse backgrounds, regardless of category, community, or demographic differences.</p>
+        </div>
+
+        <!-- Dimension 08 - Participatory Management -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">08</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-chat-square-text"></i></span>
+            <h3 class="corporate-dimension-title">Participatory Management</h3>
+          </div>
+          <p class="corporate-dimension-text">Employee participation in decision-making, communication, and information sharing contributes to a more positive and productive workplace environment. This principle encourages organizations to provide employees with opportunities to contribute to decision-making processes while promoting open, transparent, and collaborative communication across the workplace.</p>
+        </div>
+
+        <!-- Dimension 09 - Positive Psychological Approach -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">09</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-heart"></i></span>
+            <h3 class="corporate-dimension-title">Positive Psychological Approach</h3>
+          </div>
+          <p class="corporate-dimension-text">Organizations should foster an environment that attracts employees and encourages them to remain engaged and committed to the workplace. By adopting a positive psychological approach, organizations can create a supportive and motivating environment where employees feel comfortable, valued, and motivated to contribute effectively.</p>
+        </div>
+
+        <!-- Dimension 10 - Value Proposition -->
+        <div class="corporate-dimension-card">
+          <div class="corporate-dimension-header">
+            <span class="corporate-dimension-number">10</span>
+            <span class="corporate-dimension-icon"><i class="bi bi-gem"></i></span>
+            <h3 class="corporate-dimension-title">Value Proposition</h3>
+          </div>
+          <p class="corporate-dimension-text">Employee Value Proposition (EVP) is a comprehensive concept that encompasses the overall work environment, organizational culture, and benefits offered to employees. A strong EVP enhances employee interest, engagement, and commitment to the organization. It is considered one of the key factors in establishing and sustaining best HR practices within an organization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLOSING CTA ===== -->
+  <section class="section corporate-cta-section" id="corporate-cta">
+    <div class="container nh-container">
+      <div class="corporate-cta-content">
+        <span class="corporate-cta-eyebrow"><i class="bi bi-stars"></i> Get Started</span>
+        <h2 class="corporate-cta-title">Build a Responsible and Professional HR Workplace</h2>
+        <p class="corporate-cta-text">Explore how the NHRCA-SHRP framework can support standardized, ethical, and effective human resource practices within your organization.</p>
+        <div class="corporate-cta-buttons">
+          <a href="https://nhrca.uk/certify-corporate#" class="btn btn-white btn-lg"><i class="bi bi-arrow-right-circle"></i> Apply for Accreditation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="nh-footer">
+    <div class="container nh-container">
+      <div class="row g-4 g-lg-5 pb-4">
+        <!-- Column 1: Brand -->
+        <div class="col-lg-4 col-md-12">
+          <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" alt="NHRCA UK Logo" class="footer-logo" onerror="this.onerror=null;this.src='imgs/nhrca-logo-fallback.svg';" />
+          <p>The National Human Resource Certification Academy (NHRCA), UK promotes globally relevant standards, professional competence, and responsible people management practices in Human Resource Management.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/">Home</a></li>
+            <li><a href="https://nhrca.uk/about-us">About Us</a></li>
+            <li><a href="https://nhrca.uk/contact">Contact</a></li>
+            <li><a href="https://nhrca.uk/verify">Verify</a></li>
+            <li><a href="https://nhrca.uk/credential">Credential</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Standards -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5 class="footer-title">Standards &amp; Framework</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/nhrca-standard">NHRCA Standard</a></li>
+            <li><a href="https://nhrca.uk/institutional-standard">Institutional Standard</a></li>
+            <li><a href="https://nhrca.uk/course-standard">Course Standard</a></li>
+            <li><a href="https://nhrca.uk/framework">NHRCA Framework</a></li>
+            <li><a href="https://nhrca.uk/nhrca-shrp">NHRCA-SHRP</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Accreditation -->
+        <div class="col-lg-3 col-md-5 col-12">
+          <h5 class="footer-title">Accreditation</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/course-accreditation">Course Accreditation</a></li>
+            <li><a href="https://nhrca.uk/institute-accreditation">Institute Accreditation</a></li>
+            <li><a href="https://nhrca.uk/apply-for-accreditation">Apply for Accreditation</a></li>
+          </ul>
+          <div class="mt-3">
+            <span class="footer-contact-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+            <span class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="row align-items-center g-2">
+          <div class="col-md-6">
+            &copy; 2026 National Human Resource Certification Academy. All rights reserved.
+          </div>
+          <div class="col-md-6">
+            <div class="footer-bottom-links">
+              <a href="https://nhrca.uk/privacy-policy">Privacy Policy</a>
+              <a href="https://nhrca.uk/refund-policy">Refund Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    /* ==========================================
+       GLOBAL JAVASCRIPT (reused from Homepage)
+    =========================================== */
+
+    /* ===== NAVBAR JAVASCRIPT ===== */
+    (function () {
+      const navbar = document.getElementById('mainNavbar');
+      if (!navbar) return;
+      const onScroll = () => {
+        if (window.scrollY > 30) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    /* ===== DROPDOWN ACCESSIBILITY JAVASCRIPT ===== */
+    document.querySelectorAll('.nh-navbar .dropdown-item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        const collapse = document.getElementById('mainNav');
+        if (collapse && collapse.classList.contains('show') && window.innerWidth < 992) {
+          const bsCollapse = bootstrap.Collapse.getInstance(collapse) || new bootstrap.Collapse(collapse, { toggle: false });
+          bsCollapse.hide();
+        }
+      });
+    });
+
+    /* ===== CORPORATE PAGE HERO FADE-IN JAVASCRIPT ===== */
+    (function () {
+      const hero = document.querySelector('.corporate-hero');
+      if (!hero) return;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) return;
+      hero.style.opacity = '0';
+      hero.style.transform = 'translateY(12px)';
+      hero.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          hero.style.opacity = '1';
+          hero.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    })();
+  </script>
+
+</body>
+</html>

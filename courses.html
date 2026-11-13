@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | NHRCA - National Human Resource Certification Academy, UK</title>
+  <meta name="description" content="Explore certified diploma and executive master class programs tailored for modern industry leadership. Browse all available accredited course certifications." />
+  <meta name="keywords" content="HR Courses, Diploma Programs, Executive Master Class, Certification Programs, Professional Courses" />
+  <meta name="author" content="National Human Resource Certification Academy" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Courses | NHRCA - National Human Resource Certification Academy, UK" />
+  <meta property="og:description" content="Explore certified diploma and executive master class programs tailored for modern industry leadership." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nhrca.uk/courses" />
+  <meta property="og:image" content="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+        <!-- Topbar -->
+        <div class="nh-topbar d-none d-lg-block">
+            <div class="container nh-container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <span class="topbar-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+                        <span class="topbar-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="topbar-item"><i class="bi bi-shield-check"></i> UK Professional Certification
+                            Body</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg nh-navbar sticky-top" id="mainNavbar" aria-label="Main navigation">
+            <div class="container nh-container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="https://nhrca.uk/" aria-label="NHRCA Home">
+                    <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png"
+                        alt="" class="nh-navbar-logo"
+                        width="180" height="52" />
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://nhrca.uk/" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="standardsDropdown">
+                                Standards
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="standardsDropdown">
+                                <li><a class="dropdown-item" href="nhrca_standard.html"><i
+                                            class="bi bi-award me-2"></i>NHRCA Standard</a></li>
+                                <li><a class="dropdown-item" href="institutional.html"><i
+                                            class="bi bi-building me-2"></i>Institutional Standard</a></li>
+                                <li><a class="dropdown-item" href="course-standard.html"><i
+                                            class="bi bi-journal-text me-2"></i>Course Standard</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="framework.html">Framework</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="accreditationDropdown">
+                                Accreditation
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="accreditationDropdown">
+                                <li><a class="dropdown-item" href="course-accreditation.html"><i
+                                            class="bi bi-mortarboard me-2"></i>Course Accreditation</a></li>
+                                <li><a class="dropdown-item" href="institute-accreditation.html"><i
+                                            class="bi bi-bank me-2"></i>Institute Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="credential.html">Credential</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="corporateDropdown">
+                                Certify Corporate
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="corporateDropdown">
+                                <li><a class="dropdown-item" href="certify-corporate.html"><i
+                                            class="bi bi-briefcase me-2"></i>NHRCA Standard </a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="bi bi-file-earmark-check me-2"></i>Apply for Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://nhrca.uk/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-blue btn-verify" href="https://nhrca.uk/verify"><i
+                                    class="bi bi-patch-check"></i> Verify</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+  <!-- ==========================================
+       COURSES PAGE SECTIONS
+  =========================================== -->
+
+  <!-- ===== COURSES HERO ===== -->
+  <section class="courses-hero" id="courses-hero">
+    <div class="container nh-container">
+      <span class="courses-hero-eyebrow"><i class="bi bi-mortarboard"></i> Accredited Programs</span>
+      <h1 class="courses-hero-title">Elevate Your Career with Industry Standards</h1>
+      <p class="courses-hero-text">Explore certified diploma and executive master class programs tailored for modern industry leadership.</p>
+    </div>
+  </section>
+
+  <!-- ===== COURSE LISTING & FILTER ===== -->
+  <section class="section" id="courses-listing">
+    <div class="container nh-container">
+      <!-- Toolbar: title + count + filter -->
+      <div class="courses-toolbar">
+        <div class="courses-toolbar-info">
+          <h2 class="courses-toolbar-title">All Available Programs</h2>
+          <p class="courses-toolbar-count">Showing 5 total course certifications</p>
+        </div>
+        <nav class="courses-filter" aria-label="Course categories">
+          <a href="#" class="courses-filter-item active" aria-current="page">
+            All <span class="courses-filter-count">5</span>
+          </a>
+          <a href="#" class="courses-filter-item">
+            Diploma <span class="courses-filter-count">3</span>
+          </a>
+          <a href="#" class="courses-filter-item">
+            MBA <span class="courses-filter-count">0</span>
+          </a>
+          <a href="#" class="courses-filter-item">
+            Certificated <span class="courses-filter-count">2</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Course cards grid -->
+      <div class="courses-grid">
+
+
+        <!-- Course 03: Certified Professional Manager [CPM] -->
+        <article class="courses-card">
+          <div class="courses-card-image-wrap">
+            <img src="https://aifap.us/storage/courses/thumbnails/OqP7xRWFT3lJJmaAg6nPiWQTu1BJL9EQKCbm6ZU6.jpg" alt="Certified Professional Manager [CPM]" class="courses-card-image" loading="lazy" />
+            <span class="courses-card-category"><i class="bi bi-patch-check"></i> Certificated</span>
+            <span class="courses-card-delivery-badge"><i class="bi bi-broadcast"></i> Live Session</span>
+          </div>
+          <div class="courses-card-content">
+            <a href="https://aifap.us/course_details/certified-professional-manager-cpm" class="courses-card-title">Certified Professional Manager [CPM]</a>
+            <div class="courses-card-meta">
+              <span class="courses-card-meta-item"><i class="bi bi-clock"></i> 12</span>
+              <span class="courses-card-meta-item"><i class="bi bi-translate"></i> English</span>
+            </div>
+            <p class="courses-card-desc">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+            <div class="courses-card-footer">
+              <div class="courses-card-price-wrap">
+                <span class="courses-card-price-label">Price</span>
+                <div class="courses-card-price-row">
+                  <span class="courses-card-price-current">$450.00</span>
+                  <span class="courses-card-price-original">$700.00</span>
+                </div>
+              </div>
+              <a href="https://aifap.us/course_details/certified-professional-manager-cpm" class="courses-card-view">View Course <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 04: Certified Scrum Master (CSM) -->
+        <article class="courses-card">
+          <div class="courses-card-image-wrap">
+            <img src="https://aifap.us/storage/courses/thumbnails/SRs6D4Wcsrpzd8Tf0r9Yb6K6Qn0wRrg3sWYoSASG.jpg" alt="Certified Scrum Master (CSM)" class="courses-card-image" loading="lazy" />
+            <span class="courses-card-category"><i class="bi bi-patch-check"></i> Certificated</span>
+            <span class="courses-card-delivery-badge"><i class="bi bi-broadcast"></i> Live Session</span>
+          </div>
+          <div class="courses-card-content">
+            <a href="https://aifap.us/course_details/csm" class="courses-card-title">Certified Scrum Master (CSM)</a>
+            <div class="courses-card-meta">
+              <span class="courses-card-meta-item"><i class="bi bi-clock"></i> 12 Houre</span>
+              <span class="courses-card-meta-item"><i class="bi bi-translate"></i> English</span>
+            </div>
+            <p class="courses-card-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+            <div class="courses-card-footer">
+              <div class="courses-card-price-wrap">
+                <span class="courses-card-price-label">Price</span>
+                <div class="courses-card-price-row">
+                  <span class="courses-card-price-current">$300.00</span>
+                  <span class="courses-card-price-original">$500.00</span>
+                </div>
+              </div>
+              <a href="https://aifap.us/course_details/csm" class="courses-card-view">View Course <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 05: Master Class on Agile Project Manager(McAPM)- -->
+        <article class="courses-card">
+          <div class="courses-card-image-wrap">
+            <img src="https://aifap.us/storage/courses/thumbnails/fqwx0wFHn5nwf7qYvDCBSkOH4qe4CqQ9AAiHXUvQ.jpg" alt="Master Class on Agile Project Manager (McAPM)" class="courses-card-image" loading="lazy" />
+            <span class="courses-card-category"><i class="bi bi-award"></i> Diploma</span>
+            <span class="courses-card-delivery-badge"><i class="bi bi-broadcast"></i> Live Session</span>
+          </div>
+          <div class="courses-card-content">
+            <a href="https://aifap.us/course_details/mcapm" class="courses-card-title">Master Class on Agile Project Manager(McAPM)-</a>
+            <div class="courses-card-meta">
+              <span class="courses-card-meta-item"><i class="bi bi-clock"></i> 12 Houre</span>
+              <span class="courses-card-meta-item"><i class="bi bi-translate"></i> English</span>
+            </div>
+            <p class="courses-card-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+            <div class="courses-card-footer">
+              <div class="courses-card-price-wrap">
+                <span class="courses-card-price-label">Price</span>
+                <div class="courses-card-price-row">
+                  <span class="courses-card-price-current">$500.00</span>
+                  <span class="courses-card-price-original">$700.00</span>
+                </div>
+              </div>
+              <a href="https://aifap.us/course_details/mcapm" class="courses-card-view">View Course <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER (NHRCA design, AIFAP content)
+  =========================================== -->
+  <footer class="nh-footer">
+    <div class="container nh-container">
+      <div class="row g-4 g-lg-5 pb-4">
+        <!-- Column 1: Brand -->
+        <div class="col-lg-4 col-md-12">
+          <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" alt="NHRCA UK Logo" class="footer-logo" onerror="this.onerror=null;this.src='imgs/nhrca-logo-fallback.svg';" />
+          <p>AIFAP is committed to Build Competent Finance &amp; Accounting Professionals for a Changing Business World.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: About -->
+        <div class="col-lg-2 col-md-4 col-6">
+          <h5 class="footer-title">About</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://aifap.us/about">About AIFAP</a></li>
+            <li><a href="https://aifap.us/membership">Membership</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Verification & Policies -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5 class="footer-title">Verification &amp; Policies</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://aifap.us/verification">Verification</a></li>
+            <li><a href="https://aifap.us/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://aifap.us/terms-and-condition">Terms &amp; Conditions</a></li>
+            <li><a href="https://aifap.us/refund-policy">Refund Policy</a></li>
+            <li><a href="https://aifap.us/code-of-ethics">Code of Ethics</a></li>
+            <li><a href="https://aifap.us/complaint-and-appeals">Complaint and Appeals</a></li>
+            <li><a href="https://aifap.us/faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="col-lg-3 col-md-4 col-12">
+          <h5 class="footer-title">Contact</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://aifap.us/contact">Contact Us</a></li>
+            <li><a href="mailto:support@aifap.org">Email Support</a></li>
+          </ul>
+          <div class="mt-3">
+            <span class="footer-contact-item"><i class="bi bi-envelope-fill"></i> support@aifap.org</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="row align-items-center g-2">
+          <div class="col-md-12">
+            &copy; 2026 American Institute of Finance and Accounting Professional (AIFAP). All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    /* ==========================================
+       GLOBAL JAVASCRIPT (reused from Homepage)
+    =========================================== */
+
+    /* ===== NAVBAR JAVASCRIPT ===== */
+    (function () {
+      const navbar = document.getElementById('mainNavbar');
+      if (!navbar) return;
+      const onScroll = () => {
+        if (window.scrollY > 30) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    /* ===== DROPDOWN ACCESSIBILITY JAVASCRIPT ===== */
+    document.querySelectorAll('.nh-navbar .dropdown-item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        const collapse = document.getElementById('mainNav');
+        if (collapse && collapse.classList.contains('show') && window.innerWidth < 992) {
+          const bsCollapse = bootstrap.Collapse.getInstance(collapse) || new bootstrap.Collapse(collapse, { toggle: false });
+          bsCollapse.hide();
+        }
+      });
+    });
+
+    /* ===== COURSES PAGE HERO FADE-IN JAVASCRIPT ===== */
+    (function () {
+      const hero = document.querySelector('.courses-hero');
+      if (!hero) return;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) return;
+      hero.style.opacity = '0';
+      hero.style.transform = 'translateY(12px)';
+      hero.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          hero.style.opacity = '1';
+          hero.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    })();
+  </script>
+
+</body>
+</html>

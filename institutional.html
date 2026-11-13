@@ -34,95 +34,105 @@
 <body>
 
 <header>
-    <!-- Topbar -->
-    <div class="nh-topbar d-none d-lg-block">
-      <div class="container nh-container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="d-flex align-items-center gap-4">
-            <span class="topbar-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
-            <span class="topbar-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
-          </div>
-          <div class="d-flex align-items-center gap-3">
-            <span class="topbar-item"><i class="bi bi-shield-check"></i> UK Professional Certification Body</span>
-          </div>
+        <!-- Topbar -->
+        <div class="nh-topbar d-none d-lg-block">
+            <div class="container nh-container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <span class="topbar-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+                        <span class="topbar-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="topbar-item"><i class="bi bi-shield-check"></i> UK Professional Certification
+                            Body</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg nh-navbar sticky-top" id="mainNavbar" aria-label="Main navigation">
-      <div class="container nh-container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="https://nhrca.uk/" aria-label="NHRCA Home">
-          <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" alt="National Human Resource Certification Academy - NHRCA UK Logo" class="nh-navbar-logo" width="190" height="52" onerror="this.onerror=null;this.src='imgs/nhrca-logo-fallback.svg';" />
-        </a>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg nh-navbar sticky-top" id="mainNavbar" aria-label="Main navigation">
+            <div class="container nh-container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="https://nhrca.uk/" aria-label="NHRCA Home">
+                    <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png"
+                        alt="" class="nh-navbar-logo"
+                        width="180" height="52" />
+                </a>
 
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="bi bi-list"></i>
-        </button>
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
 
-        <!-- Navigation -->
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="https://nhrca.uk/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://nhrca.uk/contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://nhrca.uk/about-us">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="standardsDropdown">
-                Standards
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="standardsDropdown">
-                <li><a class="dropdown-item" href="https://nhrca.uk/nhrca-standard"><i class="bi bi-award me-2"></i>NHRCA Standard</a></li>
-                <li><a class="dropdown-item active" href="https://nhrca.uk/institutional-standard" aria-current="page"><i class="bi bi-building me-2"></i>Institutional Standard</a></li>
-                <li><a class="dropdown-item" href="https://nhrca.uk/course-standard"><i class="bi bi-journal-text me-2"></i>Course Standard</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://nhrca.uk/framework">Framework</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="accreditationDropdown">
-                Accreditation
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="accreditationDropdown">
-                <li><a class="dropdown-item" href="https://nhrca.uk/course-accreditation"><i class="bi bi-mortarboard me-2"></i>Course Accreditation</a></li>
-                <li><a class="dropdown-item" href="https://nhrca.uk/institute-accreditation"><i class="bi bi-bank me-2"></i>Institute Accreditation</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://nhrca.uk/credential">Credential</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="corporateDropdown">
-                Certify Corporate
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="corporateDropdown">
-                <li><a class="dropdown-item" href="https://nhrca.uk/nhrca-shrp"><i class="bi bi-briefcase me-2"></i>NHRCA Standard for Human Resource Practice (NHRCA-SHRP)</a></li>
-                <li><a class="dropdown-item" href="https://nhrca.uk/apply-for-accreditation"><i class="bi bi-file-earmark-check me-2"></i>Apply for Accreditation</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-blue btn-verify" href="https://nhrca.uk/verify"><i class="bi bi-patch-check"></i> Verify</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://nhrca.uk/" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="standardsDropdown">
+                                Standards
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="standardsDropdown">
+                                <li><a class="dropdown-item" href="nhrca_standard.html"><i
+                                            class="bi bi-award me-2"></i>NHRCA Standard</a></li>
+                                <li><a class="dropdown-item" href="institutional.html"><i
+                                            class="bi bi-building me-2"></i>Institutional Standard</a></li>
+                                <li><a class="dropdown-item" href="course-standard.html"><i
+                                            class="bi bi-journal-text me-2"></i>Course Standard</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="framework.html">Framework</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="accreditationDropdown">
+                                Accreditation
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="accreditationDropdown">
+                                <li><a class="dropdown-item" href="course-accreditation.html"><i
+                                            class="bi bi-mortarboard me-2"></i>Course Accreditation</a></li>
+                                <li><a class="dropdown-item" href="institute-accreditation.html"><i
+                                            class="bi bi-bank me-2"></i>Institute Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="credential.html">Credential</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="corporateDropdown">
+                                Certify Corporate
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="corporateDropdown">
+                                <li><a class="dropdown-item" href="certify-corporate.html"><i
+                                            class="bi bi-briefcase me-2"></i>NHRCA Standard </a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="bi bi-file-earmark-check me-2"></i>Apply for Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://nhrca.uk/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-blue btn-verify" href="https://nhrca.uk/verify"><i
+                                    class="bi bi-patch-check"></i> Verify</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- ==========================================
-       INSTITUTIONAL STANDARD PAGE SECTIONS
-  =========================================== -->
-  <!-- ==========================================
-       INSTITUTIONAL STANDARD PAGE SECTIONS
-  =========================================== -->
+
 
   <!-- ===== INSTITUTIONAL STANDARD HERO ===== -->
   <section class="institutional-hero" id="institutional-hero">
