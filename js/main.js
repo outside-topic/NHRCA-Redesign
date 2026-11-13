@@ -109,3 +109,71 @@ document.querySelectorAll('.nh-navbar .dropdown-item').forEach(function (item) {
     });
 })();
 
+
+
+
+
+// About page start
+
+/* ===== ABOUT PAGE HERO FADE-IN JAVASCRIPT ===== */
+// Subtle entrance animation for the About hero
+(function () {
+    const hero = document.querySelector('.ap-hero');
+    if (!hero) return;
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
+    hero.style.opacity = '0';
+    hero.style.transform = 'translateY(12px)';
+    hero.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            hero.style.opacity = '1';
+            hero.style.transform = 'translateY(0)';
+        }, 100);
+    });
+})();
+
+// About page end
+
+// Certify Corporate start
+
+/* ===== CORPORATE PAGE HERO FADE-IN JAVASCRIPT ===== */
+(function () {
+    const hero = document.querySelector('.corporate-hero');
+    if (!hero) return;
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
+    hero.style.opacity = '0';
+    hero.style.transform = 'translateY(12px)';
+    hero.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            hero.style.opacity = '1';
+            hero.style.transform = 'translateY(0)';
+        }, 100);
+    });
+})();
+// Certify Corporate end
+
+
+
+
+// COURSE ACCREDITATION start
+
+/* ===== COURSE ACCREDITATION PAGE HERO FADE-IN JAVASCRIPT ===== */
+    (function () {
+      const hero = document.querySelector('.course-accreditation-hero');
+      if (!hero) return;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) return;
+      hero.style.opacity = '0';
+      hero.style.transform = 'translateY(12px)';
+      hero.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          hero.style.opacity = '1';
+          hero.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    })();
+// COURSE ACCREDITATION end
