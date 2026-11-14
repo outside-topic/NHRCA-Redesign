@@ -1,0 +1,7600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | NHRCA - National Human Resource Certification Academy, UK</title>
+  <meta name="description" content="Connect with the National Human Resource Certification Academy (NHRCA) for information about professional certification, institutional accreditation, corporate HR standards, and general inquiries." />
+  <meta name="keywords" content="NHRCA Contact, HR Certification Contact, HR Accreditation Inquiry, Contact NHRCA UK" />
+  <meta name="author" content="National Human Resource Certification Academy" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us | NHRCA - National Human Resource Certification Academy, UK" />
+  <meta property="og:description" content="Connect with NHRCA for professional certification, institutional accreditation, and corporate HR standards." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nhrca.uk/contact" />
+  <meta property="og:image" content="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" />
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ==========================================
+       FIRST STYLE TAG: GLOBAL COMMON CSS
+       (Reusable across all website pages — integrated)
+  ========================================== -->
+  <style>
+/* ==========================================
+       GLOBAL COMMON CSS
+       Reusable across all website pages
+    ========================================== */
+/* ===== Brand Variables ===== */
+:root {
+     /* Approved Brand Colors */
+     --nh-white: #ffffff;
+     --nh-navy: #1f357a;
+     --nh-blue: #307ccd;
+
+     /* Derived Tints & Supporting Tones */
+     --nh-navy-dark: #18285f;
+     --nh-navy-soft: #2a4499;
+     --nh-blue-dark: #286db8;
+     --nh-blue-soft: #4a91dc;
+     --nh-blue-tint: #eaf2fb;
+     --nh-navy-tint: #eef1f9;
+     --nh-bg-light: #f6f8fc;
+     --nh-bg-section: #fafbfd;
+
+     --nh-text: #3c4858;
+     --nh-text-muted: #6b7686;
+     --nh-text-light: #9aa3b0;
+     --nh-border: #e6eaf1;
+     --nh-border-soft: #f0f3f8;
+
+     /* Typography */
+     --nh-font-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+
+     /* Spacing */
+     --nh-section-y: 5rem;
+     --nh-section-y-sm: 3rem;
+     --nh-navbar-height: 82px;
+
+     /* Transitions */
+     --nh-transition: all 0.3s ease;
+
+     /* Shadows */
+     --nh-shadow-sm: 0 1px 3px rgba(31, 53, 122, 0.05);
+     --nh-shadow-md: 0 6px 24px rgba(31, 53, 122, 0.08);
+     --nh-shadow-lg: 0 16px 48px rgba(31, 53, 122, 0.12);
+     --nh-shadow-blue: 0 10px 30px rgba(48, 124, 205, 0.22);
+
+     /* Radius */
+     --nh-radius: 0.75rem;
+     --nh-radius-sm: 0.5rem;
+     --nh-radius-lg: 1rem;
+
+}
+
+/* ===== Global Typography ===== */
+html {
+     scroll-behavior: smooth;
+     scroll-padding-top: var(--nh-navbar-height);
+
+}
+
+body {
+     font-family: var(--nh-font-base);
+     color: var(--nh-text);
+     font-size: 1rem;
+     line-height: 1.7;
+     font-weight: 400;
+     background-color: var(--nh-white);
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     font-family: var(--nh-font-base);
+     color: var(--nh-navy);
+     font-weight: 700;
+     line-height: 1.22;
+     letter-spacing: -0.01em;
+
+}
+
+h1 {
+     font-size: clamp(2rem, 4vw, 3rem);
+     font-weight: 800;
+
+}
+
+h2 {
+     font-size: clamp(1.6rem, 3vw, 2.25rem);
+
+}
+
+h3 {
+     font-size: clamp(1.25rem, 2vw, 1.5rem);
+
+}
+
+h4,
+.course-accreditation-cta-email i {
+     font-size: 1.15rem;
+
+}
+
+h5,
+.course-accreditation-step-email i {
+     font-size: 1rem;
+
+}
+
+h6 {
+     font-size: 0.9rem;
+
+}
+
+p,
+.intro-content p,
+.course-standard-competency {
+     margin-bottom: 1rem;
+
+}
+
+a {
+     color: var(--nh-blue);
+     text-decoration: none;
+     transition: var(--nh-transition);
+
+}
+
+a:hover,
+.nh-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-navy);
+
+}
+
+.lead {
+     font-size: 1.1rem;
+     color: var(--nh-text-muted);
+     font-weight: 400;
+     line-height: 1.7;
+
+}
+
+.text-navy {
+     color: var(--nh-navy) !important;
+
+}
+
+.text-blue {
+     color: var(--nh-blue) !important;
+
+}
+
+.text-muted-soft {
+     color: var(--nh-text-muted) !important;
+
+}
+
+.bg-navy {
+     background-color: var(--nh-navy) !important;
+
+}
+
+.bg-blue {
+     background-color: var(--nh-blue) !important;
+
+}
+
+.bg-blue-tint {
+     background-color: var(--nh-blue-tint) !important;
+
+}
+
+.bg-navy-tint {
+     background-color: var(--nh-navy-tint) !important;
+
+}
+
+.bg-section {
+     background-color: var(--nh-bg-section) !important;
+
+}
+
+/* ===== Common Container ===== */
+.nh-container {
+     max-width: 1240px;
+
+}
+
+/* ===== Common Section Spacing ===== */
+.section {
+     padding-top: var(--nh-section-y);
+     padding-bottom: var(--nh-section-y);
+
+}
+
+.section-sm {
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+
+}
+
+.section-lg {
+     padding-top: 6.5rem;
+     padding-bottom: 6.5rem;
+
+}
+
+/* ===== Common Section Headings ===== */
+.section-eyebrow {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     color: var(--nh-blue);
+     font-size: 0.8rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 0.14em;
+     margin-bottom: 1rem;
+
+}
+
+.section-eyebrow::before {
+     content: "";
+     display: inline-block;
+     width: 28px;
+     height: 2px;
+     background-color: var(--nh-blue);
+     border-radius: 2px;
+
+}
+
+.section-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     margin-bottom: 1.1rem;
+
+}
+
+.section-subtitle {
+     color: var(--nh-text-muted);
+     font-size: 1.05rem;
+     line-height: 1.75;
+     max-width: 640px;
+
+}
+
+.section-divider,
+.course-details-panel-divider,
+.credential-section-divider {
+     width: 56px;
+     height: 3px;
+     background-color: var(--nh-blue);
+     border-radius: 3px;
+     margin-bottom: 1.5rem;
+
+}
+
+/* ===== Common Buttons ===== */
+.btn {
+     font-family: var(--nh-font-base);
+     font-weight: 600;
+     padding: 0.8rem 1.75rem;
+     border-radius: var(--nh-radius-sm);
+     transition: var(--nh-transition);
+     font-size: 0.94rem;
+     letter-spacing: 0.01em;
+     border: 1.5px solid transparent;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+
+}
+
+.btn:focus {
+     box-shadow: 0 0 0 0.2rem rgba(48, 124, 205, 0.25);
+
+}
+
+.btn-lg {
+     padding: 0.95rem 2rem;
+     font-size: 1rem;
+
+}
+
+.btn-sm {
+     padding: 0.5rem 1.1rem;
+     font-size: 0.85rem;
+
+}
+
+.btn-blue {
+     background-color: var(--nh-blue);
+     border-color: var(--nh-blue);
+     color: var(--nh-white);
+
+}
+
+.btn-blue:hover {
+     background-color: var(--nh-blue-dark);
+     border-color: var(--nh-blue-dark);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+     box-shadow: var(--nh-shadow-blue);
+
+}
+
+.btn-navy,
+.credential-benefit-tab-btn.active,
+.credential-eligibility-tab-btn.active,
+.credential-assessment-tab-btn.active {
+     background-color: var(--nh-navy);
+     border-color: var(--nh-navy);
+     color: var(--nh-white);
+
+}
+
+.btn-navy:hover {
+     background-color: var(--nh-navy-dark);
+     border-color: var(--nh-navy-dark);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+     box-shadow: 0 10px 30px rgba(31, 53, 122, 0.28);
+
+}
+
+.btn-outline-blue {
+     background-color: transparent;
+     border-color: var(--nh-blue);
+     color: var(--nh-blue);
+
+}
+
+.btn-outline-blue:hover {
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+
+}
+
+.btn-outline-navy {
+     background-color: transparent;
+     border-color: var(--nh-navy);
+     color: var(--nh-navy);
+
+}
+
+.btn-outline-navy:hover {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+
+}
+
+.btn-outline-light {
+     background-color: transparent;
+     border-color: rgba(255, 255, 255, 0.7);
+     color: var(--nh-white);
+
+}
+
+.btn-outline-light:hover {
+     background-color: var(--nh-white);
+     color: var(--nh-navy);
+     border-color: var(--nh-white);
+
+}
+
+.btn-white {
+     background-color: var(--nh-white);
+     border-color: var(--nh-white);
+     color: var(--nh-navy);
+
+}
+
+.btn-white:hover {
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-navy);
+     transform: translateY(-2px);
+
+}
+
+/* ===== Common Cards ===== */
+.nh-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 2rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+
+}
+
+.nh-card:hover,
+.about-membership-tile:hover,
+.about-why-feature-card:hover,
+.standard-compliance-card:hover,
+.standard-course-card:hover,
+.course-accreditation-benefit-card:hover,
+.institute-accreditation-benefit-card:hover,
+.courses-card:hover,
+.corporate-dimension-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-4px);
+
+}
+
+.nh-card-icon,
+.standard-compliance-icon,
+.standard-course-icon,
+.course-accreditation-benefit-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.5rem;
+     margin-bottom: 1.25rem;
+
+}
+
+.nh-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.15rem;
+     margin-bottom: 0.6rem;
+
+}
+
+.nh-card-text,
+.institutional-core-card-text {
+     color: var(--nh-text-muted);
+     font-size: 0.95rem;
+     line-height: 1.7;
+     margin-bottom: 1.25rem;
+
+}
+
+.nh-card-link,
+.service-card-link {
+     color: var(--nh-blue);
+     font-weight: 600;
+     font-size: 0.9rem;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     transition: var(--nh-transition);
+
+}
+
+.nh-card-link:hover,
+.nh-link:hover,
+.service-card-link:hover {
+     color: var(--nh-navy);
+     gap: 0.7rem;
+
+}
+
+/* ===== Common Badges ===== */
+.nh-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     padding: 0.4rem 0.9rem;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.04em;
+     border-radius: 50px;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     text-transform: uppercase;
+
+}
+
+.nh-badge-navy {
+     background-color: var(--nh-navy-tint);
+     color: var(--nh-navy);
+
+}
+
+.nh-badge-white {
+     background-color: rgba(255, 255, 255, 0.15);
+     color: var(--nh-white);
+     backdrop-filter: blur(6px);
+
+}
+
+/* ===== Common Images ===== */
+.nh-img {
+     max-width: 100%;
+     height: auto;
+     border-radius: var(--nh-radius);
+
+}
+
+.nh-img-cover {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: var(--nh-radius);
+
+}
+
+/* ===== Common Links ===== */
+.nh-link {
+     color: var(--nh-blue);
+     font-weight: 600;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     transition: var(--nh-transition);
+
+}
+
+/* ===== Breadcrumbs ===== */
+.nh-breadcrumb {
+     background-color: var(--nh-bg-section);
+     padding: 1rem 0;
+     border-bottom: 1px solid var(--nh-border);
+
+}
+
+.nh-breadcrumb .breadcrumb {
+     margin: 0;
+     font-size: 0.9rem;
+
+}
+
+.nh-breadcrumb .breadcrumb-item a {
+     color: var(--nh-text-muted);
+     text-decoration: none;
+
+}
+
+.nh-breadcrumb .breadcrumb-item a:hover,
+.nh-navbar .nav-link:hover,
+.nh-navbar .nav-link.active,
+.hero-title .text-highlight,
+.about-vm-card-vision .about-vm-card-eyebrow,
+.courses-card-title:hover,
+.course-details-tab-btn:hover i,
+.course-details-sidebar-preview-title i,
+.credential-profile-sidebar-title i,
+.credential-profile-nav-item:hover i,
+.credential-profile-nav-item.active i,
+.credential-benefit-tab-btn:hover i,
+.credential-eligibility-panel-title i {
+     color: var(--nh-blue);
+
+}
+
+.nh-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+     content: "\F285";
+     font-family: "bootstrap-icons";
+     color: var(--nh-text-light);
+
+}
+
+/* ===== Navbar Common ===== */
+.nh-navbar {
+     background-color: var(--nh-white);
+     padding: 0.85rem 0;
+     transition: var(--nh-transition);
+     border-bottom: 1px solid var(--nh-border-soft);
+
+}
+
+.nh-navbar.scrolled {
+     box-shadow: var(--nh-shadow-md);
+     padding: 0.55rem 0;
+
+}
+
+.nh-navbar .navbar-brand {
+     padding: 0;
+
+}
+
+.nh-navbar-logo {
+     height: 52px;
+     width: auto;
+     transition: var(--nh-transition);
+
+}
+
+.nh-navbar.scrolled .nh-navbar-logo {
+     height: 46px;
+
+}
+
+.nh-navbar .nav-link {
+     color: var(--nh-text);
+     font-weight: 500;
+     font-size: 0.94rem;
+     padding: 0.6rem 0.95rem !important;
+     position: relative;
+     transition: var(--nh-transition);
+     display: inline-flex;
+     align-items: center;
+     gap: 0.3rem;
+
+}
+
+.nh-navbar .nav-link.active::after {
+     content: "";
+     position: absolute;
+     bottom: 0.2rem;
+     left: 0.95rem;
+     right: 0.95rem;
+     height: 2px;
+     background-color: var(--nh-blue);
+     border-radius: 2px;
+
+}
+
+.nh-navbar .dropdown-menu {
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+     box-shadow: var(--nh-shadow-md);
+     padding: 0.6rem;
+     min-width: 240px;
+     margin-top: 0.4rem !important;
+
+}
+
+.nh-navbar .dropdown-item {
+     padding: 0.65rem 0.9rem;
+     border-radius: var(--nh-radius-sm);
+     color: var(--nh-text);
+     font-weight: 500;
+     font-size: 0.92rem;
+     transition: var(--nh-transition);
+
+}
+
+.nh-navbar .dropdown-item:hover,
+.nh-navbar .dropdown-item:focus,
+.credential-profile-nav-item:hover {
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-navy);
+
+}
+
+.nh-navbar .dropdown-toggle::after {
+     font-size: 0.75rem;
+     margin-left: 0.15rem;
+
+}
+
+/* ===== Footer Common ===== */
+.nh-footer {
+     background-color: var(--nh-navy);
+     color: rgba(255, 255, 255, 0.78);
+     padding-top: 4.5rem;
+     padding-bottom: 0;
+
+}
+
+.nh-footer h5,
+.nh-footer .footer-title {
+     color: var(--nh-white);
+     font-size: 1rem;
+     font-weight: 700;
+     margin-bottom: 1.4rem;
+     letter-spacing: 0.01em;
+
+}
+
+.nh-footer p {
+     color: rgba(255, 255, 255, 0.72);
+
+}
+
+.nh-footer a {
+     color: rgba(255, 255, 255, 0.74);
+     text-decoration: none;
+     font-size: 0.92rem;
+     transition: var(--nh-transition);
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+
+}
+
+.nh-footer a:hover {
+     color: var(--nh-white);
+     padding-left: 0.25rem;
+
+}
+
+.nh-footer .footer-link-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+
+}
+
+.nh-footer .footer-link-list li {
+     margin-bottom: 0.65rem;
+
+}
+
+.nh-footer .footer-logo {
+     height: 56px;
+     width: auto;
+     margin-bottom: 1.3rem;
+     filter: brightness(0) invert(1);
+
+}
+
+.nh-footer .footer-contact-item {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+     margin-bottom: 0.85rem;
+     font-size: 0.92rem;
+     color: rgba(255, 255, 255, 0.74);
+
+}
+
+.nh-footer .footer-contact-item i {
+     color: var(--nh-blue-soft);
+     font-size: 1rem;
+     margin-top: 0.15rem;
+
+}
+
+.nh-footer .footer-social {
+     display: flex;
+     gap: 0.6rem;
+     margin-top: 1.25rem;
+
+}
+
+.nh-footer .footer-social a {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 38px;
+     height: 38px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.08);
+     color: var(--nh-white);
+     font-size: 1rem;
+
+}
+
+.nh-footer .footer-social a:hover {
+     background-color: var(--nh-blue);
+     padding-left: 0;
+     transform: translateY(-2px);
+
+}
+
+.nh-footer .footer-bottom {
+     border-top: 1px solid rgba(255, 255, 255, 0.12);
+     padding: 1.5rem 0;
+     margin-top: 3rem;
+     font-size: 0.88rem;
+     color: rgba(255, 255, 255, 0.62);
+
+}
+
+.nh-footer .footer-bottom a {
+     font-size: 0.88rem;
+
+}
+
+/* ==========================================
+       HEADER CSS
+    ========================================== */
+/* ===== Header ===== */
+.nh-topbar {
+     background-color: var(--nh-navy);
+     color: rgba(255, 255, 255, 0.85);
+     font-size: 0.84rem;
+     padding: 0.45rem 0;
+
+}
+
+.nh-topbar a {
+     color: rgba(255, 255, 255, 0.85);
+     text-decoration: none;
+
+}
+
+.nh-topbar a:hover,
+.individual-section h2,
+.individual-section .section-title,
+.stats-header h2,
+.about-corporate-section h2,
+.about-corporate-section .about-section-title,
+.about-vm-card-mission .about-vm-card-title,
+.about-vm-card-mission .about-vm-card-text,
+.institutional-hero-breadcrumb .breadcrumb-item a:hover,
+.framework-hero-breadcrumb .breadcrumb-item a:hover,
+.course-accreditation-hero-breadcrumb .breadcrumb-item a:hover,
+.institute-accreditation-hero-breadcrumb .breadcrumb-item a:hover,
+.course-details-hero-breadcrumb .breadcrumb-item a:hover,
+.corporate-hero-breadcrumb .breadcrumb-item a:hover,
+.course-standard-hero-breadcrumb .breadcrumb-item a:hover,
+.credential-hero-breadcrumb .breadcrumb-item a:hover {
+     color: var(--nh-white);
+
+}
+
+.nh-topbar .topbar-item,
+.framework-focus-level {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+
+}
+
+.nh-topbar .topbar-item i,
+.individual-section .section-eyebrow,
+.stats-header .section-eyebrow,
+.stat-number .stat-suffix,
+.about-corporate-section .about-section-eyebrow,
+.about-vm-card-mission .about-vm-card-eyebrow,
+.course-accreditation-step-text a:hover,
+.course-details-tab-btn.active i,
+.credential-benefit-tab-btn.active i {
+     color: var(--nh-blue-soft);
+
+}
+
+/* ===== Desktop Navigation ===== */
+.nh-navbar .container-fluid,
+.nh-navbar .nh-container {
+     align-items: center;
+
+}
+
+.nh-navbar .navbar-nav {
+     align-items: center;
+     gap: 0.15rem;
+
+}
+
+.nh-navbar .btn-verify {
+     margin-left: 0.75rem;
+     padding: 0.55rem 1.25rem;
+     font-size: 0.88rem;
+
+}
+
+/* ==========================================
+       HOMEPAGE SECTION CSS
+    ========================================== */
+/* ===== HERO SECTION CSS ===== */
+/* Hero Section Styling */
+.hero-section {
+     position: relative;
+     padding-top: 5rem;
+     padding-bottom: 5rem;
+     background-color: var(--nh-white);
+     overflow: hidden;
+
+}
+
+.hero-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 55%;
+     height: 100%;
+     background: linear-gradient(135deg, var(--nh-blue-tint) 0%, var(--nh-navy-tint) 100%);
+     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+     z-index: 0;
+
+}
+
+.hero-section .container,
+.stats-section .container,
+.cta-section .container,
+.about-hero .container,
+.about-corporate-section .container,
+.about-cta-section .container,
+.standard-hero .container,
+.institutional-hero .container,
+.framework-hero .container,
+.course-accreditation-hero .container,
+.course-accreditation-cta-section .container,
+.institute-accreditation-hero .container,
+.institute-accreditation-form-card .container-inner,
+.courses-hero .container,
+.course-details-hero .container,
+.corporate-hero .container,
+.corporate-cta-section .container,
+.course-standard-hero .container,
+.course-standard-commitment .container,
+.credential-hero .container,
+.credential-apply-cta-section .container {
+     position: relative;
+     z-index: 1;
+
+}
+
+.hero-eyebrow {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.45rem 1rem;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     border-radius: 50px;
+     font-size: 0.8rem;
+     font-weight: 600;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin-bottom: 1.5rem;
+
+}
+
+.hero-eyebrow i,
+.course-standard-badge i {
+     font-size: 0.85rem;
+
+}
+
+.hero-title {
+     color: var(--nh-navy);
+     font-weight: 800;
+     margin-bottom: 1.25rem;
+     letter-spacing: -0.02em;
+
+}
+
+.hero-support {
+     font-size: 1.18rem;
+     color: var(--nh-text);
+     font-weight: 500;
+     line-height: 1.6;
+     margin-bottom: 1.25rem;
+
+}
+
+.hero-intro {
+     color: var(--nh-text-muted);
+     font-size: 1rem;
+     line-height: 1.75;
+     margin-bottom: 1.5rem;
+
+}
+
+.hero-features {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+     margin-bottom: 1.75rem;
+
+}
+
+.hero-feature {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+     padding: 1rem;
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+
+}
+
+.hero-feature-icon {
+     flex-shrink: 0;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 38px;
+     height: 38px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.1rem;
+
+}
+
+.hero-feature-title {
+     font-size: 0.9rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin-bottom: 0.15rem;
+     line-height: 1.3;
+
+}
+
+.hero-feature-text {
+     font-size: 0.82rem;
+     color: var(--nh-text-muted);
+     line-height: 1.5;
+     margin: 0;
+
+}
+
+.hero-additional {
+     font-size: 0.92rem;
+     color: var(--nh-text-muted);
+     line-height: 1.7;
+     padding: 1.1rem 1.25rem;
+     background-color: var(--nh-bg-section);
+     border-left: 3px solid var(--nh-blue);
+     border-radius: var(--nh-radius-sm);
+     margin-bottom: 1.75rem;
+
+}
+
+.hero-cta-group {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0.85rem;
+
+}
+
+.hero-visual {
+     position: relative;
+     padding: 1rem;
+
+}
+
+.hero-visual-img-wrap {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-lg);
+     aspect-ratio: 4 / 4.4;
+
+}
+
+.hero-visual-img-wrap img,
+.institutional-visual img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+
+}
+
+.hero-visual-badge {
+     position: absolute;
+     bottom: 1.75rem;
+     left: -1.5rem;
+     background-color: var(--nh-white);
+     border-radius: var(--nh-radius);
+     padding: 1.1rem 1.35rem;
+     box-shadow: var(--nh-shadow-lg);
+     display: flex;
+     align-items: center;
+     gap: 0.85rem;
+     max-width: 230px;
+
+}
+
+.hero-visual-badge-icon {
+     flex-shrink: 0;
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.35rem;
+
+}
+
+.hero-visual-badge-title,
+.about-hero-badge-title,
+.standard-hero-badge-title {
+     font-size: 0.82rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin: 0;
+     line-height: 1.3;
+
+}
+
+.hero-visual-badge-text,
+.about-hero-badge-text,
+.standard-hero-badge-text {
+     font-size: 0.74rem;
+     color: var(--nh-text-muted);
+     margin: 0;
+
+}
+
+.hero-visual-stat {
+     position: absolute;
+     top: 1.75rem;
+     right: -0.75rem;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     padding: 0.9rem 1.15rem;
+     border-radius: var(--nh-radius);
+     box-shadow: var(--nh-shadow-lg);
+     text-align: center;
+
+}
+
+.hero-visual-stat-num {
+     font-size: 1.5rem;
+     font-weight: 800;
+     line-height: 1;
+
+}
+
+.hero-visual-stat-label {
+     font-size: 0.72rem;
+     font-weight: 500;
+     opacity: 0.9;
+
+}
+
+/* ===== INTRODUCTION SECTION CSS ===== */
+/* Introduction Section Styling */
+.intro-section,
+.institutional-section,
+.accreditation-section,
+.about-membership-section,
+.about-vision-mission-section,
+.about-why-features-section,
+.standard-compliance-section,
+.standard-course-section,
+.standard-cluster-professional,
+.standard-cluster-entrepreneurial,
+.institutional-standards-section,
+.framework-progression-section,
+.framework-comparison-table tbody tr:nth-child(even) td,
+.framework-summary-section,
+.course-accreditation-benefits-section,
+.institute-accreditation-benefits-section,
+.institute-accreditation-form-section,
+.course-details-faq-question:hover,
+.corporate-dimensions-section,
+.course-standard-cards-section {
+     background-color: var(--nh-bg-section);
+
+}
+
+.intro-visual {
+     position: relative;
+     padding-right: 1rem;
+
+}
+
+.intro-visual-img,
+.about-who-img,
+.standard-intro-img {
+     border-radius: var(--nh-radius-lg);
+     width: 100%;
+     height: 460px;
+     object-fit: cover;
+     box-shadow: var(--nh-shadow-md);
+
+}
+
+.intro-quote-block {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     padding: 1.75rem 1.5rem;
+     border-radius: var(--nh-radius);
+     position: relative;
+     margin-top: -3rem;
+     margin-left: 2rem;
+     box-shadow: var(--nh-shadow-lg);
+     max-width: 460px;
+
+}
+
+.intro-quote-block::before {
+     content: "\F6A0";
+     font-family: "bootstrap-icons";
+     position: absolute;
+     top: -0.85rem;
+     left: 1.5rem;
+     font-size: 2rem;
+     color: var(--nh-blue);
+     background-color: var(--nh-white);
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+.intro-quote-text {
+     font-size: 0.98rem;
+     line-height: 1.65;
+     font-style: italic;
+     color: rgba(255, 255, 255, 0.92);
+     margin: 0;
+
+}
+
+.intro-content .section-divider {
+     margin-top: 0;
+
+}
+
+/* ===== KEY SERVICES SECTION CSS ===== */
+/* Key Services Section Styling */
+.services-section,
+.course-section,
+.about-section,
+.about-advancement-section,
+.institutional-excellence-section,
+.framework-comparison-section,
+.course-accreditation-process-section,
+.institute-accreditation-process-section,
+.credential-profile {
+     background-color: var(--nh-white);
+
+}
+
+.service-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.75rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+
+}
+
+.service-card::after,
+.course-accreditation-benefit-card::before,
+.corporate-dimension-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background-color: var(--nh-blue);
+     transform: scaleX(0);
+     transform-origin: left;
+     transition: var(--nh-transition);
+
+}
+
+.service-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-5px);
+
+}
+
+.service-card:hover::after,
+.course-accreditation-benefit-card:hover::before,
+.institute-accreditation-benefit-card:hover::before,
+.corporate-dimension-card:hover::before {
+     transform: scaleX(1);
+
+}
+
+.service-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 60px;
+     height: 60px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.6rem;
+     margin-bottom: 1.5rem;
+     transition: var(--nh-transition);
+
+}
+
+.service-card:hover .service-card-icon,
+.about-vm-card-vision .about-vm-card-icon {
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+
+}
+
+.service-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.2rem;
+     margin-bottom: 0.7rem;
+
+}
+
+.service-card-text {
+     color: var(--nh-text-muted);
+     font-size: 0.93rem;
+     line-height: 1.7;
+     margin-bottom: 1.3rem;
+
+}
+
+/* ===== INSTITUTIONAL STANDARDS SECTION CSS ===== */
+/* Institutional Standards Section Styling */
+.institutional-visual {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+     aspect-ratio: 5 / 4;
+
+}
+
+.institutional-visual-overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     padding: 1.5rem;
+     background: linear-gradient(to top, rgba(31, 53, 122, 0.92), rgba(31, 53, 122, 0));
+     color: var(--nh-white);
+
+}
+
+.institutional-visual-overlay-title {
+     font-size: 1rem;
+     font-weight: 700;
+     color: var(--nh-white);
+     margin: 0;
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+
+}
+
+.institutional-feature-list,
+.about-inst-accred-points {
+     list-style: none;
+     padding: 0;
+     margin: 1.5rem 0;
+
+}
+
+.institutional-feature-list li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+     margin-bottom: 1rem;
+     color: var(--nh-text);
+     font-size: 0.96rem;
+     line-height: 1.6;
+
+}
+
+.institutional-feature-list li i {
+     color: var(--nh-blue);
+     font-size: 1.1rem;
+     margin-top: 0.2rem;
+     flex-shrink: 0;
+
+}
+
+.quality-mark-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.75rem;
+     padding: 0.9rem 1.25rem;
+     background-color: var(--nh-blue-tint);
+     border: 1px solid rgba(48, 124, 205, 0.2);
+     border-radius: var(--nh-radius-sm);
+     margin-top: 1.25rem;
+
+}
+
+.quality-mark-badge i,
+.course-details-panel-heading i,
+.credential-section-heading i {
+     color: var(--nh-blue);
+     font-size: 1.5rem;
+
+}
+
+.quality-mark-badge-title {
+     font-size: 0.92rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin: 0;
+     line-height: 1.3;
+
+}
+
+.quality-mark-badge-text {
+     font-size: 0.8rem;
+     color: var(--nh-text-muted);
+     margin: 0;
+
+}
+
+/* ===== COURSE STANDARDS SECTION CSS ===== */
+/* Course Standards Section Styling */
+.course-visual {
+     position: relative;
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+     background-color: var(--nh-bg-section);
+
+}
+
+.course-visual img {
+     width: 100%;
+     height: auto;
+     display: block;
+
+}
+
+.course-visual-tag {
+     position: absolute;
+     top: 1.25rem;
+     right: 1.25rem;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     padding: 0.5rem 1rem;
+     border-radius: 50px;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.03em;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+
+}
+
+.course-feature-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+     margin: 1.5rem 0;
+
+}
+
+.course-feature-item {
+     padding: 1rem;
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-bg-section);
+
+}
+
+.course-feature-item i {
+     color: var(--nh-blue);
+     font-size: 1.25rem;
+     margin-bottom: 0.5rem;
+     display: block;
+
+}
+
+.course-feature-item-title {
+     font-size: 0.88rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin-bottom: 0.15rem;
+
+}
+
+.course-feature-item-text {
+     font-size: 0.8rem;
+     color: var(--nh-text-muted);
+     line-height: 1.5;
+     margin: 0;
+
+}
+
+/* ===== INDIVIDUAL STANDARDS SECTION CSS ===== */
+/* Individual Standards Section Styling */
+.individual-section {
+     background-color: var(--nh-navy);
+     color: rgba(255, 255, 255, 0.85);
+
+}
+
+.individual-section .section-subtitle,
+.about-corporate-section .about-section-subtitle {
+     color: rgba(255, 255, 255, 0.75);
+
+}
+
+.individual-section .section-eyebrow::before,
+.stats-header .section-eyebrow::before,
+.about-corporate-section .about-section-eyebrow::before,
+.about-vm-card-mission .about-vm-card-divider,
+.framework-level-card-legendary .framework-level-num,
+.credential-assessment-tab-btn.active .credential-assessment-weight {
+     background-color: var(--nh-blue-soft);
+
+}
+
+.individual-section p {
+     color: rgba(255, 255, 255, 0.78);
+
+}
+
+.individual-level-card {
+     background-color: rgba(255, 255, 255, 0.06);
+     border: 1px solid rgba(255, 255, 255, 0.12);
+     border-radius: var(--nh-radius);
+     padding: 1.5rem;
+     height: 100%;
+     transition: var(--nh-transition);
+
+}
+
+.individual-level-card:hover,
+.about-corporate-feature:hover {
+     background-color: rgba(48, 124, 205, 0.15);
+     border-color: var(--nh-blue-soft);
+     transform: translateY(-4px);
+
+}
+
+.individual-level-icon,
+.about-corporate-feature-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 48px;
+     height: 48px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     font-size: 1.3rem;
+     margin-bottom: 1rem;
+
+}
+
+.individual-level-title {
+     color: var(--nh-white);
+     font-size: 1.05rem;
+     font-weight: 700;
+     margin-bottom: 0.4rem;
+
+}
+
+.individual-level-text {
+     font-size: 0.85rem;
+     color: rgba(255, 255, 255, 0.72);
+     line-height: 1.6;
+     margin: 0;
+
+}
+
+/* ===== ACCREDITATION SECTION CSS ===== */
+/* Accreditation Section Styling */
+.accreditation-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+
+}
+
+.accreditation-card:hover,
+.standard-cluster-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-lg);
+     transform: translateY(-5px);
+
+}
+
+.accreditation-card-header {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     color: var(--nh-white);
+     padding: 2rem;
+     text-align: center;
+     position: relative;
+
+}
+
+.accreditation-card-header::after {
+     content: "";
+     position: absolute;
+     bottom: -1px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 0;
+     height: 0;
+     border-left: 14px solid transparent;
+     border-right: 14px solid transparent;
+     border-top: 14px solid var(--nh-blue);
+
+}
+
+.accreditation-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 68px;
+     height: 68px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.15);
+     color: var(--nh-white);
+     font-size: 1.8rem;
+     margin-bottom: 1rem;
+
+}
+
+.accreditation-card-title {
+     color: var(--nh-white);
+     font-size: 1.25rem;
+     font-weight: 700;
+     margin: 0;
+
+}
+
+.accreditation-card-body {
+     padding: 2rem;
+     text-align: center;
+
+}
+
+.accreditation-card-text {
+     color: var(--nh-text-muted);
+     font-size: 0.95rem;
+     line-height: 1.7;
+     margin-bottom: 1.5rem;
+
+}
+
+.accreditation-card-list {
+     list-style: none;
+     padding: 0;
+     margin: 0 0 1.5rem 0;
+     text-align: left;
+
+}
+
+.accreditation-card-list li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.65rem;
+     padding: 0.5rem 0;
+     font-size: 0.88rem;
+     color: var(--nh-text);
+     border-bottom: 1px solid var(--nh-border-soft);
+
+}
+
+.accreditation-card-list li:last-child,
+.about-inst-accred-points li:last-child,
+.framework-info-row:last-of-type,
+.framework-comparison-table tbody tr:last-child td {
+     border-bottom: none;
+
+}
+
+.accreditation-card-list li i {
+     color: var(--nh-blue);
+     font-size: 1rem;
+     margin-top: 0.15rem;
+     flex-shrink: 0;
+
+}
+
+/* ===== ABOUT SECTION CSS ===== */
+/* About Section Styling */
+.about-visual {
+     position: relative;
+     padding: 0;
+
+}
+
+.about-visual-img {
+     border-radius: var(--nh-radius-lg);
+     width: 100%;
+     height: 480px;
+     object-fit: cover;
+     box-shadow: var(--nh-shadow-md);
+
+}
+
+.about-visual-frame {
+     position: relative;
+
+}
+
+.about-visual-frame::before {
+     content: "";
+     position: absolute;
+     top: -1rem;
+     left: -1rem;
+     width: 100px;
+     height: 100px;
+     border-top: 4px solid var(--nh-blue);
+     border-left: 4px solid var(--nh-blue);
+     border-top-left-radius: var(--nh-radius-lg);
+     z-index: 1;
+
+}
+
+.about-visual-frame::after {
+     content: "";
+     position: absolute;
+     bottom: -1rem;
+     right: -1rem;
+     width: 100px;
+     height: 100px;
+     border-bottom: 4px solid var(--nh-navy);
+     border-right: 4px solid var(--nh-navy);
+     border-bottom-right-radius: var(--nh-radius-lg);
+     z-index: 1;
+
+}
+
+.about-feature-row {
+     display: flex;
+     gap: 1.5rem;
+     margin: 1.5rem 0;
+     flex-wrap: wrap;
+
+}
+
+.about-feature {
+     flex: 1 1 200px;
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+
+}
+
+.about-feature-icon {
+     flex-shrink: 0;
+     width: 44px;
+     height: 44px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.2rem;
+
+}
+
+.about-feature-title {
+     font-size: 0.95rem;
+     font-weight: 700;
+     color: var(--nh-navy);
+     margin-bottom: 0.15rem;
+
+}
+
+.about-feature-text {
+     font-size: 0.85rem;
+     color: var(--nh-text-muted);
+     line-height: 1.55;
+     margin: 0;
+
+}
+
+/* ===== STATISTICS SECTION CSS ===== */
+/* Statistics Section Styling */
+.stats-section,
+.course-standard-commitment {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     position: relative;
+     overflow: hidden;
+
+}
+
+.stats-section::before {
+     content: "";
+     position: absolute;
+     top: -50%;
+     right: -10%;
+     width: 400px;
+     height: 400px;
+     background-color: rgba(48, 124, 205, 0.12);
+     border-radius: 50%;
+     filter: blur(60px);
+
+}
+
+.stats-section::after {
+     content: "";
+     position: absolute;
+     bottom: -30%;
+     left: -5%;
+     width: 350px;
+     height: 350px;
+     background-color: rgba(74, 145, 220, 0.1);
+     border-radius: 50%;
+     filter: blur(60px);
+
+}
+
+.stats-header {
+     text-align: center;
+     margin-bottom: 3rem;
+
+}
+
+.stats-header .section-subtitle {
+     color: rgba(255, 255, 255, 0.72);
+     margin: 0 auto;
+
+}
+
+.stat-card {
+     text-align: center;
+     padding: 1.75rem 1rem;
+     border-radius: var(--nh-radius);
+     background-color: rgba(255, 255, 255, 0.05);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     height: 100%;
+     transition: var(--nh-transition);
+
+}
+
+.stat-card:hover {
+     background-color: rgba(48, 124, 205, 0.18);
+     border-color: var(--nh-blue-soft);
+     transform: translateY(-4px);
+
+}
+
+.stat-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 52px;
+     height: 52px;
+     border-radius: 50%;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     font-size: 1.35rem;
+     margin-bottom: 1rem;
+
+}
+
+.stat-number {
+     font-size: 2.6rem;
+     font-weight: 800;
+     color: var(--nh-white);
+     line-height: 1;
+     margin-bottom: 0.4rem;
+     letter-spacing: -0.02em;
+
+}
+
+.stat-label {
+     font-size: 0.9rem;
+     color: rgba(255, 255, 255, 0.75);
+     font-weight: 500;
+     margin: 0;
+     line-height: 1.4;
+
+}
+
+/* ===== CTA SECTION CSS ===== */
+/* CTA Section Styling */
+.cta-section {
+     background: linear-gradient(135deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+     color: var(--nh-white);
+     position: relative;
+     overflow: hidden;
+
+}
+
+.cta-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+     background-image: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+
+}
+
+.cta-content,
+.about-cta-content,
+.course-accreditation-cta-content {
+     text-align: center;
+     max-width: 760px;
+     margin: 0 auto;
+
+}
+
+.cta-content h2,
+.about-cta-content h2 {
+     color: var(--nh-white);
+     margin-bottom: 1rem;
+
+}
+
+.cta-content p,
+.about-cta-content p {
+     color: rgba(255, 255, 255, 0.85);
+     font-size: 1.1rem;
+     line-height: 1.7;
+     margin-bottom: 2rem;
+
+}
+
+.cta-buttons,
+.about-cta-buttons,
+.course-accreditation-cta-buttons,
+.institute-accreditation-form-buttons,
+.corporate-cta-buttons,
+.credential-apply-cta-buttons {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: center;
+
+}
+
+.cta-buttons .btn,
+.about-cta-buttons .btn,
+.course-accreditation-cta-buttons .btn,
+.institute-accreditation-form-buttons .btn,
+.credential-apply-cta-buttons .btn {
+     min-width: 220px;
+     justify-content: center;
+
+}
+
+.cta-feature-list {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     justify-content: center;
+     margin-top: 2.5rem;
+     padding-top: 2.5rem;
+     border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+.cta-feature {
+     display: flex;
+     align-items: center;
+     gap: 0.65rem;
+     color: rgba(255, 255, 255, 0.88);
+     font-size: 0.92rem;
+     font-weight: 500;
+
+}
+
+.cta-feature i {
+     color: var(--nh-white);
+     font-size: 1.15rem;
+
+}
+
+/* ==========================================
+       FOOTER CSS
+    ========================================== */
+/* Footer Styling */
+.nh-footer .footer-newsletter p {
+     color: rgba(255, 255, 255, 0.7);
+     font-size: 0.9rem;
+
+}
+
+.nh-footer .footer-bottom-links {
+     display: flex;
+     gap: 1.5rem;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+
+}
+
+/* ==========================================
+   HERO SECTION - BASE STYLES
+========================================== */
+.nh-hero {
+     position: relative;
+     width: 100%;
+     height: calc(100vh - 80px);
+     min-height: 600px;
+     background-color: var(--nh-navy-dark);
+     overflow: hidden;
+
+}
+
+.nh-hero-swiper,
+.nh-hero-swiper .swiper-wrapper {
+     position: relative;
+     width: 100%;
+     height: 100%;
+
+}
+
+.nh-hero-slide {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     min-height: 600px;
+     background-size: cover;
+     background-position: center 35%;
+     background-repeat: no-repeat;
+     overflow: hidden;
+
+}
+
+/* ==========================================
+   HERO SECTION - BACKGROUND SLIDER
+========================================== */
+.nh-hero-slide-1 {
+     background-image: url('https://images.unsplash.com/photo-1627518788331-b3b7fdaa382f?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0');
+
+}
+
+.nh-hero-slide-2 {
+     background-image: url('https://images.unsplash.com/photo-1648337564744-f919c7c2fc02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0');
+
+}
+
+.nh-hero-slide-3 {
+     background-image: url('https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=1216&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+
+}
+
+/* ==========================================
+   HERO SECTION - CONTENT STYLES
+========================================== */
+.nh-hero-overlay {
+     position: absolute;
+     inset: 0;
+     z-index: 1;
+     background: linear-gradient(90deg,
+               rgba(24, 40, 95, 0.92) 0%,
+               rgba(24, 40, 95, 0.82) 35%,
+               rgba(31, 53, 122, 0.55) 70%,
+               rgba(31, 53, 122, 0.25) 100%);
+
+}
+
+.nh-hero-content-wrap {
+     position: relative;
+     z-index: 2;
+     display: flex;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     min-height: 100%;
+     padding: 5rem 0 7rem;
+
+}
+
+.nh-hero-content {
+     max-width: 40rem;
+
+}
+
+.nh-hero-eyebrow {
+     display: inline-block;
+     padding: 0.45rem 1rem;
+     margin-bottom: 1.4rem;
+     font-family: var(--nh-font-base);
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     color: var(--nh-white);
+     background: rgba(48, 124, 205, 0.22);
+     border: 1px solid rgba(74, 145, 220, 0.5);
+     border-radius: var(--nh-radius-sm);
+     -webkit-backdrop-filter: blur(6px);
+     backdrop-filter: blur(6px);
+
+}
+
+.nh-hero-title {
+     font-family: var(--nh-font-base);
+     font-size: clamp(2rem, 4vw, 3.4rem);
+     font-weight: 700;
+     line-height: 1.15;
+     letter-spacing: -0.01em;
+     color: var(--nh-white);
+     margin-bottom: 1.25rem;
+
+}
+
+.nh-hero-desc {
+     font-family: var(--nh-font-base);
+     font-size: clamp(1rem, 1.3vw, 1.15rem);
+     line-height: 1.7;
+     color: rgba(255, 255, 255, 0.88);
+     margin-bottom: 2rem;
+     max-width: 38rem;
+
+}
+
+.nh-hero-actions {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     margin-bottom: 2.5rem;
+
+}
+
+.nh-hero-actions .btn {
+     min-width: 11rem;
+
+}
+
+.nh-hero-trust {
+     display: flex;
+     align-items: baseline;
+     gap: 0.7rem;
+     padding-top: 1.5rem;
+     border-top: 1px solid rgba(255, 255, 255, 0.18);
+     max-width: 24rem;
+
+}
+
+.nh-hero-trust-num {
+     font-family: var(--nh-font-base);
+     font-size: 1.8rem;
+     font-weight: 700;
+     line-height: 1;
+     color: var(--nh-blue-soft);
+
+}
+
+.nh-hero-trust-text {
+     font-family: var(--nh-font-base);
+     font-size: 0.9rem;
+     color: rgba(255, 255, 255, 0.78);
+
+}
+
+/* ==========================================
+   HERO SECTION - TEXT ANIMATIONS
+========================================== */
+.nh-hero-js-ready .nh-hero-content>* {
+     opacity: 0;
+
+}
+
+@keyframes nhHeroTextIn {
+     0% {
+          opacity: 0;
+          transform: translateX(-40px);
+     }
+
+     100% {
+          opacity: 1;
+          transform: translateX(0);
+     }
+}
+
+@keyframes nhHeroTextOut {
+     0% {
+          opacity: 1;
+          transform: translateX(0);
+     }
+
+     100% {
+          opacity: 0;
+          transform: translateX(-25px);
+     }
+}
+
+.nh-hero-text-in>* {
+     animation: nhHeroTextIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+
+}
+
+.nh-hero-text-in>.nh-hero-eyebrow {
+     animation-delay: 0.10s;
+
+}
+
+.nh-hero-text-in>.nh-hero-title {
+     animation-delay: 0.22s;
+
+}
+
+.nh-hero-text-in>.nh-hero-desc {
+     animation-delay: 0.34s;
+
+}
+
+.nh-hero-text-in>.nh-hero-actions {
+     animation-delay: 0.46s;
+
+}
+
+.nh-hero-text-in>.nh-hero-trust {
+     animation-delay: 0.58s;
+
+}
+
+.nh-hero-text-out>* {
+     animation: nhHeroTextOut 0.55s ease forwards;
+
+}
+
+/* ==========================================
+   HERO SECTION - SLIDER NAVIGATION
+========================================== */
+.nh-hero-prev,
+.nh-hero-next {
+     position: absolute;
+     bottom: 1.75rem;
+     top: auto;
+     width: 48px;
+     height: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background: rgba(255, 255, 255, 0.14);
+     border: 1px solid rgba(255, 255, 255, 0.32);
+     color: var(--nh-white);
+     cursor: pointer;
+     -webkit-backdrop-filter: blur(6px);
+     backdrop-filter: blur(6px);
+     transition: var(--nh-transition);
+     z-index: 10;
+
+}
+
+.nh-hero-prev:hover,
+.nh-hero-next:hover {
+     background: var(--nh-blue);
+     border-color: var(--nh-blue);
+
+}
+
+.nh-hero-prev:focus-visible,
+.nh-hero-next:focus-visible {
+     outline: 2px solid var(--nh-blue-soft);
+     outline-offset: 3px;
+
+}
+
+.nh-hero-prev::after,
+.nh-hero-next::after {
+     font-family: var(--nh-font-base);
+     font-size: 1.5rem;
+     font-weight: 700;
+     line-height: 1;
+
+}
+
+.nh-hero-prev::after {
+     content: '\2039';
+
+}
+
+.nh-hero-next::after {
+     content: '\203A';
+
+}
+
+.nh-hero-next {
+     right: 1.75rem;
+     left: auto;
+
+}
+
+.nh-hero-prev {
+     right: 4.75rem;
+     left: auto;
+
+}
+
+/* ==========================================
+   HERO SECTION - PAGINATION
+========================================== */
+.nh-hero-pagination {
+     position: absolute;
+     bottom: 2.6rem !important;
+     left: 50% !important;
+     right: auto !important;
+     width: auto !important;
+     transform: translateX(-50%);
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     z-index: 10;
+
+}
+
+.nh-hero-pagination .swiper-pagination-bullet {
+     width: 10px;
+     height: 10px;
+     background: rgba(255, 255, 255, 0.5);
+     opacity: 1;
+     border-radius: 50%;
+     transition: var(--nh-transition);
+
+}
+
+.nh-hero-pagination .swiper-pagination-bullet-active {
+     width: 30px;
+     border-radius: 5px;
+     background: var(--nh-blue-soft);
+
+}
+
+/* ==========================================
+   HERO SECTION - REDUCED MOTION
+========================================== */
+@media (prefers-reduced-motion: reduce) {
+     .nh-hero-js-ready .nh-hero-content>* {
+          opacity: 1 !important;
+     }
+
+     .nh-hero-text-in>*,
+     .nh-hero-text-out>* {
+          animation: none !important;
+     }
+}
+
+/* ==========================================
+       ABOUT US PAGE CSS (New Redesign)
+    =========================================== */
+
+    html, body { overflow-x: hidden; }
+    .nh-container { --bs-gutter-x: 3rem; }
+    @media (max-width: 575.98px) { .nh-container { --bs-gutter-x: 1.5rem; } }
+
+    .about-hero {
+      position: relative;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      background: linear-gradient(135deg, var(--nh-navy-tint) 0%, var(--nh-blue-tint) 100%);
+      overflow: hidden;
+    }
+    .about-hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(48, 124, 205, 0.12) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .about-hero .container { position: relative; z-index: 1; }
+    .about-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--nh-blue);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 1rem;
+    }
+    .about-hero-eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background-color: var(--nh-blue);
+      border-radius: 2px;
+    }
+    .about-hero-title {
+      color: var(--nh-navy);
+      font-weight: 800;
+      font-size: clamp(2.2rem, 4.5vw, 3rem);
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .about-hero-text p {
+      color: var(--nh-text);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 1.1rem;
+    }
+    .about-hero-text p:last-child { margin-bottom: 1.75rem; }
+    .about-hero-text .text-highlight {
+      color: var(--nh-blue);
+      font-weight: 600;
+    }
+    .about-hero-visual {
+      position: relative;
+    }
+    .about-hero-image {
+      width: 100%;
+      aspect-ratio: 4 / 3.2;
+      object-fit: cover;
+      border-radius: var(--nh-radius-lg);
+      box-shadow: var(--nh-shadow-lg);
+      display: block;
+    }
+    .about-hero-stat-badge {
+      position: absolute;
+      bottom: -1.25rem;
+      right: -0.75rem;
+      background-color: var(--nh-navy);
+      color: var(--nh-white);
+      padding: 1.1rem 1.35rem;
+      border-radius: var(--nh-radius);
+      box-shadow: var(--nh-shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      max-width: 220px;
+    }
+    .about-hero-stat-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: var(--nh-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .about-hero-stat-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--nh-white);
+      margin: 0;
+      line-height: 1.3;
+    }
+    .about-hero-stat-text {
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.78);
+      margin: 0;
+    }
+
+    /* ==========================================
+       ABOUT - WHAT NHRCA DOES (3 cards)
+    =========================================== */
+    .about-does-section { background-color: var(--nh-white); }
+    .about-does-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .about-does-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius);
+      padding: 2rem 1.85rem;
+      transition: var(--nh-transition);
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+    .about-does-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--nh-transition);
+    }
+    .about-does-card:hover {
+      border-color: var(--nh-blue-soft);
+      box-shadow: var(--nh-shadow-md);
+      transform: translateY(-4px);
+    }
+    .about-does-card:hover::before { transform: scaleX(1); }
+    .about-does-num {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--nh-blue-tint);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .about-does-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: var(--nh-radius-sm);
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .about-does-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+      padding-right: 2.5rem;
+      line-height: 1.35;
+    }
+    .about-does-text {
+      color: var(--nh-text-muted);
+      font-size: 0.93rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ==========================================
+       ABOUT - OVERALL CONTRIBUTION (statement)
+    =========================================== */
+    .about-contribution-section {
+      background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+      color: var(--nh-white);
+      position: relative;
+      overflow: hidden;
+    }
+    .about-contribution-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 55%;
+      height: 100%;
+      background-image: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .about-contribution-section .container { position: relative; z-index: 1; }
+    .about-contribution-content {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-contribution-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.12);
+      color: var(--nh-white);
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
+    .about-contribution-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      background-color: rgba(255, 255, 255, 0.12);
+      color: var(--nh-white);
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .about-contribution-text {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.18rem;
+      line-height: 1.8;
+      margin: 0;
+      font-weight: 500;
+    }
+    .about-contribution-text .text-highlight {
+      color: var(--nh-blue-soft);
+      font-weight: 700;
+    }
+
+    /* ==========================================
+       ABOUT - VISION & MISSION
+    =========================================== */
+    .about-vm-section { background-color: var(--nh-bg-section); }
+    .about-vm-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+    .about-vm-card {
+      border-radius: var(--nh-radius-lg);
+      padding: 2.75rem 2.5rem;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      transition: var(--nh-transition);
+    }
+    .about-vm-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--nh-shadow-lg);
+    }
+    .about-vm-card-vision {
+      background: linear-gradient(160deg, var(--nh-white) 0%, var(--nh-blue-tint) 100%);
+      border: 1px solid rgba(48, 124, 205, 0.18);
+    }
+    .about-vm-card-mission {
+      background: linear-gradient(160deg, var(--nh-navy) 0%, var(--nh-navy-soft) 100%);
+      border: 1px solid var(--nh-navy-soft);
+      color: var(--nh-white);
+    }
+    .about-vm-card-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: var(--nh-radius);
+      margin-bottom: 1.5rem;
+      font-size: 1.7rem;
+    }
+    .about-vm-card-vision .about-vm-card-icon {
+      background-color: var(--nh-blue);
+      color: var(--nh-white);
+    }
+    .about-vm-card-mission .about-vm-card-icon {
+      background-color: var(--nh-blue-soft);
+      color: var(--nh-white);
+    }
+    .about-vm-card-eyebrow {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+    .about-vm-card-vision .about-vm-card-eyebrow { color: var(--nh-blue); }
+    .about-vm-card-mission .about-vm-card-eyebrow { color: var(--nh-blue-soft); }
+    .about-vm-card-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .about-vm-card-mission .about-vm-card-title { color: var(--nh-white); }
+    .about-vm-card-divider {
+      width: 48px;
+      height: 3px;
+      border-radius: 3px;
+      margin-bottom: 1.25rem;
+    }
+    .about-vm-card-vision .about-vm-card-divider { background-color: var(--nh-blue); }
+    .about-vm-card-mission .about-vm-card-divider { background-color: var(--nh-blue-soft); }
+    .about-vm-card-text {
+      color: var(--nh-text);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin: 0;
+    }
+    .about-vm-card-mission .about-vm-card-text { color: rgba(255, 255, 255, 0.92); }
+
+    /* ==========================================
+       ABOUT - WHY NHRCA (split layout)
+    =========================================== */
+    .about-why-section { background-color: var(--nh-white); }
+    .about-why-visual {
+      position: relative;
+    }
+    .about-why-image {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: var(--nh-radius-lg);
+      box-shadow: var(--nh-shadow-md);
+      display: block;
+    }
+    .about-why-content .text-highlight {
+      color: var(--nh-blue);
+      font-weight: 600;
+    }
+    .about-why-intro {
+      color: var(--nh-text);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .about-why-points {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .about-why-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: var(--nh-text);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .about-why-points li i {
+      color: var(--nh-blue);
+      font-size: 1.1rem;
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================
+       ABOUT - WHY CHOOSE NHRCA (6 features)
+    =========================================== */
+    .about-features-section { background-color: var(--nh-bg-section); }
+    .about-features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .about-feature-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius);
+      padding: 1.85rem 1.65rem;
+      transition: var(--nh-transition);
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+    .about-feature-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var(--nh-blue);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--nh-transition);
+    }
+    .about-feature-card:hover {
+      border-color: var(--nh-blue-soft);
+      box-shadow: var(--nh-shadow-md);
+      transform: translateY(-4px);
+    }
+    .about-feature-card:hover::before { transform: scaleX(1); }
+    .about-feature-num {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.5rem;
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--nh-blue-tint);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .about-feature-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: var(--nh-radius-sm);
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      font-size: 1.4rem;
+      margin-bottom: 1.15rem;
+    }
+    .about-feature-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.65rem;
+      padding-right: 2.5rem;
+      line-height: 1.35;
+    }
+    .about-feature-text {
+      color: var(--nh-text-muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ==========================================
+       ABOUT - COMMITMENT
+    =========================================== */
+    .about-commitment-section {
+      background-color: var(--nh-white);
+    }
+    .about-commitment-card {
+      background: linear-gradient(135deg, var(--nh-blue-tint) 0%, var(--nh-navy-tint) 100%);
+      border: 1px solid var(--nh-border);
+      border-left: 4px solid var(--nh-blue);
+      border-radius: var(--nh-radius-lg);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .about-commitment-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: var(--nh-white);
+      color: var(--nh-blue);
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--nh-shadow-sm);
+    }
+    .about-commitment-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: clamp(1.6rem, 2.5vw, 2rem);
+      margin-bottom: 1rem;
+    }
+    .about-commitment-text {
+      color: var(--nh-text-muted);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ==========================================
+       ABOUT - RESPONSIVE
+    =========================================== */
+    @media (max-width: 991.98px) {
+      .about-hero { padding-top: 4rem; padding-bottom: 4rem; }
+      .about-hero-visual { margin-top: 2.5rem; }
+      .about-does-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-features-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-why-visual { margin-bottom: 2.5rem; }
+    }
+    @media (max-width: 767.98px) {
+      .about-hero { padding-top: 3rem; padding-bottom: 3rem; }
+      .about-hero-title { font-size: 2rem; }
+      .about-hero-stat-badge { display: none; }
+      .about-does-grid { grid-template-columns: 1fr; }
+      .about-vm-grid { grid-template-columns: 1fr; }
+      .about-vm-card { padding: 2rem 1.75rem; }
+      .about-features-grid { grid-template-columns: 1fr; }
+      .about-does-card,
+      .about-feature-card { padding: 1.5rem; }
+      .about-commitment-card { padding: 2rem 1.5rem; }
+      .about-contribution-text { font-size: 1.05rem; }
+    }
+    @media (max-width: 389.98px) {
+      .about-hero-title { font-size: 1.75rem; }
+      .about-does-num,
+      .about-feature-num { font-size: 1.9rem; }
+      .about-does-title,
+      .about-feature-title { font-size: 1rem; padding-right: 2rem; }
+      .about-vm-card-title { font-size: 1.4rem; }
+    }
+
+/* ==========================================
+       NHRCA STANDARD PAGE - HERO SECTION
+    =========================================== */
+/* ==========================================
+       NHRCA STANDARD PAGE - INTRODUCTION SECTION
+    =========================================== */
+.standard-intro-research-icon {
+     font-size: 1.5rem;
+     display: block;
+     margin-bottom: 0.25rem;
+
+}
+
+.standard-intro-research-label {
+     font-size: 0.78rem;
+     font-weight: 700;
+     line-height: 1.3;
+
+}
+
+/* ==========================================
+       NHRCA STANDARD PAGE - COMPLIANCE STANDARD SECTION
+    =========================================== */
+.standard-compliance-card,
+.standard-course-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.85rem 1.75rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+
+}
+
+.standard-compliance-num,
+.standard-course-num {
+     position: absolute;
+     top: 1.5rem;
+     right: 1.5rem;
+     font-size: 2.25rem;
+     font-weight: 800;
+     color: var(--nh-blue-tint);
+     line-height: 1;
+     letter-spacing: -0.03em;
+
+}
+
+.standard-compliance-title,
+.standard-course-title,
+.course-accreditation-benefit-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.1rem;
+     margin-bottom: 0.65rem;
+     padding-right: 2.5rem;
+     line-height: 1.35;
+
+}
+
+.standard-compliance-text,
+.standard-course-text,
+.course-accreditation-benefit-text {
+     color: var(--nh-text-muted);
+     font-size: 0.93rem;
+     line-height: 1.7;
+     margin: 0;
+
+}
+
+/* ==========================================
+       NHRCA STANDARD PAGE - OPERATIONAL STANDARD SECTION
+    ========================================== */
+.standard-operational-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 2.5rem 2.5rem;
+     box-shadow: var(--nh-shadow-sm);
+     position: relative;
+     overflow: hidden;
+
+}
+
+.standard-operational-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 5px;
+     height: 100%;
+     background: linear-gradient(180deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+
+}
+
+.standard-operational-icon-row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     margin-top: 1.5rem;
+
+}
+
+.standard-operational-pill {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.55rem 1rem;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-navy);
+     border-radius: 50px;
+     font-size: 0.88rem;
+     font-weight: 600;
+
+}
+
+.standard-operational-pill i,
+.course-details-info-label i,
+.course-details-sidebar-list-label i {
+     color: var(--nh-blue);
+     font-size: 1rem;
+
+}
+
+/* ==========================================
+       NHRCA STANDARD PAGE - HR COURSE STANDARD SECTION
+    =========================================== */
+/* ==========================================
+       NHRCA STANDARD PAGE - COMPETENCY FRAMEWORK OVERVIEW
+    =========================================== */
+.standard-framework-intro {
+     max-width: 800px;
+     margin: 0 auto 3rem;
+     text-align: center;
+
+}
+
+.standard-cluster-overview-grid,
+.credential-objective-grid {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1.25rem;
+
+}
+
+.standard-cluster-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 2rem 1.5rem;
+     text-align: center;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+     height: 100%;
+
+}
+
+.standard-cluster-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background-color: var(--nh-blue);
+     transition: var(--nh-transition);
+
+}
+
+.standard-cluster-card-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.7rem;
+     margin-bottom: 1.25rem;
+
+}
+
+.standard-cluster-card-num {
+     font-size: 0.78rem;
+     font-weight: 700;
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     color: var(--nh-blue);
+     margin-bottom: 0.5rem;
+
+}
+
+.standard-cluster-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.15rem;
+     margin-bottom: 0.65rem;
+
+}
+
+.standard-cluster-card-text,
+.course-details-accreditation-text {
+     color: var(--nh-text-muted);
+     font-size: 0.88rem;
+     line-height: 1.6;
+     margin: 0;
+
+}
+
+/* ==========================================
+       NHRCA STANDARD PAGE - COMPETENCY CLUSTER SECTIONS
+    =========================================== */
+.standard-cluster-section {
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+
+}
+
+.standard-cluster-header {
+     display: flex;
+     align-items: flex-start;
+     gap: 1.25rem;
+     margin-bottom: 2rem;
+     padding-bottom: 1.5rem;
+     border-bottom: 1px solid var(--nh-border);
+
+}
+
+.standard-cluster-header-icon {
+     flex-shrink: 0;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: var(--nh-radius);
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     font-size: 1.5rem;
+
+}
+
+.standard-cluster-header-num {
+     font-size: 0.78rem;
+     font-weight: 700;
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     color: var(--nh-blue);
+     margin-bottom: 0.35rem;
+
+}
+
+.standard-cluster-header-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.5rem;
+     margin-bottom: 0.35rem;
+
+}
+
+.standard-cluster-header-text {
+     color: var(--nh-text-muted);
+     font-size: 0.95rem;
+     line-height: 1.6;
+     margin: 0;
+
+}
+
+.standard-competency-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.5rem;
+     height: 100%;
+     transition: var(--nh-transition);
+     position: relative;
+
+}
+
+.standard-competency-card:hover,
+.institutional-standard-card:hover,
+.framework-level-card:hover,
+.course-standard-card:hover,
+.credential-objective-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-3px);
+
+}
+
+.standard-competency-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 44px;
+     height: 44px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.2rem;
+     margin-bottom: 1rem;
+
+}
+
+.standard-competency-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1rem;
+     margin-bottom: 0.5rem;
+     line-height: 1.35;
+
+}
+
+.standard-competency-text,
+.institute-accreditation-benefit-text {
+     color: var(--nh-text-muted);
+     font-size: 0.88rem;
+     line-height: 1.65;
+     margin: 0;
+
+}
+
+/* Cluster-specific accent colors (subtle, within brand palette) */
+.standard-cluster-personal .standard-cluster-header-icon {
+     background-color: var(--nh-navy);
+
+}
+
+.standard-cluster-leadership .standard-cluster-header-icon {
+     background-color: var(--nh-navy-soft);
+
+}
+
+.standard-cluster-entrepreneurial .standard-cluster-header-icon {
+     background-color: var(--nh-blue-dark);
+
+}
+
+/* Subtle background variation between clusters */
+/* ==========================================
+       INSTITUTIONAL STANDARD - HERO SECTION
+    =========================================== */
+/* Dark navy hero inspired by the uploaded screenshot */
+.institutional-hero,
+.framework-hero,
+.course-accreditation-hero,
+.institute-accreditation-hero,
+.courses-hero,
+.course-details-hero,
+.corporate-hero,
+.course-standard-hero,
+.credential-hero {
+     position: relative;
+     padding-top: 3.5rem;
+     padding-bottom: 3.5rem;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     overflow: hidden;
+
+}
+
+.institutional-hero::before,
+.framework-hero::before,
+.course-accreditation-hero::before,
+.institute-accreditation-hero::before,
+.courses-hero::before,
+.course-details-hero::before,
+.corporate-hero::before,
+.course-standard-hero::before,
+.credential-hero::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+     background-image: radial-gradient(circle at 75% 30%, rgba(48, 124, 205, 0.18) 0%, transparent 55%);
+     pointer-events: none;
+
+}
+
+.institutional-hero::after,
+.framework-hero::after,
+.course-accreditation-hero::after,
+.institute-accreditation-hero::after,
+.courses-hero::after,
+.course-details-hero::after,
+.corporate-hero::after,
+.course-standard-hero::after,
+.credential-hero::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-blue-soft) 100%);
+
+}
+
+.institutional-hero-breadcrumb,
+.framework-hero-breadcrumb,
+.course-accreditation-hero-breadcrumb,
+.institute-accreditation-hero-breadcrumb,
+.course-details-hero-breadcrumb,
+.corporate-hero-breadcrumb,
+.course-standard-hero-breadcrumb,
+.credential-hero-breadcrumb {
+     margin-bottom: 1.25rem;
+
+}
+
+.institutional-hero-breadcrumb .breadcrumb,
+.framework-hero-breadcrumb .breadcrumb,
+.course-accreditation-hero-breadcrumb .breadcrumb,
+.institute-accreditation-hero-breadcrumb .breadcrumb,
+.course-details-hero-breadcrumb .breadcrumb,
+.corporate-hero-breadcrumb .breadcrumb,
+.course-standard-hero-breadcrumb .breadcrumb,
+.credential-hero-breadcrumb .breadcrumb {
+     margin: 0;
+     padding: 0;
+     background: transparent;
+     font-size: 0.88rem;
+
+}
+
+.institutional-hero-breadcrumb .breadcrumb-item a,
+.framework-hero-breadcrumb .breadcrumb-item a,
+.course-accreditation-hero-breadcrumb .breadcrumb-item a,
+.institute-accreditation-hero-breadcrumb .breadcrumb-item a,
+.course-details-hero-breadcrumb .breadcrumb-item a,
+.corporate-hero-breadcrumb .breadcrumb-item a,
+.course-standard-hero-breadcrumb .breadcrumb-item a,
+.credential-hero-breadcrumb .breadcrumb-item a {
+     color: rgba(255, 255, 255, 0.7);
+     text-decoration: none;
+     transition: var(--nh-transition);
+
+}
+
+.institutional-hero-breadcrumb .breadcrumb-item.active,
+.framework-hero-breadcrumb .breadcrumb-item.active,
+.course-accreditation-hero-breadcrumb .breadcrumb-item.active,
+.institute-accreditation-hero-breadcrumb .breadcrumb-item.active,
+.course-details-hero-breadcrumb .breadcrumb-item.active,
+.corporate-hero-breadcrumb .breadcrumb-item.active,
+.course-standard-hero-breadcrumb .breadcrumb-item.active,
+.credential-hero-breadcrumb .breadcrumb-item.active {
+     color: var(--nh-white);
+     font-weight: 600;
+
+}
+
+.institutional-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before,
+.framework-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before,
+.course-accreditation-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before,
+.institute-accreditation-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before,
+.course-details-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before,
+.corporate-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before,
+.course-standard-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before,
+.credential-hero-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+     content: "/";
+     color: rgba(255, 255, 255, 0.45);
+     padding: 0 0.5rem;
+
+}
+
+.institutional-hero-badge,
+.framework-hero-badge,
+.course-accreditation-hero-badge,
+.institute-accreditation-hero-badge,
+.courses-hero-eyebrow,
+.course-details-hero-eyebrow,
+.corporate-hero-eyebrow,
+.credential-hero-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.4rem 0.95rem;
+     background-color: rgba(48, 124, 205, 0.25);
+     color: var(--nh-blue-soft);
+     border: 1px solid rgba(48, 124, 205, 0.4);
+     border-radius: 50px;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin-bottom: 1.25rem;
+
+}
+
+.institutional-hero-title,
+.framework-hero-title,
+.course-accreditation-hero-title,
+.institute-accreditation-hero-title,
+.courses-hero-title,
+.course-standard-hero-title,
+.credential-hero-title {
+     color: var(--nh-white);
+     font-weight: 800;
+     font-size: clamp(2rem, 4.2vw, 2.85rem);
+     margin-bottom: 0.85rem;
+     letter-spacing: -0.02em;
+     line-height: 1.15;
+
+}
+
+.institutional-hero-subtitle {
+     color: rgba(255, 255, 255, 0.78);
+     font-size: 1.12rem;
+     line-height: 1.6;
+     max-width: 620px;
+     margin: 0;
+     font-weight: 400;
+
+}
+
+/* ==========================================
+       INSTITUTIONAL STANDARD - INTRODUCTION & CORE COMPONENTS
+    =========================================== */
+.institutional-core-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-left: 4px solid var(--nh-blue);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.85rem;
+     box-shadow: var(--nh-shadow-sm);
+     position: relative;
+
+}
+
+.institutional-core-card-icon,
+.course-standard-objectives-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 52px;
+     height: 52px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.4rem;
+     margin-bottom: 1.15rem;
+
+}
+
+.institutional-core-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.3rem;
+     margin-bottom: 0.75rem;
+
+}
+
+.institutional-core-pill-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 0.55rem;
+
+}
+
+.institutional-core-pill-list li {
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+     font-size: 0.88rem;
+     color: var(--nh-text);
+     font-weight: 500;
+
+}
+
+.institutional-core-pill-list li i {
+     color: var(--nh-blue);
+     font-size: 1rem;
+     flex-shrink: 0;
+
+}
+
+.institutional-core-pill-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     font-size: 0.75rem;
+     font-weight: 700;
+     flex-shrink: 0;
+
+}
+
+/* ==========================================
+       INSTITUTIONAL STANDARD - SEVEN STANDARD CARDS
+    =========================================== */
+.institutional-standards-grid,
+.course-standard-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1.75rem;
+
+}
+
+.institutional-standard-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     transition: var(--nh-transition);
+
+}
+
+/* 7th card spans full width */
+.institutional-standard-card-full {
+     grid-column: 1 / -1;
+
+}
+
+.institutional-card-header {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     padding: 1.15rem 1.5rem;
+     display: flex;
+     align-items: center;
+     gap: 0.85rem;
+
+}
+
+.institutional-card-header-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 36px;
+     height: 36px;
+     border-radius: var(--nh-radius-sm);
+     background-color: rgba(255, 255, 255, 0.12);
+     color: var(--nh-white);
+     font-size: 0.95rem;
+     font-weight: 700;
+     flex-shrink: 0;
+
+}
+
+.institutional-card-header-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: 1.1rem;
+     margin: 0;
+     line-height: 1.3;
+
+}
+
+.institutional-card-body {
+     padding: 1.5rem 1.5rem 1.75rem;
+     flex: 1 1 auto;
+
+}
+
+.institutional-card-intro {
+     color: var(--nh-text);
+     font-size: 0.94rem;
+     line-height: 1.65;
+     margin-bottom: 1.25rem;
+     padding-bottom: 1.25rem;
+     border-bottom: 1px solid var(--nh-border-soft);
+     font-style: italic;
+
+}
+
+.institutional-subsection {
+     margin-bottom: 1.1rem;
+
+}
+
+.institutional-subsection:last-child,
+.framework-focus-item:last-child,
+.course-details-panel-text:last-child,
+.course-standard-competency:last-child {
+     margin-bottom: 0;
+
+}
+
+.institutional-subsection-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 0.92rem;
+     margin-bottom: 0.3rem;
+     line-height: 1.4;
+     display: flex;
+     align-items: baseline;
+     gap: 0.4rem;
+
+}
+
+.institutional-subsection-num {
+     color: var(--nh-blue);
+     font-weight: 700;
+     flex-shrink: 0;
+
+}
+
+.institutional-subsection-text {
+     color: var(--nh-text-muted);
+     font-size: 0.9rem;
+     line-height: 1.65;
+     margin: 0;
+     padding-left: 0;
+
+}
+
+/* 7th card body uses a 2-column subsection layout on desktop */
+.institutional-standard-card-full .institutional-card-body {
+     padding: 1.75rem 1.75rem 2rem;
+
+}
+
+/* ==========================================
+       INSTITUTIONAL STANDARD - INSTITUTIONAL EXCELLENCE
+    =========================================== */
+.institutional-excellence-card,
+.framework-summary-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 3rem 2.5rem;
+     text-align: center;
+     box-shadow: var(--nh-shadow-sm);
+     position: relative;
+     overflow: hidden;
+
+}
+
+.institutional-excellence-card::before,
+.framework-summary-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 80px;
+     height: 4px;
+     background: linear-gradient(90deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     border-radius: 0 0 4px 4px;
+
+}
+
+.institutional-excellence-icon,
+.framework-summary-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.7rem;
+     margin-bottom: 1.5rem;
+
+}
+
+.institutional-excellence-title,
+.framework-summary-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: clamp(1.6rem, 2.5vw, 2rem);
+     margin-bottom: 1.25rem;
+
+}
+
+.institutional-excellence-text {
+     color: var(--nh-text-muted);
+     font-size: 1.05rem;
+     line-height: 1.8;
+     max-width: 760px;
+     margin: 0 auto;
+
+}
+
+.institutional-excellence-features {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 1.5rem 2.5rem;
+     margin-top: 2rem;
+     padding-top: 2rem;
+     border-top: 1px solid var(--nh-border-soft);
+
+}
+
+.institutional-excellence-feature,
+.framework-summary-feature {
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+     color: var(--nh-navy);
+     font-size: 0.92rem;
+     font-weight: 600;
+
+}
+
+.institutional-excellence-feature i,
+.framework-summary-feature i {
+     color: var(--nh-blue);
+     font-size: 1.15rem;
+
+}
+
+/* ==========================================
+       FRAMEWORK PAGE - HERO SECTION
+    =========================================== */
+.framework-hero-subtitle {
+     color: rgba(255, 255, 255, 0.78);
+     font-size: 1.12rem;
+     line-height: 1.6;
+     max-width: 660px;
+     margin: 0;
+     font-weight: 400;
+
+}
+
+/* ==========================================
+       FRAMEWORK PAGE - INTRODUCTION
+    =========================================== */
+.framework-intro-overview,
+.corporate-intro-panel {
+     background-color: var(--nh-bg-section);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     padding: 2rem 1.85rem;
+     height: 100%;
+
+}
+
+.framework-overview-title,
+.corporate-intro-panel-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.2rem;
+     margin-bottom: 1.25rem;
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+
+}
+
+.framework-overview-title i,
+.corporate-intro-panel-title i,
+.credential-benefits-panel-title i {
+     color: var(--nh-blue);
+     font-size: 1.4rem;
+
+}
+
+.framework-overview-list,
+.course-details-modules-list,
+.corporate-intro-panel-list,
+.course-standard-objectives-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 0.85rem;
+
+}
+
+.framework-overview-list li,
+.corporate-intro-panel-list li,
+.course-standard-objectives-list li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+     font-size: 0.93rem;
+     color: var(--nh-text);
+     line-height: 1.55;
+
+}
+
+/* ==========================================
+       FRAMEWORK PAGE - PROGRESSION TIMELINE
+    =========================================== */
+.framework-timeline {
+     position: relative;
+     padding-top: 1rem;
+
+}
+
+/* Horizontal connecting line on desktop (lg+) */
+.framework-timeline::before {
+     content: "";
+     position: absolute;
+     top: 2.75rem;
+     left: 4%;
+     right: 4%;
+     height: 3px;
+     background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+     border-radius: 3px;
+     z-index: 0;
+
+}
+
+.framework-timeline-row {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1rem;
+     position: relative;
+     z-index: 1;
+
+}
+
+.framework-stage {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+
+}
+
+.framework-stage-marker {
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background-color: var(--nh-white);
+     border: 3px solid var(--nh-blue);
+     color: var(--nh-navy);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.15rem;
+     font-weight: 800;
+     margin-bottom: 1rem;
+     box-shadow: var(--nh-shadow-sm);
+     flex-shrink: 0;
+     position: relative;
+     z-index: 2;
+
+}
+
+.framework-stage-legendary .framework-stage-marker {
+     background-color: var(--nh-navy);
+     border-color: var(--nh-blue-soft);
+     color: var(--nh-white);
+
+}
+
+.framework-stage-theme {
+     display: inline-block;
+     font-size: 0.74rem;
+     font-weight: 700;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     color: var(--nh-blue);
+     background-color: var(--nh-blue-tint);
+     padding: 0.3rem 0.7rem;
+     border-radius: 50px;
+     margin-bottom: 0.65rem;
+     line-height: 1.3;
+
+}
+
+.framework-stage-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 0.98rem;
+     line-height: 1.3;
+     margin-bottom: 0;
+     min-height: 2.6em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+/* ==========================================
+       FRAMEWORK PAGE - LEVEL CARDS (detailed)
+    =========================================== */
+.framework-levels-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1.5rem;
+
+}
+
+.framework-level-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     overflow: hidden;
+     transition: var(--nh-transition);
+     display: flex;
+     flex-direction: column;
+
+}
+
+.framework-level-card-header {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     padding: 1.35rem 1.5rem;
+     display: flex;
+     align-items: center;
+     gap: 0.85rem;
+
+}
+
+.framework-level-card-legendary .framework-level-card-header {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-navy-soft) 100%);
+
+}
+
+.framework-level-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     border-radius: var(--nh-radius-sm);
+     background-color: rgba(255, 255, 255, 0.14);
+     color: var(--nh-white);
+     font-size: 1.05rem;
+     font-weight: 800;
+     flex-shrink: 0;
+
+}
+
+.framework-level-title-wrap,
+.course-details-module-content {
+     flex: 1 1 auto;
+
+}
+
+.framework-level-theme {
+     display: inline-block;
+     font-size: 0.7rem;
+     font-weight: 700;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     color: var(--nh-blue-soft);
+     margin-bottom: 0.2rem;
+
+}
+
+.framework-level-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: 1.05rem;
+     margin: 0;
+     line-height: 1.3;
+
+}
+
+.framework-level-body {
+     padding: 1.5rem;
+     flex: 1 1 auto;
+
+}
+
+.framework-info-row {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+     padding: 0.75rem 0;
+     border-bottom: 1px solid var(--nh-border-soft);
+
+}
+
+.framework-info-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 36px;
+     height: 36px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1rem;
+     flex-shrink: 0;
+
+}
+
+.framework-info-label {
+     font-size: 0.76rem;
+     font-weight: 700;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--nh-text-muted);
+     margin-bottom: 0.2rem;
+
+}
+
+.framework-info-value {
+     font-size: 0.93rem;
+     color: var(--nh-navy);
+     font-weight: 600;
+     line-height: 1.5;
+
+}
+
+.framework-focus-block {
+     margin-top: 1rem;
+     padding-top: 1rem;
+     border-top: 1px solid var(--nh-border-soft);
+
+}
+
+.framework-focus-label {
+     font-size: 0.76rem;
+     font-weight: 700;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--nh-text-muted);
+     margin-bottom: 0.75rem;
+
+}
+
+.framework-focus-item {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 0.75rem;
+     margin-bottom: 0.6rem;
+
+}
+
+.framework-focus-name {
+     font-size: 0.85rem;
+     color: var(--nh-text);
+     font-weight: 500;
+
+}
+
+.framework-focus-dots {
+     display: inline-flex;
+     gap: 3px;
+
+}
+
+.framework-focus-dot {
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+     background-color: var(--nh-border);
+
+}
+
+.framework-focus-level-text {
+     font-size: 0.76rem;
+     font-weight: 600;
+     color: var(--nh-text-muted);
+     min-width: 64px;
+     text-align: right;
+
+}
+
+.framework-special {
+     margin-top: 1rem;
+     padding: 0.85rem 1rem;
+     background-color: var(--nh-navy-tint);
+     border-left: 3px solid var(--nh-navy);
+     border-radius: var(--nh-radius-sm);
+
+}
+
+.framework-special-label {
+     font-size: 0.74rem;
+     font-weight: 700;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--nh-navy);
+     margin-bottom: 0.3rem;
+     display: flex;
+     align-items: center;
+     gap: 0.4rem;
+
+}
+
+.framework-special-text {
+     font-size: 0.85rem;
+     color: var(--nh-text);
+     line-height: 1.55;
+     margin: 0;
+
+}
+
+/* Legendary card (Stage 5) — no detailed data, distinguished presentation */
+.framework-level-card-legendary .framework-level-body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 2.5rem 1.75rem;
+
+}
+
+.framework-legendary-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     font-size: 1.7rem;
+     margin-bottom: 1.25rem;
+
+}
+
+/* ==========================================
+       FRAMEWORK PAGE - COMPETENCY COMPARISON
+    =========================================== */
+.framework-comparison-table-wrap {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-lg);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-sm);
+
+}
+
+.framework-comparison-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 0;
+
+}
+
+.framework-comparison-table thead th {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     padding: 1.1rem 1.25rem;
+     font-weight: 700;
+     font-size: 0.88rem;
+     text-align: left;
+     letter-spacing: 0.02em;
+     border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.framework-comparison-table thead th:last-child,
+.framework-comparison-table tbody td:last-child {
+     border-right: none;
+
+}
+
+.framework-comparison-table thead th.framework-comp-center,
+.framework-comp-center {
+     text-align: center;
+
+}
+
+.framework-comparison-table tbody td {
+     padding: 1.1rem 1.25rem;
+     border-bottom: 1px solid var(--nh-border-soft);
+     border-right: 1px solid var(--nh-border-soft);
+     font-size: 0.92rem;
+     vertical-align: middle;
+
+}
+
+.framework-comparison-table tbody tr:hover td,
+.course-details-faq-item.active .course-details-faq-question {
+     background-color: var(--nh-blue-tint);
+
+}
+
+.framework-comp-stage-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 28px;
+     height: 28px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 0.82rem;
+     font-weight: 700;
+     margin-right: 0.6rem;
+
+}
+
+.framework-comp-level {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+
+}
+
+.framework-comp-dots {
+     display: inline-flex;
+     gap: 4px;
+
+}
+
+.framework-comp-dot {
+     width: 9px;
+     height: 9px;
+     border-radius: 50%;
+     background-color: var(--nh-border);
+
+}
+
+.framework-comp-level-text {
+     font-size: 0.82rem;
+     font-weight: 600;
+     color: var(--nh-text);
+
+}
+
+/* ==========================================
+       FRAMEWORK PAGE - FINAL SUMMARY
+    =========================================== */
+.framework-summary-text {
+     color: var(--nh-text-muted);
+     font-size: 1.05rem;
+     line-height: 1.8;
+     max-width: 720px;
+     margin: 0 auto 2rem;
+
+}
+
+.framework-summary-features {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 1.5rem 2.5rem;
+     padding-top: 2rem;
+     border-top: 1px solid var(--nh-border-soft);
+
+}
+
+/* ==========================================
+       COURSE ACCREDITATION - HERO SECTION
+    =========================================== */
+.course-accreditation-hero-subtitle,
+.institute-accreditation-hero-subtitle,
+.courses-hero-text,
+.course-standard-hero-subtitle,
+.credential-hero-subtitle {
+     color: rgba(255, 255, 255, 0.78);
+     font-size: 1.12rem;
+     line-height: 1.6;
+     max-width: 640px;
+     margin: 0;
+     font-weight: 400;
+
+}
+
+/* ==========================================
+       COURSE ACCREDITATION - BENEFITS SECTION
+    =========================================== */
+.course-accreditation-benefits-intro,
+.course-accreditation-process-intro {
+     max-width: 780px;
+     margin: 0 auto 3rem;
+     text-align: center;
+
+}
+
+.course-accreditation-benefits-intro p,
+.course-accreditation-process-intro p,
+.institute-accreditation-benefits-intro p,
+.institute-accreditation-process-intro p {
+     color: var(--nh-text-muted);
+     font-size: 1.02rem;
+     line-height: 1.75;
+     margin: 0;
+
+}
+
+.course-accreditation-benefit-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.75rem;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+     height: 100%;
+
+}
+
+.course-accreditation-benefit-num {
+     position: absolute;
+     top: 1.25rem;
+     right: 1.5rem;
+     font-size: 2.25rem;
+     font-weight: 800;
+     color: var(--nh-blue-tint);
+     line-height: 1;
+     letter-spacing: -0.03em;
+
+}
+
+/* ==========================================
+   COURSE ACCREDITATION - ACCORDION
+========================================== */
+
+.course-accreditation-accordion {
+     max-width: 820px;
+     margin: 0 auto;
+}
+
+.course-accreditation-item {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     border: none;
+     border-radius: var(--nh-radius-lg) !important;
+     margin-bottom: 1rem;
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+}
+
+/* Accordion Header */
+
+.course-accreditation-button {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     padding: 1.75rem 2.5rem;
+     background: transparent;
+     color: var(--nh-white);
+     box-shadow: none !important;
+     font-weight: 700;
+}
+
+/* Remove Bootstrap default arrow */
+
+.course-accreditation-button::after {
+     filter: brightness(0) invert(1);
+     margin-left: auto;
+}
+
+/* Accordion Open State */
+
+.course-accreditation-button:not(.collapsed) {
+     background: transparent;
+     color: var(--nh-white);
+     box-shadow: none;
+}
+
+/* Step Number */
+
+.course-accreditation-step-number {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.15);
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     color: var(--nh-white);
+     font-size: 1.3rem;
+     font-weight: 800;
+     flex-shrink: 0;
+}
+
+/* Heading Content */
+
+.course-accreditation-heading-content {
+     display: flex;
+     flex-direction: column;
+     gap: 0.2rem;
+}
+
+.course-accreditation-step-label {
+     color: var(--nh-blue-soft);
+     font-size: 0.78rem;
+     font-weight: 700;
+     letter-spacing: 0.12em;
+     text-transform: uppercase;
+}
+
+.course-accreditation-step-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: 1.35rem;
+     line-height: 1.3;
+}
+
+/* Accordion Body */
+
+.course-accreditation-body {
+     padding: 0 2.5rem 2rem 2.5rem;
+     color: rgba(255, 255, 255, 0.9);
+     font-size: 1.05rem;
+     line-height: 1.7;
+}
+
+.course-accreditation-body p {
+     margin: 0;
+}
+
+/* Email Button */
+
+.course-accreditation-step-email {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     margin-top: 1.25rem;
+     padding: 0.65rem 1.1rem;
+     background-color: rgba(255, 255, 255, 0.12);
+     border-radius: 50px;
+     color: var(--nh-white);
+     font-size: 0.92rem;
+     font-weight: 600;
+     text-decoration: none;
+     transition: var(--nh-transition);
+}
+
+.course-accreditation-step-email:hover {
+     background-color: rgba(255, 255, 255, 0.22);
+     color: var(--nh-white);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 576px) {
+
+     .course-accreditation-button {
+          padding: 1.25rem 1rem;
+          gap: 0.75rem;
+     }
+
+     .course-accreditation-step-number {
+          width: 44px;
+          height: 44px;
+          font-size: 1.1rem;
+     }
+
+     .course-accreditation-step-title {
+          font-size: 1.05rem;
+     }
+
+     .course-accreditation-body {
+          padding: 0 1rem 1.5rem 1rem;
+          font-size: 0.95rem;
+     }
+}
+
+/* Note about subsequent steps */
+.course-accreditation-process-note {
+     max-width: 820px;
+     margin: 1.75rem auto 0;
+     padding: 1.25rem 1.5rem;
+     background-color: var(--nh-bg-section);
+     border: 1px solid var(--nh-border);
+     border-left: 3px solid var(--nh-blue);
+     border-radius: var(--nh-radius-sm);
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+
+}
+
+.course-accreditation-process-note i {
+     color: var(--nh-blue);
+     font-size: 1.2rem;
+     margin-top: 0.1rem;
+     flex-shrink: 0;
+
+}
+
+.course-accreditation-process-note p {
+     color: var(--nh-text-muted);
+     font-size: 0.9rem;
+     line-height: 1.6;
+     margin: 0;
+
+}
+
+/* ==========================================
+       COURSE ACCREDITATION - APPLY CTA
+    =========================================== */
+.course-accreditation-cta-eyebrow,
+.institute-accreditation-form-eyebrow,
+.corporate-cta-eyebrow,
+.credential-apply-cta-eyebrow {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.4rem 0.95rem;
+     background-color: rgba(255, 255, 255, 0.12);
+     color: var(--nh-white);
+     border-radius: 50px;
+     font-size: 0.78rem;
+     font-weight: 600;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin-bottom: 1.25rem;
+
+}
+
+.course-accreditation-cta-title,
+.corporate-cta-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: clamp(1.75rem, 3vw, 2.25rem);
+     margin-bottom: 1rem;
+     letter-spacing: -0.01em;
+
+}
+
+.course-accreditation-cta-text {
+     color: rgba(255, 255, 255, 0.88);
+     font-size: 1.1rem;
+     line-height: 1.7;
+     margin-bottom: 1.75rem;
+
+}
+
+.course-accreditation-cta-text a {
+     color: var(--nh-white);
+     font-weight: 700;
+     text-decoration: underline;
+     text-underline-offset: 3px;
+
+}
+
+.course-accreditation-cta-email {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.6rem;
+     padding: 0.75rem 1.35rem;
+     background-color: rgba(255, 255, 255, 0.1);
+     border: 1px solid rgba(255, 255, 255, 0.25);
+     border-radius: 50px;
+     color: var(--nh-white);
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 2rem;
+
+}
+
+/* ==========================================
+       INSTITUTE ACCREDITATION - HERO SECTION
+    =========================================== */
+/* ==========================================
+       INSTITUTE ACCREDITATION - BENEFITS SECTION
+    =========================================== */
+.institute-accreditation-benefits-intro,
+.institute-accreditation-process-intro {
+     max-width: 820px;
+     margin: 0 auto 3rem;
+     text-align: center;
+
+}
+
+.institute-accreditation-benefits-grid {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1.5rem;
+
+}
+
+.institute-accreditation-benefit-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.85rem 1.65rem;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+     height: 100%;
+     text-align: center;
+
+}
+
+.institute-accreditation-benefit-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background-color: var(--nh-blue);
+     transform: scaleX(0);
+     transform-origin: center;
+     transition: var(--nh-transition);
+
+}
+
+.institute-accreditation-benefit-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.6rem;
+     margin-bottom: 1.15rem;
+
+}
+
+.institute-accreditation-benefit-num {
+     position: absolute;
+     top: 1rem;
+     right: 1.1rem;
+     font-size: 1.6rem;
+     font-weight: 800;
+     color: var(--nh-blue-tint);
+     line-height: 1;
+     letter-spacing: -0.03em;
+
+}
+
+.institute-accreditation-benefit-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1rem;
+     margin-bottom: 0.6rem;
+     line-height: 1.35;
+     min-height: 2.7em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+/* ==========================================
+       INSTITUTE ACCREDITATION - PROCESS TIMELINE
+    =========================================== */
+/* Vertical timeline with alternating left/right cards on desktop,
+       single-column on tablet/mobile. */
+.institute-accreditation-timeline {
+     position: relative;
+     max-width: 980px;
+     margin: 0 auto;
+     padding: 0.5rem 0;
+
+}
+
+.institute-accreditation-timeline::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     width: 3px;
+     background: linear-gradient(180deg, var(--nh-blue) 0%, var(--nh-navy) 100%);
+     transform: translateX(-50%);
+     border-radius: 3px;
+
+}
+
+.institute-accreditation-step {
+     position: relative;
+     width: 50%;
+     padding: 0 2.5rem 2.5rem 0;
+     margin-left: 0;
+
+}
+
+.institute-accreditation-step:nth-child(even) {
+     margin-left: 50%;
+     padding: 0 0 2.5rem 2.5rem;
+
+}
+
+.institute-accreditation-step:last-child {
+     padding-bottom: 0;
+
+}
+
+.institute-accreditation-step-marker {
+     position: absolute;
+     top: 0;
+     right: -22px;
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background-color: var(--nh-white);
+     border: 3px solid var(--nh-blue);
+     color: var(--nh-navy);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1rem;
+     font-weight: 800;
+     z-index: 2;
+     box-shadow: var(--nh-shadow-sm);
+
+}
+
+.institute-accreditation-step:nth-child(even) .institute-accreditation-step-marker {
+     right: auto;
+     left: -22px;
+
+}
+
+.institute-accreditation-step-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.5rem 1.5rem;
+     transition: var(--nh-transition);
+
+}
+
+.institute-accreditation-step-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+     transform: translateY(-2px);
+
+}
+
+.institute-accreditation-step-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 44px;
+     height: 44px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.2rem;
+     margin-bottom: 0.85rem;
+
+}
+
+.institute-accreditation-step-label {
+     font-size: 0.74rem;
+     font-weight: 700;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     color: var(--nh-blue);
+     margin-bottom: 0.3rem;
+
+}
+
+.institute-accreditation-step-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.1rem;
+     margin-bottom: 0.6rem;
+     line-height: 1.35;
+
+}
+
+.institute-accreditation-step-text,
+.course-standard-competency-text {
+     color: var(--nh-text-muted);
+     font-size: 0.9rem;
+     line-height: 1.65;
+     margin: 0;
+
+}
+
+/* ==========================================
+       INSTITUTE ACCREDITATION - PRIMARY INTEREST FORM
+    =========================================== */
+.institute-accreditation-form-card {
+     background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+     border-radius: var(--nh-radius-lg);
+     padding: 3rem 2.5rem;
+     text-align: center;
+     color: var(--nh-white);
+     position: relative;
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-md);
+
+}
+
+.institute-accreditation-form-card::before {
+     content: "";
+     position: absolute;
+     top: -50px;
+     right: -50px;
+     width: 220px;
+     height: 220px;
+     background-color: rgba(255, 255, 255, 0.05);
+     border-radius: 50%;
+     pointer-events: none;
+
+}
+
+.institute-accreditation-form-card::after {
+     content: "";
+     position: absolute;
+     bottom: -40px;
+     left: -40px;
+     width: 180px;
+     height: 180px;
+     background-color: rgba(48, 124, 205, 0.12);
+     border-radius: 50%;
+     pointer-events: none;
+
+}
+
+.institute-accreditation-form-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.15);
+     color: var(--nh-white);
+     font-size: 1.7rem;
+     margin-bottom: 1.5rem;
+
+}
+
+.institute-accreditation-form-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: clamp(1.6rem, 2.5vw, 2rem);
+     margin-bottom: 1rem;
+     letter-spacing: -0.01em;
+
+}
+
+.institute-accreditation-form-text {
+     color: rgba(255, 255, 255, 0.88);
+     font-size: 1.05rem;
+     line-height: 1.75;
+     max-width: 640px;
+     margin: 0 auto 2rem;
+
+}
+
+.institute-accreditation-form-contact {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     margin-top: 1.5rem;
+     padding: 0.65rem 1.25rem;
+     background-color: rgba(255, 255, 255, 0.1);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     border-radius: 50px;
+     color: var(--nh-white);
+     font-size: 0.92rem;
+     font-weight: 600;
+
+}
+
+.institute-accreditation-form-contact a {
+     color: var(--nh-white);
+     text-decoration: underline;
+     text-underline-offset: 3px;
+
+}
+
+/* ==========================================
+       COURSES - HERO SECTION
+    =========================================== */
+/* ==========================================
+       COURSES - TOOLBAR (count + filter)
+    =========================================== */
+.courses-toolbar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     gap: 1.25rem;
+     margin-bottom: 2.5rem;
+     padding-bottom: 1.75rem;
+     border-bottom: 1px solid var(--nh-border);
+
+}
+
+.courses-toolbar-info {
+     display: flex;
+     flex-direction: column;
+     gap: 0.35rem;
+
+}
+
+.courses-toolbar-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.6rem;
+     margin: 0;
+     line-height: 1.2;
+
+}
+
+.courses-toolbar-count {
+     color: var(--nh-text-muted);
+     font-size: 0.92rem;
+     margin: 0;
+
+}
+
+.courses-filter {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     background-color: var(--nh-bg-section);
+     border: 1px solid var(--nh-border);
+     border-radius: 50px;
+     padding: 0.3rem;
+
+}
+
+.courses-filter-item {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     padding: 0.5rem 1.1rem;
+     border-radius: 50px;
+     color: var(--nh-text);
+     font-size: 0.9rem;
+     font-weight: 600;
+     text-decoration: none;
+     transition: var(--nh-transition);
+     white-space: nowrap;
+
+}
+
+.courses-filter-item:hover {
+     color: var(--nh-navy);
+     background-color: var(--nh-white);
+
+}
+
+.courses-filter-item.active {
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     box-shadow: var(--nh-shadow-sm);
+
+}
+
+.courses-filter-item .courses-filter-count {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     min-width: 20px;
+     height: 20px;
+     padding: 0 0.4rem;
+     border-radius: 50px;
+     background-color: rgba(255, 255, 255, 0.2);
+     font-size: 0.72rem;
+     font-weight: 700;
+
+}
+
+.courses-filter-item:not(.active) .courses-filter-count {
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+
+}
+
+/* ==========================================
+       COURSES - CARD GRID
+    =========================================== */
+.courses-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1.75rem;
+
+}
+
+/* ==========================================
+       COURSES - CARD
+    =========================================== */
+.courses-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     transition: var(--nh-transition);
+     position: relative;
+     height: 100%;
+
+}
+
+.courses-card-image-wrap {
+     position: relative;
+     aspect-ratio: 16 / 10;
+     overflow: hidden;
+     background-color: var(--nh-bg-section);
+
+}
+
+.courses-card-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+     transition: transform 0.5s ease;
+
+}
+
+.courses-card:hover .courses-card-image {
+     transform: scale(1.05);
+
+}
+
+.courses-card-image-wrap::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: linear-gradient(180deg, rgba(31, 53, 122, 0.15) 0%, transparent 30%, transparent 70%, rgba(31, 53, 122, 0.25) 100%);
+     pointer-events: none;
+
+}
+
+.courses-card-category {
+     position: absolute;
+     top: 0.85rem;
+     left: 0.85rem;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.35rem;
+     padding: 0.3rem 0.75rem;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     border-radius: 50px;
+     font-size: 0.74rem;
+     font-weight: 700;
+     letter-spacing: 0.04em;
+     text-transform: uppercase;
+     z-index: 1;
+     backdrop-filter: blur(4px);
+
+}
+
+.courses-card-delivery-badge {
+     position: absolute;
+     top: 0.85rem;
+     right: 0.85rem;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.35rem;
+     padding: 0.3rem 0.7rem;
+     background-color: rgba(255, 255, 255, 0.95);
+     color: var(--nh-navy);
+     border-radius: 50px;
+     font-size: 0.72rem;
+     font-weight: 700;
+     z-index: 1;
+     backdrop-filter: blur(4px);
+
+}
+
+.courses-card-delivery-badge i {
+     color: var(--nh-blue);
+     font-size: 0.8rem;
+
+}
+
+.courses-card-content {
+     display: flex;
+     flex-direction: column;
+     flex: 1 1 auto;
+     padding: 1.5rem 1.5rem 1.35rem;
+
+}
+
+.courses-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.1rem;
+     line-height: 1.35;
+     margin-bottom: 0.75rem;
+     text-decoration: none;
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     transition: var(--nh-transition);
+
+}
+
+.courses-card-meta {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 0.5rem 1rem;
+     margin-bottom: 0.85rem;
+     padding-bottom: 0.85rem;
+     border-bottom: 1px solid var(--nh-border-soft);
+
+}
+
+.courses-card-meta-item {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.35rem;
+     color: var(--nh-text-muted);
+     font-size: 0.82rem;
+     font-weight: 500;
+
+}
+
+.courses-card-meta-item i {
+     color: var(--nh-blue);
+     font-size: 0.9rem;
+
+}
+
+.courses-card-desc {
+     color: var(--nh-text-muted);
+     font-size: 0.88rem;
+     line-height: 1.65;
+     margin: 0 0 1.1rem;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     flex: 1 1 auto;
+
+}
+
+.courses-card-footer {
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+     gap: 0.75rem;
+     padding-top: 0.85rem;
+     border-top: 1px solid var(--nh-border-soft);
+     margin-top: auto;
+
+}
+
+.courses-card-price-wrap {
+     display: flex;
+     flex-direction: column;
+     gap: 0.15rem;
+
+}
+
+.courses-card-price-label {
+     font-size: 0.7rem;
+     font-weight: 700;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--nh-text-light);
+
+}
+
+.courses-card-price-row {
+     display: flex;
+     align-items: baseline;
+     gap: 0.5rem;
+
+}
+
+.courses-card-price-current {
+     color: var(--nh-navy);
+     font-size: 1.4rem;
+     font-weight: 800;
+     line-height: 1;
+
+}
+
+.courses-card-price-original {
+     color: var(--nh-text-light);
+     font-size: 0.9rem;
+     font-weight: 500;
+     text-decoration: line-through;
+
+}
+
+.courses-card-view {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     padding: 0.55rem 1.1rem;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     border-radius: var(--nh-radius-sm);
+     font-size: 0.85rem;
+     font-weight: 700;
+     text-decoration: none;
+     transition: var(--nh-transition);
+     white-space: nowrap;
+
+}
+
+.courses-card-view:hover {
+     background-color: var(--nh-blue-dark);
+     color: var(--nh-white);
+     transform: translateY(-1px);
+     box-shadow: var(--nh-shadow-blue);
+
+}
+
+.courses-card-view i {
+     font-size: 0.95rem;
+
+}
+
+/* ==========================================
+       COURSES - EMPTY STATE
+    =========================================== */
+.courses-empty-state {
+     grid-column: 1 / -1;
+     text-align: center;
+     padding: 4rem 2rem;
+     background-color: var(--nh-bg-section);
+     border: 1px dashed var(--nh-border);
+     border-radius: var(--nh-radius);
+
+}
+
+.courses-empty-state i {
+     font-size: 3rem;
+     color: var(--nh-text-light);
+     margin-bottom: 1rem;
+
+}
+
+.courses-empty-state h3 {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.25rem;
+     margin-bottom: 0.5rem;
+
+}
+
+.courses-empty-state p,
+.credential-benefits-panel-pending p {
+     color: var(--nh-text-muted);
+     font-size: 0.95rem;
+     margin: 0;
+
+}
+
+/* ==========================================
+       COURSE DETAILS - HERO SECTION
+    =========================================== */
+.course-details-hero-title {
+     color: var(--nh-white);
+     font-weight: 800;
+     font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+     margin-bottom: 0.85rem;
+     letter-spacing: -0.02em;
+     line-height: 1.2;
+
+}
+
+.course-details-hero-meta {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 0.5rem 1rem;
+
+}
+
+.course-details-hero-meta-item {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+     color: rgba(255, 255, 255, 0.82);
+     font-size: 0.88rem;
+     font-weight: 500;
+
+}
+
+.course-details-hero-meta-item i {
+     color: var(--nh-blue-soft);
+     font-size: 0.95rem;
+
+}
+
+.course-details-hero-meta-divider {
+     color: rgba(255, 255, 255, 0.35);
+
+}
+
+/* ==========================================
+       COURSE DETAILS - MAIN LAYOUT (content + sidebar)
+    =========================================== */
+.course-details-main {
+     display: grid;
+     grid-template-columns: 1fr 340px;
+     gap: 2.5rem;
+     align-items: start;
+
+}
+
+.course-details-content-col {
+     min-width: 0;
+
+}
+
+/* ==========================================
+       COURSE DETAILS - TAB NAVIGATION
+    =========================================== */
+.course-details-tabs-nav {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0.4rem;
+     padding-bottom: 1.25rem;
+     margin-bottom: 2rem;
+     border-bottom: 1px solid var(--nh-border);
+
+}
+
+.course-details-tab-btn {
+     background-color: var(--nh-white);
+     border: 1.5px solid var(--nh-border);
+     color: var(--nh-text);
+     padding: 0.6rem 1.1rem;
+     border-radius: 50px;
+     font-size: 0.88rem;
+     font-weight: 600;
+     cursor: pointer;
+     transition: var(--nh-transition);
+     white-space: nowrap;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
+
+}
+
+.course-details-tab-btn:hover,
+.credential-benefit-tab-btn:hover,
+.credential-eligibility-tab-btn:hover,
+.credential-assessment-tab-btn:hover {
+     border-color: var(--nh-blue-soft);
+     color: var(--nh-navy);
+
+}
+
+.course-details-tab-btn i {
+     font-size: 0.95rem;
+     color: var(--nh-text-light);
+     transition: var(--nh-transition);
+
+}
+
+.course-details-tab-btn.active {
+     background-color: var(--nh-navy);
+     border-color: var(--nh-navy);
+     color: var(--nh-white);
+     box-shadow: var(--nh-shadow-sm);
+
+}
+
+/* ==========================================
+       COURSE DETAILS - TAB PANEL
+    =========================================== */
+.course-details-tab-panel {
+     display: none;
+     animation: course-details-fade-in 0.3s ease;
+
+}
+
+.course-details-tab-panel.active {
+     display: block;
+
+}
+
+@keyframes course-details-fade-in {
+     from {
+          opacity: 0;
+          transform: translateY(8px);
+     }
+
+     to {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+.course-details-panel-heading {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.4rem;
+     margin-bottom: 1rem;
+     display: flex;
+     align-items: center;
+     gap: 0.65rem;
+
+}
+
+.course-details-panel-text {
+     color: var(--nh-text);
+     font-size: 1rem;
+     line-height: 1.8;
+     margin-bottom: 1.25rem;
+
+}
+
+/* Modules list */
+.course-details-modules-list li {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.85rem;
+     padding: 1.1rem 1.25rem;
+     background-color: var(--nh-bg-section);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+     transition: var(--nh-transition);
+
+}
+
+.course-details-modules-list li:hover {
+     border-color: var(--nh-blue-soft);
+     background-color: var(--nh-white);
+     box-shadow: var(--nh-shadow-sm);
+
+}
+
+.course-details-module-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 32px;
+     height: 32px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     font-size: 0.85rem;
+     font-weight: 700;
+     flex-shrink: 0;
+
+}
+
+.course-details-module-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 0.98rem;
+     margin-bottom: 0.2rem;
+
+}
+
+.course-details-module-desc {
+     color: var(--nh-text-muted);
+     font-size: 0.88rem;
+     line-height: 1.55;
+     margin: 0;
+
+}
+
+/* Objectives / Outcomes grid */
+.course-details-points-grid,
+.course-details-accreditation-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+
+}
+
+.course-details-point-item {
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+     padding: 1.1rem 1.25rem;
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-left: 3px solid var(--nh-blue);
+     border-radius: var(--nh-radius-sm);
+
+}
+
+.course-details-point-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 32px;
+     height: 32px;
+     border-radius: 50%;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1rem;
+     flex-shrink: 0;
+
+}
+
+.course-details-point-text {
+     color: var(--nh-text);
+     font-size: 0.92rem;
+     line-height: 1.6;
+     margin: 0;
+
+}
+
+/* Info list (Important Info, Eligibility) */
+.course-details-info-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 0.75rem;
+
+}
+
+.course-details-info-list li {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 1rem;
+     padding: 0.85rem 1.1rem;
+     background-color: var(--nh-bg-section);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+
+}
+
+.course-details-info-label {
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+     color: var(--nh-text-muted);
+     font-size: 0.9rem;
+     font-weight: 600;
+
+}
+
+.course-details-info-value {
+     color: var(--nh-navy);
+     font-size: 0.92rem;
+     font-weight: 700;
+     text-align: right;
+
+}
+
+/* Accreditation cards */
+.course-details-accreditation-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.5rem;
+     transition: var(--nh-transition);
+
+}
+
+.course-details-accreditation-card:hover {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-md);
+
+}
+
+.course-details-accreditation-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 44px;
+     height: 44px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.25rem;
+     margin-bottom: 0.85rem;
+
+}
+
+.course-details-accreditation-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1rem;
+     margin-bottom: 0.4rem;
+
+}
+
+/* FAQ accordion */
+.course-details-faq-item {
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius-sm);
+     margin-bottom: 0.75rem;
+     overflow: hidden;
+     transition: var(--nh-transition);
+
+}
+
+.course-details-faq-item.active {
+     border-color: var(--nh-blue-soft);
+     box-shadow: var(--nh-shadow-sm);
+
+}
+
+.course-details-faq-question {
+     width: 100%;
+     background-color: var(--nh-white);
+     border: none;
+     padding: 1.1rem 1.25rem;
+     text-align: left;
+     cursor: pointer;
+     font-size: 0.95rem;
+     font-weight: 600;
+     color: var(--nh-navy);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 0.75rem;
+     transition: var(--nh-transition);
+
+}
+
+.course-details-faq-icon {
+     color: var(--nh-blue);
+     font-size: 1.1rem;
+     transition: transform 0.3s ease;
+     flex-shrink: 0;
+
+}
+
+.course-details-faq-item.active .course-details-faq-icon {
+     transform: rotate(180deg);
+
+}
+
+.course-details-faq-answer {
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.3s ease;
+
+}
+
+.course-details-faq-answer-inner {
+     padding: 0 1.25rem 1.1rem;
+     color: var(--nh-text-muted);
+     font-size: 0.92rem;
+     line-height: 1.7;
+
+}
+
+/* ==========================================
+       COURSE DETAILS - SIDEBAR
+    =========================================== */
+.course-details-sidebar {
+     position: sticky;
+     top: 100px;
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+
+}
+
+.course-details-sidebar-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     overflow: hidden;
+     box-shadow: var(--nh-shadow-sm);
+
+}
+
+.course-details-sidebar-image {
+     width: 100%;
+     aspect-ratio: 16 / 10;
+     object-fit: cover;
+     display: block;
+
+}
+
+.course-details-sidebar-body,
+.course-details-sidebar-preview-card {
+     padding: 1.5rem;
+
+}
+
+.course-details-sidebar-price-wrap {
+     display: flex;
+     align-items: baseline;
+     gap: 0.65rem;
+     margin-bottom: 1.25rem;
+     padding-bottom: 1.25rem;
+     border-bottom: 1px solid var(--nh-border-soft);
+
+}
+
+.course-details-sidebar-price-current {
+     color: var(--nh-navy);
+     font-size: 2rem;
+     font-weight: 800;
+     line-height: 1;
+
+}
+
+.course-details-sidebar-price-original {
+     color: var(--nh-text-light);
+     font-size: 1.05rem;
+     font-weight: 500;
+     text-decoration: line-through;
+
+}
+
+.course-details-sidebar-discount {
+     display: inline-flex;
+     align-items: center;
+     padding: 0.25rem 0.6rem;
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     border-radius: 50px;
+     font-size: 0.75rem;
+     font-weight: 700;
+     margin-left: auto;
+
+}
+
+.course-details-sidebar-list {
+     list-style: none;
+     padding: 0;
+     margin: 0 0 1.5rem;
+     display: flex;
+     flex-direction: column;
+     gap: 0.75rem;
+
+}
+
+.course-details-sidebar-list li {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 0.75rem;
+     font-size: 0.9rem;
+
+}
+
+.course-details-sidebar-list-label {
+     display: flex;
+     align-items: center;
+     gap: 0.55rem;
+     color: var(--nh-text-muted);
+     font-weight: 500;
+
+}
+
+.course-details-sidebar-enroll {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 0.5rem;
+     width: 100%;
+     padding: 0.85rem 1.5rem;
+     background-color: var(--nh-blue);
+     color: var(--nh-white);
+     border-radius: var(--nh-radius-sm);
+     font-weight: 700;
+     font-size: 0.95rem;
+     text-decoration: none;
+     transition: var(--nh-transition);
+
+}
+
+.course-details-sidebar-enroll:hover,
+.credential-profile-apply:hover {
+     background-color: var(--nh-blue-dark);
+     color: var(--nh-white);
+     transform: translateY(-2px);
+     box-shadow: var(--nh-shadow-blue);
+
+}
+
+.course-details-sidebar-preview-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.05rem;
+     margin-bottom: 0.75rem;
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+
+}
+
+.course-details-sidebar-preview-text {
+     color: var(--nh-text-muted);
+     font-size: 0.88rem;
+     line-height: 1.6;
+     margin-bottom: 1rem;
+
+}
+
+.course-details-sidebar-preview-link {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     color: var(--nh-blue);
+     font-weight: 600;
+     font-size: 0.9rem;
+     text-decoration: none;
+     transition: var(--nh-transition);
+
+}
+
+.course-details-sidebar-preview-link:hover {
+     color: var(--nh-navy);
+     gap: 0.75rem;
+
+}
+
+/* ==========================================
+       CORPORATE - HERO SECTION
+    =========================================== */
+.corporate-hero-title {
+     color: var(--nh-white);
+     font-weight: 800;
+     font-size: clamp(1.85rem, 4vw, 2.75rem);
+     margin-bottom: 0.85rem;
+     letter-spacing: -0.02em;
+     line-height: 1.15;
+
+}
+
+.corporate-hero-support {
+     color: var(--nh-blue-soft);
+     font-size: 1.15rem;
+     line-height: 1.6;
+     max-width: 640px;
+     margin: 0;
+     font-weight: 500;
+
+}
+
+/* ==========================================
+       CORPORATE - INTRODUCTION SECTION
+    =========================================== */
+.corporate-intro-panel-stat {
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+     margin-top: 1.5rem;
+     padding-top: 1.5rem;
+     border-top: 1px solid var(--nh-border);
+
+}
+
+.corporate-intro-panel-stat-num {
+     font-size: 2rem;
+     font-weight: 800;
+     color: var(--nh-navy);
+     line-height: 1;
+
+}
+
+.corporate-intro-panel-stat-label {
+     font-size: 0.85rem;
+     color: var(--nh-text-muted);
+     line-height: 1.4;
+     margin: 0;
+
+}
+
+/* ==========================================
+       CORPORATE - FRAMEWORK DIMENSIONS
+    =========================================== */
+.corporate-dimension-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 1.85rem 1.65rem;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+
+}
+
+.corporate-dimension-header {
+     display: flex;
+     align-items: center;
+     gap: 0.85rem;
+     margin-bottom: 1rem;
+
+}
+
+.corporate-dimension-number {
+     font-size: 2.5rem;
+     font-weight: 800;
+     color: var(--nh-navy);
+     line-height: 1;
+     letter-spacing: -0.04em;
+     flex-shrink: 0;
+     opacity: 0.25;
+
+}
+
+.corporate-dimension-card:hover .corporate-dimension-number {
+     opacity: 1;
+     color: var(--nh-blue);
+
+}
+
+.corporate-dimension-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 48px;
+     height: 48px;
+     border-radius: var(--nh-radius-sm);
+     background-color: var(--nh-blue-tint);
+     color: var(--nh-blue);
+     font-size: 1.3rem;
+     flex-shrink: 0;
+
+}
+
+.corporate-dimension-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.05rem;
+     margin: 0;
+     line-height: 1.3;
+     flex: 1 1 auto;
+
+}
+
+.corporate-dimension-text {
+     color: var(--nh-text-muted);
+     font-size: 0.9rem;
+     line-height: 1.7;
+     margin: 0;
+     flex: 1 1 auto;
+
+}
+
+/* ==========================================
+       CORPORATE - CLOSING CTA
+    =========================================== */
+.corporate-cta-content {
+     text-align: center;
+     max-width: 720px;
+     margin: 0 auto;
+
+}
+
+.corporate-cta-text,
+.credential-apply-cta-text {
+     color: rgba(255, 255, 255, 0.88);
+     font-size: 1.1rem;
+     line-height: 1.7;
+     margin-bottom: 2rem;
+
+}
+
+.corporate-cta-buttons .btn {
+     min-width: 240px;
+     justify-content: center;
+
+}
+
+/* ==========================================
+       COURSE STANDARD - HERO SECTION
+    =========================================== */
+/* Dark navy hero with red Professional Excellence badge — per screenshot */
+/* Red accent badge — Professional Excellence (per screenshot) */
+.course-standard-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.45rem 1rem;
+     background-color: #b83242;
+     color: var(--nh-white);
+     border-radius: 50px;
+     font-size: 0.76rem;
+     font-weight: 700;
+     letter-spacing: 0.12em;
+     text-transform: uppercase;
+     margin-bottom: 1.25rem;
+
+}
+
+/* ==========================================
+       COURSE STANDARD - INTRODUCTION & OBJECTIVES
+    =========================================== */
+.course-standard-objectives-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-left: 4px solid var(--nh-navy);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.85rem;
+     box-shadow: var(--nh-shadow-sm);
+
+}
+
+.course-standard-objectives-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.3rem;
+     margin-bottom: 1.25rem;
+
+}
+
+.course-standard-objectives-list li .course-standard-arrow {
+     color: #b83242;
+     font-size: 1.1rem;
+     flex-shrink: 0;
+     margin-top: 0.1rem;
+
+}
+
+.course-standard-objectives-list li .course-standard-obj-num {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 26px;
+     height: 26px;
+     border-radius: 50%;
+     background-color: var(--nh-navy);
+     color: var(--nh-white);
+     font-size: 0.78rem;
+     font-weight: 700;
+     flex-shrink: 0;
+     margin-right: 0.25rem;
+
+}
+
+.course-standard-objectives-list li .course-standard-obj-text {
+     flex: 1 1 auto;
+     padding-top: 0.1rem;
+
+}
+
+/* ==========================================
+       COURSE STANDARD - SIX STANDARD CARDS
+    =========================================== */
+.course-standard-card {
+     background-color: var(--nh-white);
+     border: 1px solid var(--nh-border);
+     border-radius: var(--nh-radius);
+     padding: 2rem 1.85rem;
+     transition: var(--nh-transition);
+     position: relative;
+     overflow: hidden;
+
+}
+
+.course-standard-card-header {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     margin-bottom: 1rem;
+
+}
+
+.course-standard-number {
+     font-size: 3rem;
+     font-weight: 800;
+     color: var(--nh-blue-tint);
+     line-height: 1;
+     letter-spacing: -0.04em;
+     flex-shrink: 0;
+
+}
+
+.course-standard-card-title {
+     color: var(--nh-navy);
+     font-weight: 700;
+     font-size: 1.25rem;
+     margin: 0;
+     line-height: 1.3;
+
+}
+
+.course-standard-card-intro {
+     color: var(--nh-text);
+     font-size: 0.93rem;
+     line-height: 1.65;
+     margin-bottom: 1.25rem;
+     padding-bottom: 1.25rem;
+     border-bottom: 1px solid var(--nh-border-soft);
+
+}
+
+.course-standard-competency-title {
+     color: #b83242;
+     font-weight: 700;
+     font-size: 0.93rem;
+     margin-bottom: 0.3rem;
+     line-height: 1.4;
+     display: flex;
+     align-items: baseline;
+     gap: 0.4rem;
+
+}
+
+.course-standard-competency-num {
+     color: #b83242;
+     font-weight: 700;
+     flex-shrink: 0;
+
+}
+
+/* ==========================================
+       COURSE STANDARD - COMMITMENT TO COMPETENCY
+    =========================================== */
+.course-standard-commitment-eyebrow {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     color: var(--nh-blue-soft);
+     font-size: 0.78rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 0.14em;
+     margin-bottom: 1rem;
+
+}
+
+.course-standard-commitment-eyebrow::before {
+     content: "";
+     display: inline-block;
+     width: 28px;
+     height: 2px;
+     background-color: var(--nh-blue-soft);
+     border-radius: 2px;
+
+}
+
+.course-standard-commitment-title {
+     color: var(--nh-white);
+     font-weight: 700;
+     font-size: clamp(1.75rem, 3vw, 2.25rem);
+     margin-bottom: 1.25rem;
+     letter-spacing: -0.01em;
+
+}
+
+.course-standard-commitment-text {
+     color: rgba(255, 255, 255, 0.82);
+     font-size: 1.05rem;
+     line-height: 1.8;
+     margin: 0;
+
+}
+
+.course-standard-commitment-supporting {
+     color: rgba(255, 255, 255, 0.92);
+     font-size: 1.05rem;
+     line-height: 1.75;
+     font-weight: 500;
+     margin: 0;
+
+}
+
+.course-standard-commitment-supporting-label {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     color: var(--nh-blue-soft);
+     font-size: 0.78rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 0.12em;
+     margin-bottom: 0.85rem;
+
+}
+
+.course-standard-commitment-divider {
+     width: 1px;
+     background-color: rgba(255, 255, 255, 0.12);
+
+}
+
+
+/* ==========================================
+       CREDENTIAL PAGE CSS (New Redesign)
+    =========================================== */
+
+    /* Safety: prevent horizontal overflow */
+    html, body { overflow-x: hidden; }
+    .nh-container { --bs-gutter-x: 3rem; }
+    @media (max-width: 575.98px) { .nh-container { --bs-gutter-x: 1.5rem; } }
+
+    /* ==========================================
+       CREDENTIAL PAGE - HERO
+    =========================================== */
+    .credential-page-hero {
+      position: relative;
+      padding-top: 4rem;
+      padding-bottom: 2.5rem;
+      background-color: var(--nh-navy);
+      color: var(--nh-white);
+      overflow: hidden;
+    }
+    .credential-page-hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-image: radial-gradient(circle at 75% 30%, rgba(48, 124, 205, 0.18) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .credential-page-hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--nh-blue) 0%, var(--nh-blue-soft) 100%);
+    }
+    .credential-page-hero .container { position: relative; z-index: 1; }
+    .credential-page-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      background-color: rgba(48, 124, 205, 0.25);
+      color: var(--nh-blue-soft);
+      border: 1px solid rgba(48, 124, 205, 0.4);
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .credential-page-hero-title {
+      color: var(--nh-white);
+      font-weight: 800;
+      font-size: clamp(2rem, 4.2vw, 2.85rem);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .credential-page-hero-subtitle {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      max-width: 620px;
+      margin: 0 0 2rem;
+      font-weight: 400;
+    }
+
+    /* ==========================================
+       CREDENTIAL PAGE - MAIN NAV (Level-1 tabs)
+    =========================================== */
+    .credential-page-main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .credential-page-main-nav .nav-link {
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      color: var(--nh-white);
+      padding: 0.8rem 1.75rem;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      transition: var(--nh-transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+    .credential-page-main-nav .nav-link:hover {
+      border-color: var(--nh-blue-soft);
+      color: var(--nh-white);
+      background-color: rgba(48, 124, 205, 0.2);
+    }
+    .credential-page-main-nav .nav-link.active {
+      background-color: var(--nh-blue);
+      border-color: var(--nh-blue);
+      color: var(--nh-white);
+      box-shadow: var(--nh-shadow-md);
+    }
+    .credential-page-main-nav .nav-link .credential-page-nav-badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      opacity: 0.75;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .credential-page-main-content {
+      background-color: var(--nh-white);
+    }
+
+    /* ==========================================
+       CREDENTIAL PAGE - BANNER (per credential)
+    =========================================== */
+    .credential-page-banner {
+      background-color: var(--nh-bg-section);
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .credential-page-banner-row {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .credential-page-banner-main {
+      background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-navy-soft) 100%);
+      border-radius: var(--nh-radius-lg);
+      padding: 2.5rem;
+      color: var(--nh-white);
+      position: relative;
+      overflow: hidden;
+    }
+    .credential-page-banner-main::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 240px;
+      height: 240px;
+      background-color: rgba(48, 124, 205, 0.15);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .credential-page-banner-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      background-color: rgba(48, 124, 205, 0.25);
+      color: var(--nh-blue-soft);
+      border-radius: 50px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .credential-page-banner-title {
+      color: var(--nh-white);
+      font-weight: 800;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      margin-bottom: 1rem;
+      line-height: 1.25;
+      position: relative;
+      z-index: 1;
+    }
+    .credential-page-banner-desc {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .credential-page-banner-image-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .credential-page-banner-image {
+      width: 100%;
+      max-width: 220px;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      border-radius: var(--nh-radius-lg);
+      background-color: var(--nh-white);
+      padding: 1rem;
+      box-shadow: var(--nh-shadow-lg);
+    }
+    .credential-page-banner-apply {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.85rem 1.5rem;
+      background-color: var(--nh-blue);
+      color: var(--nh-white);
+      border-radius: var(--nh-radius-sm);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: var(--nh-transition);
+    }
+    .credential-page-banner-apply:hover {
+      background-color: var(--nh-blue-dark);
+      color: var(--nh-white);
+      transform: translateY(-2px);
+      box-shadow: var(--nh-shadow-blue);
+    }
+
+    /* ==========================================
+       CREDENTIAL PAGE - DETAILS LAYOUT
+       (sidebar secondary nav + content panel)
+    =========================================== */
+    .credential-page-details-section {
+      background-color: var(--nh-white);
+      padding-top: 2.5rem;
+      padding-bottom: 4rem;
+    }
+    .credential-page-layout {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    /* Sidebar secondary nav (Level-2 tabs) */
+    .credential-page-sidebar {
+      position: sticky;
+      top: 1.5rem;
+    }
+    .credential-page-sidebar-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius);
+      padding: 1.25rem;
+      box-shadow: var(--nh-shadow-sm);
+    }
+    .credential-page-sidebar-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--nh-blue-tint);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .credential-page-sidebar-title i { color: var(--nh-blue); }
+    .credential-page-secondary-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .credential-page-secondary-nav .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.7rem 0.9rem;
+      border-radius: var(--nh-radius-sm);
+      color: var(--nh-text);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--nh-transition);
+      border: 1px solid transparent;
+      border-left: 3px solid transparent;
+    }
+    .credential-page-secondary-nav .nav-link i {
+      color: var(--nh-text-light);
+      font-size: 0.95rem;
+      width: 18px;
+    }
+    .credential-page-secondary-nav .nav-link:hover {
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-navy);
+      border-left-color: var(--nh-blue);
+    }
+    .credential-page-secondary-nav .nav-link:hover i { color: var(--nh-blue); }
+    .credential-page-secondary-nav .nav-link.active {
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-navy);
+      border-left-color: var(--nh-blue);
+      font-weight: 700;
+    }
+    .credential-page-secondary-nav .nav-link.active i { color: var(--nh-blue); }
+
+    /* Content panel */
+    .credential-page-content {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius);
+      padding: 2.25rem;
+      box-shadow: var(--nh-shadow-sm);
+      min-width: 0;
+    }
+    .credential-page-content .tab-pane { padding: 0; }
+    .credential-page-panel-heading {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .credential-page-panel-heading i { color: var(--nh-blue); font-size: 1.5rem; }
+    .credential-page-panel-divider {
+      width: 56px;
+      height: 3px;
+      background-color: var(--nh-blue);
+      border-radius: 3px;
+      margin-bottom: 1.5rem;
+    }
+    .credential-page-panel-text {
+      color: var(--nh-text);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .credential-page-panel-text:last-child { margin-bottom: 0; }
+    .credential-page-panel-text strong { color: var(--nh-navy); font-weight: 700; }
+
+    /* Objective "aims to" cards */
+    .credential-page-aim-subheading {
+      color: var(--nh-blue);
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+    .credential-page-aim-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .credential-page-aim-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1.1rem 1.25rem;
+      background-color: var(--nh-bg-section);
+      border: 1px solid var(--nh-border);
+      border-left: 3px solid var(--nh-blue);
+      border-radius: var(--nh-radius-sm);
+    }
+    .credential-page-aim-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      font-size: 0.9rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .credential-page-aim-text {
+      color: var(--nh-text);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ==========================================
+       CREDENTIAL PAGE - NESTED TABS
+       (Benefits, Eligibility, Assessment — all Bootstrap 5)
+    =========================================== */
+    .credential-page-nested-section {
+      margin-top: 1.5rem;
+    }
+    .credential-page-nested-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--nh-border-soft);
+      list-style: none;
+      padding-left: 0;
+    }
+    .credential-page-nested-nav .nav-link {
+      background-color: var(--nh-white);
+      border: 1.5px solid var(--nh-border);
+      color: var(--nh-text);
+      padding: 0.55rem 1.1rem;
+      border-radius: 50px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--nh-transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      white-space: nowrap;
+    }
+    .credential-page-nested-nav .nav-link:hover {
+      border-color: var(--nh-blue-soft);
+      color: var(--nh-navy);
+    }
+    .credential-page-nested-nav .nav-link.active {
+      background-color: var(--nh-navy);
+      border-color: var(--nh-navy);
+      color: var(--nh-white);
+    }
+    .credential-page-weight-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.15rem 0.5rem;
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-left: 0.25rem;
+    }
+    .credential-page-nested-nav .nav-link.active .credential-page-weight-badge {
+      background-color: var(--nh-blue-soft);
+      color: var(--nh-white);
+    }
+    .credential-page-nested-content {
+      padding: 1.5rem;
+      background-color: var(--nh-bg-section);
+      border: 1px solid var(--nh-border-soft);
+      border-radius: var(--nh-radius-sm);
+      min-height: 100px;
+    }
+    .credential-page-nested-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+    }
+    .credential-page-nested-text {
+      color: var(--nh-text-muted);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin: 0 0 0.75rem;
+    }
+    .credential-page-nested-text:last-child { margin-bottom: 0; }
+    .credential-page-nested-text strong { color: var(--nh-navy); font-weight: 700; }
+
+    /* Target audience cards */
+    .credential-page-audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .credential-page-audience-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-left: 3px solid var(--nh-blue);
+      border-radius: var(--nh-radius-sm);
+      padding: 1.25rem 1.35rem;
+      transition: var(--nh-transition);
+    }
+    .credential-page-audience-card:hover {
+      border-color: var(--nh-blue-soft);
+      box-shadow: var(--nh-shadow-sm);
+      transform: translateY(-2px);
+    }
+    .credential-page-audience-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: var(--nh-navy);
+      color: var(--nh-white);
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .credential-page-audience-text {
+      color: var(--nh-text);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ==========================================
+       CREDENTIAL PAGE - APPLY CTA
+    =========================================== */
+    .credential-page-apply-cta {
+      background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+      color: var(--nh-white);
+      position: relative;
+      overflow: hidden;
+    }
+    .credential-page-apply-cta::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 55%;
+      height: 100%;
+      background-image: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .credential-page-apply-cta .container { position: relative; z-index: 1; }
+    .credential-page-apply-content {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .credential-page-apply-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      background-color: rgba(255, 255, 255, 0.12);
+      color: var(--nh-white);
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .credential-page-apply-title {
+      color: var(--nh-white);
+      font-weight: 700;
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      margin-bottom: 1rem;
+    }
+    .credential-page-apply-text {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .credential-page-apply-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .credential-page-apply-buttons .btn { min-width: 220px; justify-content: center; }
+
+    /* ==========================================
+       CREDENTIAL PAGE - RESPONSIVE
+    =========================================== */
+    @media (max-width: 991.98px) {
+      .credential-page-hero { padding-top: 3rem; padding-bottom: 2rem; }
+      .credential-page-banner-row { grid-template-columns: 1fr; }
+      .credential-page-banner-image-wrap { flex-direction: row; justify-content: center; }
+      .credential-page-banner-image { max-width: 180px; }
+      .credential-page-layout { grid-template-columns: 1fr; }
+      .credential-page-sidebar { position: static; }
+      .credential-page-secondary-nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.5rem;
+        gap: 0.4rem;
+      }
+      .credential-page-secondary-nav .nav-link {
+        white-space: nowrap;
+        flex-shrink: 0;
+        border-left: none;
+        border: 1.5px solid var(--nh-border);
+      }
+      .credential-page-secondary-nav .nav-link.active { border-color: var(--nh-navy); }
+      .credential-page-aim-grid { grid-template-columns: 1fr; }
+      .credential-page-audience-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 767.98px) {
+      .credential-page-hero { padding-top: 2.5rem; padding-bottom: 2rem; }
+      .credential-page-hero-subtitle { font-size: 1rem; }
+      .credential-page-main-nav { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; justify-content: flex-start; padding-bottom: 0.5rem; }
+      .credential-page-main-nav .nav-link { flex-shrink: 0; padding: 0.65rem 1.25rem; font-size: 0.85rem; }
+      .credential-page-banner-main { padding: 1.75rem 1.5rem; }
+      .credential-page-banner-image-wrap { flex-direction: column; }
+      .credential-page-banner-image { max-width: 160px; }
+      .credential-page-content { padding: 1.5rem; }
+      .credential-page-nested-nav { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 0.5rem; }
+      .credential-page-nested-nav .nav-link { flex-shrink: 0; }
+      .credential-page-nested-content { padding: 1.25rem; }
+      .credential-page-apply-buttons .btn { width: 100%; min-width: auto; }
+    }
+    @media (max-width: 389.98px) {
+      .credential-page-hero-title { font-size: 1.7rem; }
+      .credential-page-main-nav .nav-link { padding: 0.55rem 1rem; font-size: 0.8rem; }
+      .credential-page-banner-title { font-size: 1.2rem; }
+      .credential-page-panel-heading { font-size: 1.2rem; }
+    }
+
+  </style>
+
+  <!-- ==========================================
+       SECOND STYLE TAG: CONTACT US PAGE CSS
+       (Page-specific — all classes prefixed with `contact-`)
+  ========================================== -->
+  <style>
+    /* ==========================================
+       CONTACT US PAGE - PAGE-SPECIFIC CSS
+       All classes prefixed with `contact-` to prevent conflicts.
+       Reuses GLOBAL COMMON CSS classes (.nh-container, .section, .section-title,
+       .section-eyebrow, .btn-blue, .nh-card, .nh-badge, etc.) wherever possible.
+    =========================================== */
+
+    /* Safety: prevent horizontal overflow */
+    html, body { overflow-x: hidden; }
+    .nh-container { --bs-gutter-x: 3rem; }
+    @media (max-width: 575.98px) { .nh-container { --bs-gutter-x: 1.5rem; } }
+
+    /* ==========================================
+       CONTACT - HERO
+    =========================================== */
+    .contact-hero {
+      position: relative;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      background: linear-gradient(135deg, var(--nh-navy-tint) 0%, var(--nh-blue-tint) 100%);
+      overflow: hidden;
+    }
+    .contact-hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(48, 124, 205, 0.12) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .contact-hero .container { position: relative; z-index: 1; }
+    .contact-hero-breadcrumb {
+      margin-bottom: 1.25rem;
+    }
+    .contact-hero-breadcrumb .breadcrumb {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      font-size: 0.88rem;
+    }
+    .contact-hero-breadcrumb .breadcrumb-item a {
+      color: var(--nh-text-muted);
+      text-decoration: none;
+      transition: var(--nh-transition);
+    }
+    .contact-hero-breadcrumb .breadcrumb-item a:hover { color: var(--nh-blue); }
+    .contact-hero-breadcrumb .breadcrumb-item.active {
+      color: var(--nh-navy);
+      font-weight: 600;
+    }
+    .contact-hero-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      content: "/";
+      color: var(--nh-text-light);
+      padding: 0 0.5rem;
+    }
+    .contact-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--nh-blue);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 1rem;
+    }
+    .contact-hero-eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background-color: var(--nh-blue);
+      border-radius: 2px;
+    }
+    .contact-hero-title {
+      color: var(--nh-navy);
+      font-weight: 800;
+      font-size: clamp(2rem, 4vw, 2.85rem);
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .contact-hero-text {
+      color: var(--nh-text-muted);
+      font-size: 1.1rem;
+      line-height: 1.75;
+      max-width: 560px;
+      margin-bottom: 0;
+    }
+    .contact-hero-visual {
+      position: relative;
+    }
+    .contact-hero-image {
+      width: 100%;
+      aspect-ratio: 4 / 3.2;
+      object-fit: cover;
+      border-radius: var(--nh-radius-lg);
+      box-shadow: var(--nh-shadow-lg);
+      display: block;
+    }
+    .contact-hero-stat-badge {
+      position: absolute;
+      bottom: -1.25rem;
+      right: -0.75rem;
+      background-color: var(--nh-navy);
+      color: var(--nh-white);
+      padding: 1.1rem 1.35rem;
+      border-radius: var(--nh-radius);
+      box-shadow: var(--nh-shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      max-width: 220px;
+    }
+    .contact-hero-stat-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: var(--nh-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .contact-hero-stat-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--nh-white);
+      margin: 0;
+      line-height: 1.3;
+    }
+    .contact-hero-stat-text {
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.78);
+      margin: 0;
+    }
+
+    /* ==========================================
+       CONTACT - INFO CARDS
+    =========================================== */
+    .contact-info-section { background-color: var(--nh-white); }
+    .contact-info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .contact-info-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius);
+      padding: 2rem 1.75rem;
+      transition: var(--nh-transition);
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      text-align: center;
+    }
+    .contact-info-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--nh-transition);
+    }
+    .contact-info-card:hover {
+      border-color: var(--nh-blue-soft);
+      box-shadow: var(--nh-shadow-md);
+      transform: translateY(-4px);
+    }
+    .contact-info-card:hover::before { transform: scaleX(1); }
+    .contact-info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .contact-info-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.35;
+    }
+    .contact-info-text {
+      color: var(--nh-text-muted);
+      font-size: 0.9rem;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* ==========================================
+       CONTACT - INQUIRY FORM
+    =========================================== */
+    .contact-form-section { background-color: var(--nh-bg-section); }
+    .contact-form-wrapper {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-radius: var(--nh-radius-lg);
+      padding: 3rem 2.5rem;
+      box-shadow: var(--nh-shadow-sm);
+    }
+    .contact-form .contact-form-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact-form .contact-form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .contact-form .contact-form-group.full-width {
+      grid-column: 1 / -1;
+    }
+    .contact-form label {
+      color: var(--nh-navy);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 0;
+    }
+    .contact-form label .required {
+      color: #b83242;
+      margin-left: 0.15rem;
+    }
+    .contact-form .form-control {
+      background-color: var(--nh-white);
+      border: 1.5px solid var(--nh-border);
+      border-radius: var(--nh-radius-sm);
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+      color: var(--nh-text);
+      transition: var(--nh-transition);
+      font-family: var(--nh-font-base);
+      width: 100%;
+    }
+    .contact-form .form-control::placeholder {
+      color: var(--nh-text-light);
+      font-size: 0.9rem;
+    }
+    .contact-form .form-control:focus {
+      border-color: var(--nh-blue);
+      box-shadow: 0 0 0 0.2rem rgba(48, 124, 205, 0.15);
+      background-color: var(--nh-white);
+      outline: none;
+    }
+    .contact-form .form-control:focus-visible {
+      outline: none;
+    }
+    .contact-submit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.9rem 2.25rem;
+      background-color: var(--nh-blue);
+      color: var(--nh-white);
+      border: none;
+      border-radius: var(--nh-radius-sm);
+      font-size: 0.98rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--nh-transition);
+      font-family: var(--nh-font-base);
+      margin-top: 0.5rem;
+    }
+    .contact-submit-btn:hover {
+      background-color: var(--nh-blue-dark);
+      color: var(--nh-white);
+      transform: translateY(-2px);
+      box-shadow: var(--nh-shadow-blue);
+    }
+
+    /* ==========================================
+       CONTACT - WHY CONTACT (support cards)
+    =========================================== */
+    .contact-support-section { background-color: var(--nh-white); }
+    .contact-support-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .contact-support-card {
+      background-color: var(--nh-white);
+      border: 1px solid var(--nh-border);
+      border-top: 3px solid var(--nh-blue);
+      border-radius: var(--nh-radius);
+      padding: 1.85rem 1.65rem;
+      transition: var(--nh-transition);
+      height: 100%;
+      text-align: center;
+    }
+    .contact-support-card:hover {
+      border-color: var(--nh-blue-soft);
+      box-shadow: var(--nh-shadow-md);
+      transform: translateY(-3px);
+    }
+    .contact-support-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: var(--nh-radius-sm);
+      background-color: var(--nh-blue-tint);
+      color: var(--nh-blue);
+      font-size: 1.4rem;
+      margin-bottom: 1.15rem;
+    }
+    .contact-support-title {
+      color: var(--nh-navy);
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.65rem;
+      line-height: 1.35;
+    }
+    .contact-support-text {
+      color: var(--nh-text-muted);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* ==========================================
+       CONTACT - FINAL CTA
+    =========================================== */
+    .contact-cta {
+      background: linear-gradient(135deg, var(--nh-navy) 0%, var(--nh-blue) 100%);
+      color: var(--nh-white);
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-cta::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 55%;
+      height: 100%;
+      background-image: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .contact-cta .container { position: relative; z-index: 1; }
+    .contact-cta-content {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .contact-cta-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      background-color: rgba(255, 255, 255, 0.12);
+      color: var(--nh-white);
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .contact-cta-title {
+      color: var(--nh-white);
+      font-weight: 700;
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      margin-bottom: 1rem;
+    }
+    .contact-cta-text {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .contact-cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .contact-cta-buttons .btn { min-width: 240px; justify-content: center; }
+
+    /* ==========================================
+       CONTACT - RESPONSIVE
+    =========================================== */
+    @media (max-width: 991.98px) {
+      .contact-hero { padding-top: 4rem; padding-bottom: 4rem; }
+      .contact-hero-visual { margin-top: 2.5rem; }
+      .contact-info-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-support-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 767.98px) {
+      .contact-hero { padding-top: 3rem; padding-bottom: 3rem; }
+      .contact-hero-title { font-size: 1.85rem; }
+      .contact-hero-stat-badge { display: none; }
+      .contact-info-grid { grid-template-columns: 1fr; }
+      .contact-support-grid { grid-template-columns: 1fr; }
+      .contact-info-card,
+      .contact-support-card { padding: 1.5rem; }
+      .contact-form-wrapper { padding: 2rem 1.5rem; }
+      .contact-form .contact-form-row { grid-template-columns: 1fr; }
+      .contact-cta-buttons .btn { width: 100%; min-width: auto; }
+    }
+    @media (max-width: 389.98px) {
+      .contact-hero-title { font-size: 1.6rem; }
+      .contact-info-title { font-size: 1rem; }
+      .contact-support-title { font-size: 0.95rem; }
+      .contact-submit-btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <!-- Topbar -->
+    <div class="nh-topbar d-none d-lg-block">
+      <div class="container nh-container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-4">
+            <span class="topbar-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+            <span class="topbar-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <span class="topbar-item"><i class="bi bi-shield-check"></i> UK Professional Certification Body</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nh-navbar sticky-top" id="mainNavbar" aria-label="Main navigation">
+      <div class="container nh-container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="https://nhrca.uk/" aria-label="NHRCA Home">
+          <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" alt="National Human Resource Certification Academy - NHRCA UK Logo" class="nh-navbar-logo" width="190" height="52" onerror="this.onerror=null;this.src='imgs/nhrca-logo-fallback.svg';" />
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="https://nhrca.uk/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://nhrca.uk/contact" aria-current="page">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nhrca.uk/about-us">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="standardsDropdown">
+                Standards
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="standardsDropdown">
+                <li><a class="dropdown-item" href="https://nhrca.uk/nhrca-standard"><i class="bi bi-award me-2"></i>NHRCA Standard</a></li>
+                <li><a class="dropdown-item" href="https://nhrca.uk/institutional-standard"><i class="bi bi-building me-2"></i>Institutional Standard</a></li>
+                <li><a class="dropdown-item" href="https://nhrca.uk/course-standard"><i class="bi bi-journal-text me-2"></i>Course Standard</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nhrca.uk/framework">Framework</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="accreditationDropdown">
+                Accreditation
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="accreditationDropdown">
+                <li><a class="dropdown-item" href="https://nhrca.uk/course-accreditation"><i class="bi bi-mortarboard me-2"></i>Course Accreditation</a></li>
+                <li><a class="dropdown-item" href="https://nhrca.uk/institute-accreditation"><i class="bi bi-bank me-2"></i>Institute Accreditation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nhrca.uk/credential">Credential</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="corporateDropdown">
+                Certify Corporate
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="corporateDropdown">
+                <li><a class="dropdown-item" href="https://nhrca.uk/nhrca-shrp"><i class="bi bi-briefcase me-2"></i>NHRCA Standard for Human Resource Practice (NHRCA-SHRP)</a></li>
+                <li><a class="dropdown-item" href="https://nhrca.uk/apply-for-accreditation"><i class="bi bi-file-earmark-check me-2"></i>Apply for Accreditation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-blue btn-verify" href="https://nhrca.uk/verify"><i class="bi bi-patch-check"></i> Verify</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       CONTACT US PAGE SECTIONS
+  =========================================== -->
+
+  <!-- ==========================================
+       CONTACT US PAGE SECTIONS
+  =========================================== -->
+
+  <!-- ===== SECTION 1: CONTACT HERO ===== -->
+  <section class="contact-hero" id="contact-hero">
+    <div class="container nh-container">
+      <nav aria-label="breadcrumb" class="contact-hero-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="https://nhrca.uk/"><i class="bi bi-house-door"></i> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+        </ol>
+      </nav>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="contact-hero-eyebrow">Get In Touch</span>
+          <h1 class="contact-hero-title">Let&rsquo;s Start a Conversation</h1>
+          <p class="contact-hero-text">Whether you are interested in professional certification, institutional accreditation, corporate HR standards, or have a general inquiry, our team is here to assist you.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-hero-visual">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Professional business team having a conversation in a modern office" class="contact-hero-image" loading="eager" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('img-fallback-blue');" />
+            <div class="contact-hero-stat-badge">
+              <span class="contact-hero-stat-icon"><i class="bi bi-headset"></i></span>
+              <div>
+                <p class="contact-hero-stat-title">Dedicated Support</p>
+                <p class="contact-hero-stat-text">Professional &amp; Responsive Team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: CONTACT INFO CARDS ===== -->
+  <section class="section contact-info-section" id="how-can-we-help">
+    <div class="container nh-container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow justify-content-center">Contact Information</span>
+        <h2 class="section-title">How Can We Help You?</h2>
+        <div class="section-divider mx-auto" style="margin-left:auto;margin-right:auto;"></div>
+        <p class="section-subtitle mx-auto">Connect with the National Human Resource Certification Academy for information about our certification programs, accreditation services, and professional development opportunities.</p>
+      </div>
+      <div class="contact-info-grid">
+        <!-- Card 1: General Inquiries -->
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="bi bi-info-circle"></i></div>
+          <h3 class="contact-info-title">General Inquiries</h3>
+          <p class="contact-info-text">For general questions about NHRCA, our programs, and professional development opportunities.</p>
+        </div>
+        <!-- Card 2: Professional Certification -->
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="bi bi-award"></i></div>
+          <h3 class="contact-info-title">Professional Certification</h3>
+          <p class="contact-info-text">For information about HR certification pathways, eligibility, and assessment requirements.</p>
+        </div>
+        <!-- Card 3: Institutional Accreditation -->
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="bi bi-bank"></i></div>
+          <h3 class="contact-info-title">Institutional Accreditation</h3>
+          <p class="contact-info-text">For institutions seeking accreditation and quality assurance recognition from NHRCA.</p>
+        </div>
+        <!-- Card 4: Corporate HR Standards -->
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="bi bi-briefcase"></i></div>
+          <h3 class="contact-info-title">Corporate HR Standards</h3>
+          <p class="contact-info-text">For organizations interested in Corporate HR Standards Certification and HR governance recognition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: INQUIRY FORM ===== -->
+  <section class="section contact-form-section" id="send-inquiry">
+    <div class="container nh-container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="contact-form-wrapper">
+            <div class="text-center mb-4">
+              <span class="section-eyebrow justify-content-center">Inquiry Form</span>
+              <h2 class="section-title">Send Us an Inquiry</h2>
+              <div class="section-divider mx-auto" style="margin-left:auto;margin-right:auto;"></div>
+              <p class="section-subtitle mx-auto">Please complete the form below with your details. Our team will review your inquiry and get in touch with you.</p>
+            </div>
+
+            <!-- Laravel-friendly inquiry form -->
+            <form action="#" method="POST" class="contact-form">
+              @csrf
+
+              <div class="contact-form-row">
+                <!-- Field 1: Full Name -->
+                <div class="contact-form-group">
+                  <label for="full_name">Full Name <span class="required">*</span></label>
+                  <input type="text" name="full_name" id="full_name" class="form-control" placeholder="Enter your full name" required autocomplete="name" />
+                </div>
+
+                <!-- Field 2: Email -->
+                <div class="contact-form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="contact-form-row">
+                <!-- Field 3: Country Name -->
+                <div class="contact-form-group">
+                  <label for="country_name">Country Name <span class="required">*</span></label>
+                  <input type="text" name="country_name" id="country_name" class="form-control" placeholder="Enter your country" required autocomplete="country-name" />
+                </div>
+
+                <!-- Field 4: Position / Designation / Role -->
+                <div class="contact-form-group">
+                  <label for="position">Position / Designation / Role <span class="required">*</span></label>
+                  <input type="text" name="position" id="position" class="form-control" placeholder="Enter your position or designation" required autocomplete="organization-title" />
+                </div>
+              </div>
+
+              <div class="contact-form-row">
+                <!-- Field 5: Organization Name -->
+                <div class="contact-form-group">
+                  <label for="organization_name">Organization Name <span class="required">*</span></label>
+                  <input type="text" name="organization_name" id="organization_name" class="form-control" placeholder="Enter your organization name" required autocomplete="organization" />
+                </div>
+
+                <!-- Field 6: Phone -->
+                <div class="contact-form-group">
+                  <label for="phone">Phone <span class="required">*</span></label>
+                  <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter your phone number" required autocomplete="tel" />
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="text-center mt-4">
+                <button type="submit" class="contact-submit-btn">
+                  <i class="bi bi-send"></i> Submit Inquiry
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: WHY CONTACT NHRCA ===== -->
+  <section class="section contact-support-section" id="why-contact">
+    <div class="container nh-container">
+      <div class="text-center mb-5">
+        <span class="section-eyebrow justify-content-center">Areas of Assistance</span>
+        <h2 class="section-title">Why Contact NHRCA?</h2>
+        <div class="section-divider mx-auto" style="margin-left:auto;margin-right:auto;"></div>
+        <p class="section-subtitle mx-auto">Our team is ready to assist you across multiple areas of professional HR certification and accreditation.</p>
+      </div>
+      <div class="contact-support-grid">
+        <!-- Card 1: Certification Guidance -->
+        <div class="contact-support-card">
+          <div class="contact-support-icon"><i class="bi bi-mortarboard"></i></div>
+          <h3 class="contact-support-title">Certification Guidance</h3>
+          <p class="contact-support-text">Get information about professional HR certification pathways and requirements.</p>
+        </div>
+        <!-- Card 2: Accreditation Support -->
+        <div class="contact-support-card">
+          <div class="contact-support-icon"><i class="bi bi-shield-check"></i></div>
+          <h3 class="contact-support-title">Accreditation Support</h3>
+          <p class="contact-support-text">Learn about institutional recognition and accreditation opportunities.</p>
+        </div>
+        <!-- Card 3: Corporate HR Standards -->
+        <div class="contact-support-card">
+          <div class="contact-support-icon"><i class="bi bi-building-gear"></i></div>
+          <h3 class="contact-support-title">Corporate HR Standards</h3>
+          <p class="contact-support-text">Explore organizational HR standards and professional practices.</p>
+        </div>
+        <!-- Card 4: General Assistance -->
+        <div class="contact-support-card">
+          <div class="contact-support-icon"><i class="bi bi-question-circle"></i></div>
+          <h3 class="contact-support-title">General Assistance</h3>
+          <p class="contact-support-text">Get help with general questions and information about NHRCA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: FINAL CTA ===== -->
+  <section class="section contact-cta" id="final-cta">
+    <div class="container nh-container">
+      <div class="contact-cta-content">
+        <span class="contact-cta-eyebrow"><i class="bi bi-stars"></i> Start Your Journey</span>
+        <h2 class="contact-cta-title">Your Professional Journey Starts Here</h2>
+        <p class="contact-cta-text">Connect with NHRCA and explore opportunities to advance professional excellence in Human Resource Management.</p>
+        <div class="contact-cta-buttons">
+          <a href="https://nhrca.uk/courses" class="btn btn-white btn-lg"><i class="bi bi-arrow-right-circle"></i> Explore Our Programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="nh-footer">
+    <div class="container nh-container">
+      <div class="row g-4 g-lg-5 pb-4">
+        <!-- Column 1: Brand -->
+        <div class="col-lg-4 col-md-12">
+          <img src="https://nhrca.uk/frontend/imgs/NHRCA-UK-logo.png" alt="NHRCA UK Logo" class="footer-logo" onerror="this.onerror=null;this.src='imgs/nhrca-logo-fallback.svg';" />
+          <p>The National Human Resource Certification Academy (NHRCA), UK promotes globally relevant standards, professional competence, and responsible people management practices in Human Resource Management.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/">Home</a></li>
+            <li><a href="https://nhrca.uk/about-us">About Us</a></li>
+            <li><a href="https://nhrca.uk/contact">Contact</a></li>
+            <li><a href="https://nhrca.uk/verify">Verify</a></li>
+            <li><a href="https://nhrca.uk/credential">Credential</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Standards -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5 class="footer-title">Standards &amp; Framework</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/nhrca-standard">NHRCA Standard</a></li>
+            <li><a href="https://nhrca.uk/institutional-standard">Institutional Standard</a></li>
+            <li><a href="https://nhrca.uk/course-standard">Course Standard</a></li>
+            <li><a href="https://nhrca.uk/framework">NHRCA Framework</a></li>
+            <li><a href="https://nhrca.uk/nhrca-shrp">NHRCA-SHRP</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Accreditation -->
+        <div class="col-lg-3 col-md-5 col-12">
+          <h5 class="footer-title">Accreditation</h5>
+          <ul class="footer-link-list">
+            <li><a href="https://nhrca.uk/course-accreditation">Course Accreditation</a></li>
+            <li><a href="https://nhrca.uk/institute-accreditation">Institute Accreditation</a></li>
+            <li><a href="https://nhrca.uk/apply-for-accreditation">Apply for Accreditation</a></li>
+          </ul>
+          <div class="mt-3">
+            <span class="footer-contact-item"><i class="bi bi-envelope-fill"></i> info@nhrca.uk</span>
+            <span class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> United Kingdom</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="row align-items-center g-2">
+          <div class="col-md-6">
+            &copy; 2026 National Human Resource Certification Academy. All rights reserved.
+          </div>
+          <div class="col-md-6">
+            <div class="footer-bottom-links">
+              <a href="https://nhrca.uk/privacy-policy">Privacy Policy</a>
+              <a href="https://nhrca.uk/refund-policy">Refund Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    /* ===== NAVBAR JAVASCRIPT ===== */
+    (function () {
+      const navbar = document.getElementById('mainNavbar');
+      if (!navbar) return;
+      const onScroll = () => {
+        if (window.scrollY > 30) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    /* ===== DROPDOWN ACCESSIBILITY ===== */
+    document.querySelectorAll('.nh-navbar .dropdown-item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        const collapse = document.getElementById('mainNav');
+        if (collapse && collapse.classList.contains('show') && window.innerWidth < 992) {
+          const bsCollapse = bootstrap.Collapse.getInstance(collapse) || new bootstrap.Collapse(collapse, { toggle: false });
+          bsCollapse.hide();
+        }
+      });
+    });
+
+    /* ===== CONTACT PAGE HERO FADE-IN ===== */
+    (function () {
+      const hero = document.querySelector('.contact-hero');
+      if (!hero) return;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) return;
+      hero.style.opacity = '0';
+      hero.style.transform = 'translateY(12px)';
+      hero.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          hero.style.opacity = '1';
+          hero.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    })();
+  </script>
+
+</body>
+</html>
